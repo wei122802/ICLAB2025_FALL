@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : area
+Design : GTE
+Version: T-2022.03
+Date   : Sat Nov 29 19:44:23 2025
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+    SUMA180_1024X32X1BM2_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab11_2025F/04_MEM/SUMA180_1024X32X1BM2_WC.db)
+    SUMA180_2048X16X1BM1_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab11_2025F/04_MEM/SUMA180_2048X16X1BM1_WC.db)
+    SUMA180_4096X8X1BM4_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab11_2025F/04_MEM/SUMA180_4096X8X1BM4_WC.db)
+
+Number of ports:                           31
+Number of nets:                         29935
+Number of cells:                        29779
+Number of combinational cells:          27474
+Number of sequential cells:              2297
+Number of macros/black boxes:               8
+Number of buf/inv:                       1244
+Number of references:                      87
+
+Combinational area:             529603.607862
+Buf/Inv area:                    12267.964715
+Noncombinational area:          136422.519657
+Macro/Black Box area:          2104376.062500
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:               2770402.190019
+Total area:                 undefined
+1

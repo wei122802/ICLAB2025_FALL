@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : SUDOKU
+Version: T-2022.03
+Date   : Mon Sep 22 02:56:51 2025
+****************************************
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/umc018/Synthesis/slow.db)
+
+Number of ports:                           12
+Number of nets:                         13345
+Number of cells:                        13258
+Number of combinational cells:          12913
+Number of sequential cells:               345
+Number of macros/black boxes:               0
+Number of buf/inv:                       1723
+Number of references:                     127
+
+Combinational area:             182419.779967
+Buf/Inv area:                    17357.155820
+Noncombinational area:           25094.361908
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                207514.141875
+Total area:                 undefined
+1

@@ -1,0 +1,181 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : HLPTE
+Version: T-2022.03
+Date   : Mon Oct 13 02:07:23 2025
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: dequantization_data_reg[2][0][33]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: inv_transform_data_reg[0][3][38]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HLPTE              enG500K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dequantization_data_reg[2][0][33]/CK (QDFFS)            0.00 #     0.00 r
+  dequantization_data_reg[2][0][33]/Q (QDFFS)             1.29       1.29 r
+  U20129/O (INV1S)                                        0.64       1.92 f
+  U36867/CO (FA1S)                                        0.98       2.90 f
+  U37273/CO (FA1S)                                        1.04       3.94 f
+  U39215/CO (FA1S)                                        0.97       4.91 f
+  U39543/S (FA1S)                                         1.35       6.27 r
+  U24925/O (INV1S)                                        0.59       6.86 f
+  U42055/CO (FA1S)                                        0.98       7.84 f
+  U42057/S (FA1S)                                         1.37       9.21 r
+  U42059/O (NR2P)                                         0.49       9.70 f
+  U11783/O (NR2P)                                         0.48      10.18 r
+  U19485/O (INV3)                                         0.14      10.32 f
+  U19484/O (OR2T)                                         0.28      10.60 f
+  U59850/O (NR2P)                                         0.37      10.97 r
+  U16388/O (INV2)                                         0.18      11.15 f
+  U11221/O (OR2P)                                         0.33      11.48 f
+  U15201/O (INV1S)                                        0.34      11.82 r
+  U15367/O (AN2)                                          0.43      12.25 r
+  U19482/O (OR2T)                                         0.30      12.56 r
+  U19481/O (XNR2H)                                        0.22      12.78 r
+  inv_transform_data_reg[0][3][38]/D (QDFFS)              0.00      12.78 r
+  data arrival time                                                 12.78
+
+  clock clk (rise edge)                                  13.00      13.00
+  clock network delay (ideal)                             0.00      13.00
+  clock uncertainty                                      -0.10      12.90
+  inv_transform_data_reg[0][3][38]/CK (QDFFS)             0.00      12.90 r
+  library setup time                                     -0.12      12.78
+  data required time                                                12.78
+  --------------------------------------------------------------------------
+  data required time                                                12.78
+  data arrival time                                                -12.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: left_edge_reg[1][6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dc_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HLPTE              enG500K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  left_edge_reg[1][6]/CK (QDFFS)           0.00 #     0.00 r
+  left_edge_reg[1][6]/Q (QDFFS)            1.25       1.25 r
+  U13837/CO (FA1S)                         0.78       2.03 r
+  U57748/S (FA1)                           0.86       2.89 r
+  U25105/O (ND2)                           0.51       3.40 f
+  U57761/O (XOR2HS)                        0.53       3.93 f
+  U57763/OB (MXL2HS)                       0.53       4.46 r
+  U57765/OB (MXL2H)                        0.37       4.82 f
+  U57770/S (FA1S)                          1.14       5.96 r
+  U57773/S (FA1)                           0.48       6.44 f
+  U57774/S (FA1)                           0.81       7.25 f
+  U57777/O (ND2)                           0.62       7.87 r
+  U19165/O (OAI12HP)                       0.27       8.14 f
+  U19164/O (ND2P)                          0.28       8.42 r
+  U19163/O (ND3HT)                         0.21       8.63 f
+  U19162/O (INV3CK)                        0.18       8.81 r
+  U25533/O (XOR2H)                         0.27       9.08 r
+  U57778/O (AN2T)                          0.34       9.43 r
+  U57815/S (FA1)                           0.42       9.84 f
+  U57817/S (FA1P)                          0.79      10.63 f
+  U18492/O (NR2T)                          0.45      11.08 r
+  U57819/O (OAI12HP)                       0.20      11.28 f
+  U57822/O (AOI12HP)                       0.26      11.54 r
+  U57823/O (OAI12HP)                       0.19      11.73 f
+  U18485/O (XOR2HP)                        0.18      11.91 r
+  U18484/O (OA12P)                         0.40      12.30 r
+  U18483/O (OAI12HP)                       0.14      12.45 f
+  U18482/O (AO12T)                         0.32      12.77 f
+  dc_reg[7]/D (DFFN)                       0.00      12.77 f
+  data arrival time                                  12.77
+
+  clock clk (rise edge)                   13.00      13.00
+  clock network delay (ideal)              0.00      13.00
+  clock uncertainty                       -0.10      12.90
+  dc_reg[7]/CK (DFFN)                      0.00      12.90 r
+  library setup time                      -0.13      12.77
+  data required time                                 12.77
+  -----------------------------------------------------------
+  data required time                                 12.77
+  data arrival time                                 -12.77
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: QP_reg_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: dequantization_data_reg[3][3][29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HLPTE              enG500K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  QP_reg_reg[2]/CK (QDFFP)                                0.00 #     0.00 r
+  QP_reg_reg[2]/Q (QDFFP)                                 0.64       0.64 r
+  U20161/O (NR2F)                                         0.21       0.84 f
+  U20158/O (INV12)                                        0.16       1.00 r
+  U20223/O (ND2F)                                         0.17       1.17 f
+  U20093/O (XOR2HT)                                       0.35       1.52 r
+  U21126/O (INV12)                                        0.22       1.74 f
+  U14453/O (INV3)                                         0.33       2.07 r
+  U41041/O (XNR2HS)                                       0.33       2.40 f
+  U15043/O (BUF1CK)                                       1.32       3.73 f
+  U41226/O (OAI22S)                                       1.06       4.78 r
+  U41240/S (FA1S)                                         0.92       5.70 f
+  U28913/O (NR2)                                          1.16       6.86 r
+  U41238/O (OAI12HS)                                      0.41       7.28 f
+  U28840/O (AOI12HS)                                      0.82       8.10 r
+  U28907/O (INV1S)                                        0.58       8.68 f
+  U41239/O (AOI12H)                                       0.58       9.25 r
+  U42534/O (OAI12H)                                       0.26       9.52 f
+  U29057/O (AOI12HS)                                      0.60      10.12 r
+  U43594/O (XOR2H)                                        0.54      10.66 r
+  U61014/O (OAI22S)                                       0.43      11.08 f
+  U25629/O (NR2)                                          0.89      11.97 r
+  U26472/O (AO222S)                                       0.78      12.74 r
+  dequantization_data_reg[3][3][29]/D (DFFS)              0.00      12.74 r
+  data arrival time                                                 12.74
+
+  clock clk (rise edge)                                  13.00      13.00
+  clock network delay (ideal)                             0.00      13.00
+  clock uncertainty                                      -0.10      12.90
+  dequantization_data_reg[3][3][29]/CK (DFFS)             0.00      12.90 r
+  library setup time                                     -0.16      12.74
+  data required time                                                12.74
+  --------------------------------------------------------------------------
+  data required time                                                12.74
+  data arrival time                                                -12.74
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

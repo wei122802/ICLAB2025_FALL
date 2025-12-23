@@ -1,0 +1,52 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Mon Sep 29 11:59:35 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               3
+    Cells do not drive (LINT-1)                                     3
+
+Nets                                                               32
+    Unloaded nets (LINT-2)                                         32
+--------------------------------------------------------------------------------
+
+Warning: In design 'CONVEX', cell 'B_6914' does not drive any nets. (LINT-1)
+Warning: In design 'CONVEX', cell 'B_6915' does not drive any nets. (LINT-1)
+Warning: In design 'CONVEX', cell 'B_6924' does not drive any nets. (LINT-1)
+Warning: In design 'CONVEX', net 'net24669' driven by pin 'C156986/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24668' driven by pin 'C156956/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24667' driven by pin 'C156927/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24666' driven by pin 'C156898/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24665' driven by pin 'C156895/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24664' driven by pin 'C156894/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24663' driven by pin 'C156683/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24662' driven by pin 'C156669/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24661' driven by pin 'C156665/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24660' driven by pin 'C156661/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24659' driven by pin 'C156676/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24658' driven by pin 'C156672/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24657' driven by pin 'C155214/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24656' driven by pin 'C155210/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24655' driven by pin 'C155206/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24654' driven by pin 'C155221/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24653' driven by pin 'C155217/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24652' driven by pin 'C153766/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24651' driven by pin 'C153765/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24650' driven by pin 'C153731/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24649' driven by pin 'C153718/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24648' driven by pin 'C153705/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24647' driven by pin 'C153698/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24646' driven by pin 'C153691/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24645' driven by pin 'C153690/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24644' driven by pin 'C153686/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24643' driven by pin 'C153685/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24642' driven by pin 'C153641/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24641' driven by pin 'C153633/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24640' driven by pin 'C153626/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24639' driven by pin 'C153620/Z' has no loads. (LINT-2)
+Warning: In design 'CONVEX', net 'net24638' driven by pin 'C153612/Z' has no loads. (LINT-2)
+1

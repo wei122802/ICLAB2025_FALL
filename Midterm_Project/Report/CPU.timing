@@ -1,0 +1,162 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : CPU
+Version: T-2022.03
+Date   : Sat Nov 15 23:13:53 2025
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: rs_data_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core_r7_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CPU                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rs_data_reg[1]/CK (DFFP)                 0.00       0.00 r
+  rs_data_reg[1]/QB (DFFP)                 0.63       0.63 r
+  U1341/O (INV6)                           0.13       0.76 f
+  U1834/O (XNR2H)                          0.19       0.95 f
+  U1902/O (OAI22S)                         0.30       1.25 r
+  U1922/O (ND2P)                           0.18       1.44 f
+  U2299/O (OAI12HP)                        0.24       1.67 r
+  U1719/O (AOI12HP)                        0.14       1.81 f
+  U2389/O (OAI12HT)                        0.19       2.00 r
+  U2388/O (AOI12HT)                        0.12       2.12 f
+  U2369/O (OAI12HT)                        0.18       2.30 r
+  U2780/O (AOI12HT)                        0.12       2.42 f
+  U2796/O (OAI12HT)                        0.19       2.62 r
+  U2807/O (AOI12HT)                        0.16       2.77 f
+  U1895/O (OAI12HP)                        0.21       2.98 r
+  U1810/O (XOR2HP)                         0.17       3.15 r
+  U2376/O (AOI22HT)                        0.12       3.26 f
+  U2352/O (BUF12CK)                        0.20       3.46 f
+  U2522/O (OAI12H)                         0.16       3.62 r
+  core_r7_reg[13]/D (QDFFRBN)              0.00       3.62 r
+  data arrival time                                   3.62
+
+  clock clk (rise edge)                    3.90       3.90
+  clock network delay (ideal)              0.00       3.90
+  clock uncertainty                       -0.10       3.80
+  core_r7_reg[13]/CK (QDFFRBN)             0.00       3.80 r
+  library setup time                      -0.18       3.62
+  data required time                                  3.62
+  -----------------------------------------------------------
+  data required time                                  3.62
+  data arrival time                                  -3.62
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: SRAM_inst_data/SRAM_inst
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CPU                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  current_state_reg[1]/CK (QDFFRBT)                       0.00       0.00 r
+  current_state_reg[1]/Q (QDFFRBT)                        0.52       0.52 f
+  U1839/O (NR2T)                                          0.22       0.74 r
+  U1374/O (ND2P)                                          0.15       0.89 f
+  U1574/O (INV4)                                          0.20       1.10 r
+  U2102/O (ND3)                                           0.23       1.33 f
+  U2588/O (OAI12HS)                                       0.27       1.60 r
+  U2589/O (ND2)                                           0.17       1.77 f
+  U1300/O (ND2)                                           0.17       1.94 r
+  U1377/O (INV2)                                          0.09       2.03 f
+  U1715/O (ND2F)                                          0.15       2.18 r
+  U1701/O (INV8)                                          0.07       2.25 f
+  U2379/O (NR2F)                                          0.11       2.36 r
+  U2845/O (ND2)                                           0.16       2.52 f
+  U1401/O (ND3HT)                                         0.14       2.65 r
+  SRAM_inst_data/A[3] (SRAM_256_16)                       0.00       2.65 r
+  SRAM_inst_data/SRAM_inst/A3 (SRAM_256X16)               0.00       2.65 r
+  data arrival time                                                  2.65
+
+  clock clk (rise edge)                                   3.90       3.90
+  clock network delay (ideal)                             0.00       3.90
+  clock uncertainty                                      -0.10       3.80
+  SRAM_inst_data/SRAM_inst/CK (SRAM_256X16)               0.00       3.80 r
+  library setup time                                     -1.15       2.65
+  data required time                                                 2.65
+  --------------------------------------------------------------------------
+  data required time                                                 2.65
+  data arrival time                                                 -2.65
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: rs_data_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: core_r14_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CPU                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  rs_data_reg[1]/CK (DFFP)                 0.00       0.00 r
+  rs_data_reg[1]/QB (DFFP)                 0.63       0.63 r
+  U1341/O (INV6)                           0.13       0.76 f
+  U1834/O (XNR2H)                          0.19       0.95 f
+  U1902/O (OAI22S)                         0.30       1.25 r
+  U1922/O (ND2P)                           0.18       1.44 f
+  U2299/O (OAI12HP)                        0.24       1.67 r
+  U1719/O (AOI12HP)                        0.14       1.81 f
+  U2389/O (OAI12HT)                        0.19       2.00 r
+  U2388/O (AOI12HT)                        0.12       2.12 f
+  U2369/O (OAI12HT)                        0.18       2.30 r
+  U2780/O (AOI12HT)                        0.12       2.42 f
+  U2796/O (OAI12HT)                        0.19       2.62 r
+  U2807/O (AOI12HT)                        0.16       2.77 f
+  U1895/O (OAI12HP)                        0.21       2.98 r
+  U1810/O (XOR2HP)                         0.17       3.15 r
+  U2376/O (AOI22HT)                        0.12       3.26 f
+  U2352/O (BUF12CK)                        0.20       3.46 f
+  U2523/O (OAI12H)                         0.16       3.62 r
+  core_r14_reg[13]/D (QDFFRBN)             0.00       3.62 r
+  data arrival time                                   3.62
+
+  clock clk (rise edge)                    3.90       3.90
+  clock network delay (ideal)              0.00       3.90
+  clock uncertainty                       -0.10       3.80
+  core_r14_reg[13]/CK (QDFFRBN)            0.00       3.80 r
+  library setup time                      -0.18       3.62
+  data required time                                  3.62
+  -----------------------------------------------------------
+  data required time                                  3.62
+  data arrival time                                  -3.62
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

@@ -1,0 +1,101 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'GTE' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : design
+Design : GTE
+Version: T-2022.03
+Date   : Sat Nov 29 19:44:23 2025
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+    SUMA180_1024X32X1BM2_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab11_2025F/04_MEM/SUMA180_1024X32X1BM2_WC.db)
+    SUMA180_2048X16X1BM1_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab11_2025F/04_MEM/SUMA180_2048X16X1BM1_WC.db)
+    SUMA180_4096X8X1BM4_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab11_2025F/04_MEM/SUMA180_4096X8X1BM4_WC.db)
+
+Local Link Library:
+
+    {fsa0m_a_generic_core_ss1p62v125c.db, fsa0m_a_generic_core_ff1p98vm40c.db, fsa0m_a_t33_generic_io_ss1p62v125c.db, fsa0m_a_t33_generic_io_ff1p98vm40c.db, SUMA180_1024X32X1BM2_WC.db, SUMA180_2048X16X1BM1_WC.db, SUMA180_4096X8X1BM4_WC.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WCCOM
+    Library : fsa0m_a_generic_core_ss1p62v125c
+    Process :   1.00
+    Temperature : 125.00
+    Voltage :   1.62
+    Interconnect Model : worst_case_tree
+
+Min Operating Conditions:
+
+
+    Operating Condition Name : BCCOM
+    Library : fsa0m_a_generic_core_ff1p98vm40c
+    Process :   1.00
+    Temperature : -40.00
+    Voltage :   1.98
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected manually by the user.
+
+Name           :   G50K
+Location       :   fsa0m_a_generic_core_ff1p98vm40c
+Resistance     :   0
+Capacitance    :   0.000175
+Area           :   0
+Slope          :   0.5
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1    23.70
+     2    54.30
+     3    85.50
+     4   144.10
+     5   198.90
+    10   385.10
+    16   705.30
+    50  1094.80
+    90  1413.30
+
+
+
+Wire Loading Model Mode: top.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    DesignWare
+
+Design Parameters:
+
+    None specified.
+1

@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : CPU
+Version: T-2022.03
+Date   : Sat Nov 15 23:13:53 2025
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+    SRAM_256X16_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Midterm_Project_2025/04_MEM/SRAM_256X16_WC.db)
+
+Number of ports:                          637
+Number of nets:                          4109
+Number of cells:                         3732
+Number of combinational cells:           3288
+Number of sequential cells:               439
+Number of macros/black boxes:               1
+Number of buf/inv:                        808
+Number of references:                     111
+
+Combinational area:              62567.870471
+Buf/Inv area:                     8205.724742
+Noncombinational area:           26263.944118
+Macro/Black Box area:            68199.148438
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                157030.963027
+Total area:                 undefined
+1

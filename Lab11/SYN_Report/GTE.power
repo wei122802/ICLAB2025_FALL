@@ -1,0 +1,61 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : GTE
+Version: T-2022.03
+Date   : Sat Nov 29 19:44:24 2025
+****************************************
+
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+    SUMA180_1024X32X1BM2_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab11_2025F/04_MEM/SUMA180_1024X32X1BM2_WC.db)
+    SUMA180_2048X16X1BM1_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab11_2025F/04_MEM/SUMA180_2048X16X1BM1_WC.db)
+    SUMA180_4096X8X1BM4_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab11_2025F/04_MEM/SUMA180_4096X8X1BM4_WC.db)
+
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+GTE                    G50K              fsa0m_a_generic_core_ff1p98vm40c
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 226.0070 mW   (98%)
+  Net Switching Power  =   4.3110 mW    (2%)
+                         ---------
+Total Dynamic Power    = 230.3180 mW  (100%)
+
+Cell Leakage Power     = 384.1047 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory           210.0670        2.8320e-02        3.5219e+08          210.4476  (  91.22%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     14.6187            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.5062            0.7711        7.3651e+06           15.9033  (   6.89%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.8150            3.5115        2.4548e+07            4.3511  (   1.89%)
+--------------------------------------------------------------------------------------------------
+Total            226.0069 mW         4.3110 mW     3.8410e+08 pW       230.7020 mW
+1

@@ -1,0 +1,2048 @@
+@player_no = 0
+Day: 10/20
+Exp: 0x953D (38205) 
+MP: 0x321D (12829)
+Attack: 0x8437 (33847)
+Defense: 0x7B5D (31581)
+HP: 0x7A46 (31302)
+--------------------
+@player_no = 1
+Day: 07/15
+Exp: 0xFD8C (64908) 
+MP: 0x173A (5946)
+Attack: 0xB34F (45903)
+Defense: 0xFE6C (65132)
+HP: 0xE0F5 (57589)
+--------------------
+@player_no = 2
+Day: 07/05
+Exp: 0xC84A (51274) 
+MP: 0xF907 (63751)
+Attack: 0xFD8D (64909)
+Defense: 0xE2CE (58062)
+HP: 0xF243 (62019)
+--------------------
+@player_no = 3
+Day: 07/17
+Exp: 0x9D3D (40253) 
+MP: 0xF698 (63128)
+Attack: 0x4C42 (19522)
+Defense: 0x2B6B (11115)
+HP: 0x36C9 (14025)
+--------------------
+@player_no = 4
+Day: 05/16
+Exp: 0x26C0 (9920) 
+MP: 0xE412 (58386)
+Attack: 0xDF7C (57212)
+Defense: 0x8819 (34841)
+HP: 0xAA95 (43669)
+--------------------
+@player_no = 5
+Day: 01/11
+Exp: 0x25C7 (9671) 
+MP: 0x9519 (38169)
+Attack: 0x1C80 (7296)
+Defense: 0xED27 (60711)
+HP: 0x0517 (1303)
+--------------------
+@player_no = 6
+Day: 09/19
+Exp: 0x105E (4190) 
+MP: 0x385C (14428)
+Attack: 0x089B (2203)
+Defense: 0xD6B2 (54962)
+HP: 0xF10D (61709)
+--------------------
+@player_no = 7
+Day: 08/04
+Exp: 0x362F (13871) 
+MP: 0xD61F (54815)
+Attack: 0xC342 (49986)
+Defense: 0x4133 (16691)
+HP: 0x6742 (26434)
+--------------------
+@player_no = 8
+Day: 04/11
+Exp: 0x5960 (22880) 
+MP: 0xA5F6 (42486)
+Attack: 0xA755 (42837)
+Defense: 0xE69C (59036)
+HP: 0x5819 (22553)
+--------------------
+@player_no = 9
+Day: 02/21
+Exp: 0x8C6B (35947) 
+MP: 0x60E6 (24806)
+Attack: 0x4549 (17737)
+Defense: 0x5116 (20758)
+HP: 0x4367 (17255)
+--------------------
+@player_no = 10
+Day: 12/19
+Exp: 0x2A52 (10834) 
+MP: 0xDD3C (56636)
+Attack: 0xAF91 (44945)
+Defense: 0x04AE (1198)
+HP: 0xF106 (61702)
+--------------------
+@player_no = 11
+Day: 03/08
+Exp: 0xAA8D (43661) 
+MP: 0x00A8 (0168)
+Attack: 0x864B (34379)
+Defense: 0x4A90 (19088)
+HP: 0x8FD9 (36825)
+--------------------
+@player_no = 12
+Day: 02/11
+Exp: 0xA96C (43372) 
+MP: 0xBB2B (47915)
+Attack: 0x95D5 (38357)
+Defense: 0x8E2D (36397)
+HP: 0x4966 (18790)
+--------------------
+@player_no = 13
+Day: 11/23
+Exp: 0x8096 (32918) 
+MP: 0xBCB9 (48313)
+Attack: 0xCADD (51933)
+Defense: 0xC6A7 (50855)
+HP: 0xB550 (46416)
+--------------------
+@player_no = 14
+Day: 08/04
+Exp: 0xEF16 (61206) 
+MP: 0xAC01 (44033)
+Attack: 0x463A (17978)
+Defense: 0xA4AB (42155)
+HP: 0x7C8E (31886)
+--------------------
+@player_no = 15
+Day: 05/05
+Exp: 0x5BAD (23469) 
+MP: 0x1DB9 (7609)
+Attack: 0x0871 (2161)
+Defense: 0xBD49 (48457)
+HP: 0x9655 (38485)
+--------------------
+@player_no = 16
+Day: 02/11
+Exp: 0x9712 (38674) 
+MP: 0xD099 (53401)
+Attack: 0x6E10 (28176)
+Defense: 0x034F (0847)
+HP: 0xAAE2 (43746)
+--------------------
+@player_no = 17
+Day: 12/29
+Exp: 0xA98D (43405) 
+MP: 0x26E5 (9957)
+Attack: 0x4BF3 (19443)
+Defense: 0x3ABB (15035)
+HP: 0x1C7B (7291)
+--------------------
+@player_no = 18
+Day: 03/25
+Exp: 0xF367 (62311) 
+MP: 0x7D19 (32025)
+Attack: 0xB003 (45059)
+Defense: 0x120E (4622)
+HP: 0x5134 (20788)
+--------------------
+@player_no = 19
+Day: 11/13
+Exp: 0xFC81 (64641) 
+MP: 0x4ACB (19147)
+Attack: 0xC336 (49974)
+Defense: 0xD532 (54578)
+HP: 0xB542 (46402)
+--------------------
+@player_no = 20
+Day: 09/14
+Exp: 0x223D (8765) 
+MP: 0xAC19 (44057)
+Attack: 0xAEE4 (44772)
+Defense: 0xEC25 (60453)
+HP: 0xEF25 (61221)
+--------------------
+@player_no = 21
+Day: 07/02
+Exp: 0x7FB3 (32691) 
+MP: 0xF8A6 (63654)
+Attack: 0x780F (30735)
+Defense: 0xA97E (43390)
+HP: 0x7076 (28790)
+--------------------
+@player_no = 22
+Day: 08/28
+Exp: 0x6187 (24967) 
+MP: 0x408B (16523)
+Attack: 0x1AA5 (6821)
+Defense: 0xA752 (42834)
+HP: 0x7C26 (31782)
+--------------------
+@player_no = 23
+Day: 02/28
+Exp: 0x3B64 (15204) 
+MP: 0x300E (12302)
+Attack: 0xA9D0 (43472)
+Defense: 0xC8F7 (51447)
+HP: 0x2E7B (11899)
+--------------------
+@player_no = 24
+Day: 08/21
+Exp: 0x28C2 (10434) 
+MP: 0x4CC1 (19649)
+Attack: 0xF354 (62292)
+Defense: 0xBA5E (47710)
+HP: 0x6C6E (27758)
+--------------------
+@player_no = 25
+Day: 10/27
+Exp: 0xD8AE (55470) 
+MP: 0x2CCE (11470)
+Attack: 0xB409 (46089)
+Defense: 0xC6EB (50923)
+HP: 0xE07C (57468)
+--------------------
+@player_no = 26
+Day: 11/22
+Exp: 0x58D4 (22740) 
+MP: 0x7F40 (32576)
+Attack: 0x8AFC (35580)
+Defense: 0x03AE (0942)
+HP: 0x72FE (29438)
+--------------------
+@player_no = 27
+Day: 06/27
+Exp: 0x16B5 (5813) 
+MP: 0xA56E (42350)
+Attack: 0xBAD8 (47832)
+Defense: 0x0125 (0293)
+HP: 0xE16B (57707)
+--------------------
+@player_no = 28
+Day: 07/28
+Exp: 0x4681 (18049) 
+MP: 0x981B (38939)
+Attack: 0xCC40 (52288)
+Defense: 0xBD7F (48511)
+HP: 0x2AB7 (10935)
+--------------------
+@player_no = 29
+Day: 03/06
+Exp: 0x13C7 (5063) 
+MP: 0x6BED (27629)
+Attack: 0xC374 (50036)
+Defense: 0xD1F5 (53749)
+HP: 0x5A75 (23157)
+--------------------
+@player_no = 30
+Day: 11/29
+Exp: 0xBB53 (47955) 
+MP: 0x93BD (37821)
+Attack: 0xE50B (58635)
+Defense: 0xB4B4 (46260)
+HP: 0x6AB3 (27315)
+--------------------
+@player_no = 31
+Day: 08/09
+Exp: 0x8A75 (35445) 
+MP: 0x91F6 (37366)
+Attack: 0x573C (22332)
+Defense: 0xB8EB (47339)
+HP: 0x92F6 (37622)
+--------------------
+@player_no = 32
+Day: 09/18
+Exp: 0x84B9 (33977) 
+MP: 0x5934 (22836)
+Attack: 0x4FA1 (20385)
+Defense: 0x3132 (12594)
+HP: 0xC8E7 (51431)
+--------------------
+@player_no = 33
+Day: 02/08
+Exp: 0xD6FE (55038) 
+MP: 0xDCA2 (56482)
+Attack: 0x33F7 (13303)
+Defense: 0xCCAC (52396)
+HP: 0xC235 (49717)
+--------------------
+@player_no = 34
+Day: 03/12
+Exp: 0xA9D9 (43481) 
+MP: 0xD7FB (55291)
+Attack: 0x0CAF (3247)
+Defense: 0x7F52 (32594)
+HP: 0x4DD2 (19922)
+--------------------
+@player_no = 35
+Day: 08/03
+Exp: 0x6BFC (27644) 
+MP: 0xE757 (59223)
+Attack: 0xE2FE (58110)
+Defense: 0xD8F1 (55537)
+HP: 0x15B8 (5560)
+--------------------
+@player_no = 36
+Day: 04/22
+Exp: 0xD645 (54853) 
+MP: 0x0BF1 (3057)
+Attack: 0xBBBE (48062)
+Defense: 0xD5C3 (54723)
+HP: 0x549A (21658)
+--------------------
+@player_no = 37
+Day: 09/09
+Exp: 0x708B (28811) 
+MP: 0xC4C1 (50369)
+Attack: 0xE4BF (58559)
+Defense: 0x0610 (1552)
+HP: 0xD195 (53653)
+--------------------
+@player_no = 38
+Day: 08/15
+Exp: 0xAAF4 (43764) 
+MP: 0xEA28 (59944)
+Attack: 0x09A5 (2469)
+Defense: 0x5FAA (24490)
+HP: 0xEAB6 (60086)
+--------------------
+@player_no = 39
+Day: 10/20
+Exp: 0xA3EF (41967) 
+MP: 0x47FB (18427)
+Attack: 0x2F22 (12066)
+Defense: 0xEDE7 (60903)
+HP: 0x9363 (37731)
+--------------------
+@player_no = 40
+Day: 03/11
+Exp: 0x1109 (4361) 
+MP: 0x1A49 (6729)
+Attack: 0x662C (26156)
+Defense: 0x8900 (35072)
+HP: 0xDDEB (56811)
+--------------------
+@player_no = 41
+Day: 08/16
+Exp: 0x9000 (36864) 
+MP: 0xEC2D (60461)
+Attack: 0x3EEB (16107)
+Defense: 0x30BF (12479)
+HP: 0xD006 (53254)
+--------------------
+@player_no = 42
+Day: 07/15
+Exp: 0x7C5A (31834) 
+MP: 0x0F90 (3984)
+Attack: 0x4DEF (19951)
+Defense: 0xAF64 (44900)
+HP: 0xA39A (41882)
+--------------------
+@player_no = 43
+Day: 08/08
+Exp: 0x97E9 (38889) 
+MP: 0xA992 (43410)
+Attack: 0x80B3 (32947)
+Defense: 0xD04E (53326)
+HP: 0xA7EF (42991)
+--------------------
+@player_no = 44
+Day: 11/03
+Exp: 0xCD1B (52507) 
+MP: 0x2B59 (11097)
+Attack: 0x6418 (25624)
+Defense: 0x3203 (12803)
+HP: 0xD2FC (54012)
+--------------------
+@player_no = 45
+Day: 11/29
+Exp: 0x6411 (25617) 
+MP: 0x366B (13931)
+Attack: 0xAD83 (44419)
+Defense: 0x5565 (21861)
+HP: 0x3867 (14439)
+--------------------
+@player_no = 46
+Day: 11/07
+Exp: 0xEB3D (60221) 
+MP: 0x134B (4939)
+Attack: 0xE954 (59732)
+Defense: 0x27CC (10188)
+HP: 0xF37C (62332)
+--------------------
+@player_no = 47
+Day: 02/23
+Exp: 0xFEB6 (65206) 
+MP: 0x33C4 (13252)
+Attack: 0x31B0 (12720)
+Defense: 0x344B (13387)
+HP: 0xF1EC (61932)
+--------------------
+@player_no = 48
+Day: 02/04
+Exp: 0x54B2 (21682) 
+MP: 0x23AC (9132)
+Attack: 0x527C (21116)
+Defense: 0x8A77 (35447)
+HP: 0x67F3 (26611)
+--------------------
+@player_no = 49
+Day: 09/13
+Exp: 0x2737 (10039) 
+MP: 0x50FC (20732)
+Attack: 0xD98F (55695)
+Defense: 0x5A26 (23078)
+HP: 0xD147 (53575)
+--------------------
+@player_no = 50
+Day: 03/15
+Exp: 0x2A7A (10874) 
+MP: 0x2A84 (10884)
+Attack: 0x1119 (4377)
+Defense: 0xF550 (62800)
+HP: 0x94ED (38125)
+--------------------
+@player_no = 51
+Day: 08/17
+Exp: 0x9D45 (40261) 
+MP: 0x0F48 (3912)
+Attack: 0x5A4F (23119)
+Defense: 0x6345 (25413)
+HP: 0x2C50 (11344)
+--------------------
+@player_no = 52
+Day: 08/18
+Exp: 0x3C51 (15441) 
+MP: 0x4419 (17433)
+Attack: 0x8846 (34886)
+Defense: 0xA2B4 (41652)
+HP: 0xFCED (64749)
+--------------------
+@player_no = 53
+Day: 09/10
+Exp: 0x7A9F (31391) 
+MP: 0x0535 (1333)
+Attack: 0x1069 (4201)
+Defense: 0xAA42 (43586)
+HP: 0x8524 (34084)
+--------------------
+@player_no = 54
+Day: 06/30
+Exp: 0xEE66 (61030) 
+MP: 0xF6ED (63213)
+Attack: 0x3366 (13158)
+Defense: 0x5AC0 (23232)
+HP: 0x2F63 (12131)
+--------------------
+@player_no = 55
+Day: 01/21
+Exp: 0x40E0 (16608) 
+MP: 0xD19B (53659)
+Attack: 0xE844 (59460)
+Defense: 0x5A35 (23093)
+HP: 0x3E29 (15913)
+--------------------
+@player_no = 56
+Day: 10/07
+Exp: 0x7FEE (32750) 
+MP: 0x5A13 (23059)
+Attack: 0x3B16 (15126)
+Defense: 0xBAC6 (47814)
+HP: 0xD5BC (54716)
+--------------------
+@player_no = 57
+Day: 09/29
+Exp: 0x1D82 (7554) 
+MP: 0xFEF9 (65273)
+Attack: 0x1E05 (7685)
+Defense: 0x5645 (22085)
+HP: 0x0AA0 (2720)
+--------------------
+@player_no = 58
+Day: 08/18
+Exp: 0x80C5 (32965) 
+MP: 0x2F01 (12033)
+Attack: 0xCB83 (52099)
+Defense: 0xFDC8 (64968)
+HP: 0x1E49 (7753)
+--------------------
+@player_no = 59
+Day: 08/20
+Exp: 0xDED2 (57042) 
+MP: 0x9462 (37986)
+Attack: 0x54C4 (21700)
+Defense: 0xB6AE (46766)
+HP: 0xE04D (57421)
+--------------------
+@player_no = 60
+Day: 09/27
+Exp: 0xB93C (47420) 
+MP: 0x6CF8 (27896)
+Attack: 0xAA0A (43530)
+Defense: 0x74A9 (29865)
+HP: 0xD3E0 (54240)
+--------------------
+@player_no = 61
+Day: 04/22
+Exp: 0x85CE (34254) 
+MP: 0x125E (4702)
+Attack: 0x4E5D (20061)
+Defense: 0x2AD0 (10960)
+HP: 0x8FF8 (36856)
+--------------------
+@player_no = 62
+Day: 06/02
+Exp: 0x5DB3 (23987) 
+MP: 0xFE86 (65158)
+Attack: 0x212E (8494)
+Defense: 0xC20F (49679)
+HP: 0x1CA1 (7329)
+--------------------
+@player_no = 63
+Day: 05/11
+Exp: 0x6895 (26773) 
+MP: 0x308F (12431)
+Attack: 0xF8F1 (63729)
+Defense: 0xB54D (46413)
+HP: 0xABC4 (43972)
+--------------------
+@player_no = 64
+Day: 02/06
+Exp: 0xC878 (51320) 
+MP: 0x7635 (30261)
+Attack: 0xBF33 (48947)
+Defense: 0x5E4B (24139)
+HP: 0x8211 (33297)
+--------------------
+@player_no = 65
+Day: 08/26
+Exp: 0xEF46 (61254) 
+MP: 0xB255 (45653)
+Attack: 0xA146 (41286)
+Defense: 0x40B3 (16563)
+HP: 0x694C (26956)
+--------------------
+@player_no = 66
+Day: 04/06
+Exp: 0xECFD (60669) 
+MP: 0xBE9D (48797)
+Attack: 0x9E5B (40539)
+Defense: 0xBF94 (49044)
+HP: 0xE3B9 (58297)
+--------------------
+@player_no = 67
+Day: 09/26
+Exp: 0x350B (13579) 
+MP: 0x50A9 (20649)
+Attack: 0x7F37 (32567)
+Defense: 0x60AB (24747)
+HP: 0x57A9 (22441)
+--------------------
+@player_no = 68
+Day: 06/05
+Exp: 0xF992 (63890) 
+MP: 0x5EC4 (24260)
+Attack: 0x1BD1 (7121)
+Defense: 0x8F9F (36767)
+HP: 0x455F (17759)
+--------------------
+@player_no = 69
+Day: 08/18
+Exp: 0xE592 (58770) 
+MP: 0x4CC5 (19653)
+Attack: 0x8E05 (36357)
+Defense: 0x2F2E (12078)
+HP: 0xA434 (42036)
+--------------------
+@player_no = 70
+Day: 06/08
+Exp: 0x0CFA (3322) 
+MP: 0x0913 (2323)
+Attack: 0x03D7 (0983)
+Defense: 0x4B7E (19326)
+HP: 0x6A58 (27224)
+--------------------
+@player_no = 71
+Day: 03/07
+Exp: 0xD4FD (54525) 
+MP: 0x7B3F (31551)
+Attack: 0x7D5D (32093)
+Defense: 0x9F00 (40704)
+HP: 0xF1DC (61916)
+--------------------
+@player_no = 72
+Day: 11/11
+Exp: 0x9244 (37444) 
+MP: 0xD8C3 (55491)
+Attack: 0xF9DD (63965)
+Defense: 0x9F6E (40814)
+HP: 0x3084 (12420)
+--------------------
+@player_no = 73
+Day: 08/09
+Exp: 0x050F (1295) 
+MP: 0xE50B (58635)
+Attack: 0x1889 (6281)
+Defense: 0x02F3 (0755)
+HP: 0xD938 (55608)
+--------------------
+@player_no = 74
+Day: 03/19
+Exp: 0x96AB (38571) 
+MP: 0xA123 (41251)
+Attack: 0xB217 (45591)
+Defense: 0xA9DE (43486)
+HP: 0x1B37 (6967)
+--------------------
+@player_no = 75
+Day: 04/18
+Exp: 0x9370 (37744) 
+MP: 0xB8CE (47310)
+Attack: 0x8453 (33875)
+Defense: 0x64C0 (25792)
+HP: 0x63B6 (25526)
+--------------------
+@player_no = 76
+Day: 01/16
+Exp: 0x4B17 (19223) 
+MP: 0x0ECE (3790)
+Attack: 0xF5D2 (62930)
+Defense: 0x1E1C (7708)
+HP: 0x216B (8555)
+--------------------
+@player_no = 77
+Day: 09/29
+Exp: 0x11ED (4589) 
+MP: 0x1314 (4884)
+Attack: 0x2A65 (10853)
+Defense: 0x0A8B (2699)
+HP: 0xBA50 (47696)
+--------------------
+@player_no = 78
+Day: 09/25
+Exp: 0xC3A5 (50085) 
+MP: 0x9D38 (40248)
+Attack: 0xA66C (42604)
+Defense: 0x2290 (8848)
+HP: 0x2B80 (11136)
+--------------------
+@player_no = 79
+Day: 02/06
+Exp: 0x0FBF (4031) 
+MP: 0x27C6 (10182)
+Attack: 0x4702 (18178)
+Defense: 0xBE92 (48786)
+HP: 0x79D8 (31192)
+--------------------
+@player_no = 80
+Day: 08/01
+Exp: 0x8471 (33905) 
+MP: 0x41F5 (16885)
+Attack: 0x11D5 (4565)
+Defense: 0x3DEC (15852)
+HP: 0x79DA (31194)
+--------------------
+@player_no = 81
+Day: 11/07
+Exp: 0x26D0 (9936) 
+MP: 0xE102 (57602)
+Attack: 0xC13A (49466)
+Defense: 0x412B (16683)
+HP: 0x5633 (22067)
+--------------------
+@player_no = 82
+Day: 03/17
+Exp: 0x308C (12428) 
+MP: 0x43E5 (17381)
+Attack: 0x90A9 (37033)
+Defense: 0x288C (10380)
+HP: 0xA371 (41841)
+--------------------
+@player_no = 83
+Day: 03/04
+Exp: 0x7D87 (32135) 
+MP: 0x65EA (26090)
+Attack: 0x86A4 (34468)
+Defense: 0xE417 (58391)
+HP: 0x8319 (33561)
+--------------------
+@player_no = 84
+Day: 05/20
+Exp: 0xC843 (51267) 
+MP: 0x3B1D (15133)
+Attack: 0x0AFC (2812)
+Defense: 0xE8FF (59647)
+HP: 0x2047 (8263)
+--------------------
+@player_no = 85
+Day: 06/09
+Exp: 0x7CD2 (31954) 
+MP: 0xEF8C (61324)
+Attack: 0x2E64 (11876)
+Defense: 0xFFCD (65485)
+HP: 0x7438 (29752)
+--------------------
+@player_no = 86
+Day: 08/17
+Exp: 0x9062 (36962) 
+MP: 0xA0A1 (41121)
+Attack: 0x21F7 (8695)
+Defense: 0xD353 (54099)
+HP: 0x9EB7 (40631)
+--------------------
+@player_no = 87
+Day: 08/07
+Exp: 0xF099 (61593) 
+MP: 0x6E5C (28252)
+Attack: 0xA2AA (41642)
+Defense: 0x2DB7 (11703)
+HP: 0x501D (20509)
+--------------------
+@player_no = 88
+Day: 11/25
+Exp: 0xF0CB (61643) 
+MP: 0x6C80 (27776)
+Attack: 0xA913 (43283)
+Defense: 0xB833 (47155)
+HP: 0xCA48 (51784)
+--------------------
+@player_no = 89
+Day: 03/17
+Exp: 0xA440 (42048) 
+MP: 0xCD82 (52610)
+Attack: 0x19D6 (6614)
+Defense: 0x0D0B (3339)
+HP: 0xAED9 (44761)
+--------------------
+@player_no = 90
+Day: 08/26
+Exp: 0x85AC (34220) 
+MP: 0x9C40 (40000)
+Attack: 0xCD0E (52494)
+Defense: 0x0A1C (2588)
+HP: 0x65BC (26044)
+--------------------
+@player_no = 91
+Day: 09/23
+Exp: 0x8195 (33173) 
+MP: 0x7871 (30833)
+Attack: 0xBDFD (48637)
+Defense: 0x8AFA (35578)
+HP: 0xF8C1 (63681)
+--------------------
+@player_no = 92
+Day: 07/25
+Exp: 0x14C3 (5315) 
+MP: 0x73CF (29647)
+Attack: 0xA89B (43163)
+Defense: 0x6890 (26768)
+HP: 0x3008 (12296)
+--------------------
+@player_no = 93
+Day: 04/30
+Exp: 0x9BA1 (39841) 
+MP: 0x77DD (30685)
+Attack: 0xF196 (61846)
+Defense: 0x3D2E (15662)
+HP: 0xF8E4 (63716)
+--------------------
+@player_no = 94
+Day: 12/22
+Exp: 0x71E3 (29155) 
+MP: 0xF16A (61802)
+Attack: 0x6CDA (27866)
+Defense: 0x91F3 (37363)
+HP: 0x8131 (33073)
+--------------------
+@player_no = 95
+Day: 06/21
+Exp: 0x5F88 (24456) 
+MP: 0x50EC (20716)
+Attack: 0xBC3E (48190)
+Defense: 0xA39B (41883)
+HP: 0xE5BA (58810)
+--------------------
+@player_no = 96
+Day: 09/30
+Exp: 0x1086 (4230) 
+MP: 0x60D9 (24793)
+Attack: 0x0D9D (3485)
+Defense: 0xE0AA (57514)
+HP: 0x8997 (35223)
+--------------------
+@player_no = 97
+Day: 01/22
+Exp: 0x8E7D (36477) 
+MP: 0xE70B (59147)
+Attack: 0x35DC (13788)
+Defense: 0xF44A (62538)
+HP: 0x80F9 (33017)
+--------------------
+@player_no = 98
+Day: 05/11
+Exp: 0x048D (1165) 
+MP: 0x6827 (26663)
+Attack: 0xF849 (63561)
+Defense: 0x76AF (30383)
+HP: 0xBEFA (48890)
+--------------------
+@player_no = 99
+Day: 06/27
+Exp: 0x24C4 (9412) 
+MP: 0xD66C (54892)
+Attack: 0x1B5A (7002)
+Defense: 0xC878 (51320)
+HP: 0x6CBC (27836)
+--------------------
+@player_no = 100
+Day: 12/31
+Exp: 0xAF3A (44858) 
+MP: 0x9CA9 (40105)
+Attack: 0x6CD1 (27857)
+Defense: 0x2BD9 (11225)
+HP: 0xF16D (61805)
+--------------------
+@player_no = 101
+Day: 01/14
+Exp: 0xE913 (59667) 
+MP: 0x753B (30011)
+Attack: 0x76BD (30397)
+Defense: 0xD6E1 (55009)
+HP: 0x0B09 (2825)
+--------------------
+@player_no = 102
+Day: 12/10
+Exp: 0xB2BC (45756) 
+MP: 0x41A2 (16802)
+Attack: 0x87B1 (34737)
+Defense: 0x35BD (13757)
+HP: 0x2AAA (10922)
+--------------------
+@player_no = 103
+Day: 08/10
+Exp: 0x021E (0542) 
+MP: 0x851C (34076)
+Attack: 0xBCAD (48301)
+Defense: 0x431A (17178)
+HP: 0x617D (24957)
+--------------------
+@player_no = 104
+Day: 08/23
+Exp: 0xA5AC (42412) 
+MP: 0xC69A (50842)
+Attack: 0x063D (1597)
+Defense: 0x44F0 (17648)
+HP: 0x310F (12559)
+--------------------
+@player_no = 105
+Day: 11/23
+Exp: 0x986A (39018) 
+MP: 0x7194 (29076)
+Attack: 0x2354 (9044)
+Defense: 0x5FAF (24495)
+HP: 0xF658 (63064)
+--------------------
+@player_no = 106
+Day: 07/15
+Exp: 0xD20B (53771) 
+MP: 0xD1CC (53708)
+Attack: 0xD70F (55055)
+Defense: 0x1D65 (7525)
+HP: 0x350F (13583)
+--------------------
+@player_no = 107
+Day: 03/03
+Exp: 0x6695 (26261) 
+MP: 0x0301 (0769)
+Attack: 0x4DBA (19898)
+Defense: 0xDE01 (56833)
+HP: 0xC6F9 (50937)
+--------------------
+@player_no = 108
+Day: 04/10
+Exp: 0xDF3A (57146) 
+MP: 0x69C1 (27073)
+Attack: 0x7C35 (31797)
+Defense: 0xFD01 (64769)
+HP: 0xBF14 (48916)
+--------------------
+@player_no = 109
+Day: 12/21
+Exp: 0x6BBC (27580) 
+MP: 0x363D (13885)
+Attack: 0x1A2B (6699)
+Defense: 0x3CE0 (15584)
+HP: 0x0DAC (3500)
+--------------------
+@player_no = 110
+Day: 03/02
+Exp: 0x1E4B (7755) 
+MP: 0x4585 (17797)
+Attack: 0xA1AF (41391)
+Defense: 0x9B51 (39761)
+HP: 0x9424 (37924)
+--------------------
+@player_no = 111
+Day: 02/09
+Exp: 0xC014 (49172) 
+MP: 0x7AA8 (31400)
+Attack: 0xF10A (61706)
+Defense: 0x2E78 (11896)
+HP: 0x233D (9021)
+--------------------
+@player_no = 112
+Day: 02/15
+Exp: 0x509E (20638) 
+MP: 0x90C9 (37065)
+Attack: 0xCE2F (52783)
+Defense: 0x981A (38938)
+HP: 0x9168 (37224)
+--------------------
+@player_no = 113
+Day: 07/21
+Exp: 0xC669 (50793) 
+MP: 0x3B93 (15251)
+Attack: 0x1673 (5747)
+Defense: 0xF85D (63581)
+HP: 0x8490 (33936)
+--------------------
+@player_no = 114
+Day: 04/25
+Exp: 0x91D8 (37336) 
+MP: 0xA48F (42127)
+Attack: 0xFC1D (64541)
+Defense: 0x0076 (0118)
+HP: 0xE3D4 (58324)
+--------------------
+@player_no = 115
+Day: 07/03
+Exp: 0x0B72 (2930) 
+MP: 0x66A4 (26276)
+Attack: 0x53C8 (21448)
+Defense: 0x4A74 (19060)
+HP: 0xE43D (58429)
+--------------------
+@player_no = 116
+Day: 11/28
+Exp: 0x49C7 (18887) 
+MP: 0xCD71 (52593)
+Attack: 0x282C (10284)
+Defense: 0x3360 (13152)
+HP: 0x55D3 (21971)
+--------------------
+@player_no = 117
+Day: 01/20
+Exp: 0x4E5B (20059) 
+MP: 0x80C2 (32962)
+Attack: 0xA730 (42800)
+Defense: 0x34BA (13498)
+HP: 0x4AB4 (19124)
+--------------------
+@player_no = 118
+Day: 11/14
+Exp: 0x95BB (38331) 
+MP: 0x96DC (38620)
+Attack: 0x397E (14718)
+Defense: 0xFC19 (64537)
+HP: 0xED87 (60807)
+--------------------
+@player_no = 119
+Day: 06/09
+Exp: 0x9674 (38516) 
+MP: 0x33AE (13230)
+Attack: 0x70F1 (28913)
+Defense: 0x2AB3 (10931)
+HP: 0xB9F7 (47607)
+--------------------
+@player_no = 120
+Day: 10/19
+Exp: 0xC1BC (49596) 
+MP: 0x27EC (10220)
+Attack: 0x54FF (21759)
+Defense: 0x17EA (6122)
+HP: 0x2DB8 (11704)
+--------------------
+@player_no = 121
+Day: 09/30
+Exp: 0x115F (4447) 
+MP: 0x8E20 (36384)
+Attack: 0xA7D3 (42963)
+Defense: 0xE05D (57437)
+HP: 0x138E (5006)
+--------------------
+@player_no = 122
+Day: 02/06
+Exp: 0xDA03 (55811) 
+MP: 0x5A4E (23118)
+Attack: 0x28C1 (10433)
+Defense: 0xB28C (45708)
+HP: 0x4B3F (19263)
+--------------------
+@player_no = 123
+Day: 09/01
+Exp: 0xA360 (41824) 
+MP: 0x6175 (24949)
+Attack: 0x5375 (21365)
+Defense: 0x4132 (16690)
+HP: 0xF8D7 (63703)
+--------------------
+@player_no = 124
+Day: 03/23
+Exp: 0x6BCF (27599) 
+MP: 0x5819 (22553)
+Attack: 0x8043 (32835)
+Defense: 0x467B (18043)
+HP: 0x125E (4702)
+--------------------
+@player_no = 125
+Day: 11/14
+Exp: 0x21D3 (8659) 
+MP: 0x9FEE (40942)
+Attack: 0x0691 (1681)
+Defense: 0x75A1 (30113)
+HP: 0x3D72 (15730)
+--------------------
+@player_no = 126
+Day: 01/01
+Exp: 0xF617 (62999) 
+MP: 0xAED9 (44761)
+Attack: 0x20E3 (8419)
+Defense: 0xB774 (46964)
+HP: 0x11FB (4603)
+--------------------
+@player_no = 127
+Day: 05/09
+Exp: 0xE496 (58518) 
+MP: 0x09FB (2555)
+Attack: 0xE20C (57868)
+Defense: 0x69C8 (27080)
+HP: 0x390B (14603)
+--------------------
+@player_no = 128
+Day: 03/11
+Exp: 0x9194 (37268) 
+MP: 0x668A (26250)
+Attack: 0x4700 (18176)
+Defense: 0xFB64 (64356)
+HP: 0xD192 (53650)
+--------------------
+@player_no = 129
+Day: 03/15
+Exp: 0xA5B9 (42425) 
+MP: 0x973E (38718)
+Attack: 0x54D2 (21714)
+Defense: 0xAD88 (44424)
+HP: 0x1991 (6545)
+--------------------
+@player_no = 130
+Day: 12/14
+Exp: 0xE657 (58967) 
+MP: 0x0076 (0118)
+Attack: 0x9AAC (39596)
+Defense: 0xCA6C (51820)
+HP: 0x7706 (30470)
+--------------------
+@player_no = 131
+Day: 05/03
+Exp: 0x6638 (26168) 
+MP: 0x41FA (16890)
+Attack: 0x1696 (5782)
+Defense: 0x6745 (26437)
+HP: 0x1F99 (8089)
+--------------------
+@player_no = 132
+Day: 04/04
+Exp: 0x6C69 (27753) 
+MP: 0xE9FD (59901)
+Attack: 0x693A (26938)
+Defense: 0x8543 (34115)
+HP: 0x4384 (17284)
+--------------------
+@player_no = 133
+Day: 01/15
+Exp: 0xCD69 (52585) 
+MP: 0x3468 (13416)
+Attack: 0x08E8 (2280)
+Defense: 0xD087 (53383)
+HP: 0x9529 (38185)
+--------------------
+@player_no = 134
+Day: 07/31
+Exp: 0xA4F3 (42227) 
+MP: 0xA20B (41483)
+Attack: 0x538E (21390)
+Defense: 0x8B08 (35592)
+HP: 0xF6E1 (63201)
+--------------------
+@player_no = 135
+Day: 11/30
+Exp: 0xFAB5 (64181) 
+MP: 0xAF3F (44863)
+Attack: 0xDCEB (56555)
+Defense: 0x748B (29835)
+HP: 0x2DAE (11694)
+--------------------
+@player_no = 136
+Day: 09/17
+Exp: 0xF850 (63568) 
+MP: 0xD8CB (55499)
+Attack: 0x8341 (33601)
+Defense: 0x7B9E (31646)
+HP: 0xBA84 (47748)
+--------------------
+@player_no = 137
+Day: 11/26
+Exp: 0x3617 (13847) 
+MP: 0x442E (17454)
+Attack: 0xBB72 (47986)
+Defense: 0x25C3 (9667)
+HP: 0xC89B (51355)
+--------------------
+@player_no = 138
+Day: 01/21
+Exp: 0x498C (18828) 
+MP: 0x9BEF (39919)
+Attack: 0xEB13 (60179)
+Defense: 0xDB04 (56068)
+HP: 0x841E (33822)
+--------------------
+@player_no = 139
+Day: 03/13
+Exp: 0x3C9F (15519) 
+MP: 0xF3DE (62430)
+Attack: 0x6A14 (27156)
+Defense: 0x9596 (38294)
+HP: 0xDADE (56030)
+--------------------
+@player_no = 140
+Day: 10/06
+Exp: 0xFD39 (64825) 
+MP: 0x019A (0410)
+Attack: 0x578E (22414)
+Defense: 0x7D5A (32090)
+HP: 0x2C3E (11326)
+--------------------
+@player_no = 141
+Day: 07/20
+Exp: 0x3D40 (15680) 
+MP: 0x18F3 (6387)
+Attack: 0xE9C0 (59840)
+Defense: 0xF0A9 (61609)
+HP: 0x55DF (21983)
+--------------------
+@player_no = 142
+Day: 11/26
+Exp: 0x0808 (2056) 
+MP: 0x17AB (6059)
+Attack: 0xA8E5 (43237)
+Defense: 0x3AD6 (15062)
+HP: 0x3EF7 (16119)
+--------------------
+@player_no = 143
+Day: 10/15
+Exp: 0x5785 (22405) 
+MP: 0x51A6 (20902)
+Attack: 0x6AC9 (27337)
+Defense: 0x5464 (21604)
+HP: 0xD9CD (55757)
+--------------------
+@player_no = 144
+Day: 07/14
+Exp: 0x344B (13387) 
+MP: 0x22C2 (8898)
+Attack: 0x12A0 (4768)
+Defense: 0xE18B (57739)
+HP: 0x8152 (33106)
+--------------------
+@player_no = 145
+Day: 01/14
+Exp: 0xD3A8 (54184) 
+MP: 0xE6EA (59114)
+Attack: 0xA4CC (42188)
+Defense: 0xF241 (62017)
+HP: 0xCC29 (52265)
+--------------------
+@player_no = 146
+Day: 11/15
+Exp: 0xD891 (55441) 
+MP: 0x9C89 (40073)
+Attack: 0x75F3 (30195)
+Defense: 0x0743 (1859)
+HP: 0x3A34 (14900)
+--------------------
+@player_no = 147
+Day: 04/27
+Exp: 0x37C3 (14275) 
+MP: 0x2417 (9239)
+Attack: 0xA633 (42547)
+Defense: 0x4804 (18436)
+HP: 0x8240 (33344)
+--------------------
+@player_no = 148
+Day: 05/01
+Exp: 0x051C (1308) 
+MP: 0x1EBF (7871)
+Attack: 0x2FEB (12267)
+Defense: 0x577A (22394)
+HP: 0x4FEA (20458)
+--------------------
+@player_no = 149
+Day: 03/04
+Exp: 0x086A (2154) 
+MP: 0xDA11 (55825)
+Attack: 0x8792 (34706)
+Defense: 0x957F (38271)
+HP: 0xCF0A (53002)
+--------------------
+@player_no = 150
+Day: 03/17
+Exp: 0x451D (17693) 
+MP: 0xEA58 (59992)
+Attack: 0xB0DE (45278)
+Defense: 0x6AF2 (27378)
+HP: 0x2DF0 (11760)
+--------------------
+@player_no = 151
+Day: 03/28
+Exp: 0xD359 (54105) 
+MP: 0xA6E9 (42729)
+Attack: 0xBA69 (47721)
+Defense: 0x86B5 (34485)
+HP: 0xCE18 (52760)
+--------------------
+@player_no = 152
+Day: 09/24
+Exp: 0x7708 (30472) 
+MP: 0x8D71 (36209)
+Attack: 0xD169 (53609)
+Defense: 0x3D82 (15746)
+HP: 0x0240 (0576)
+--------------------
+@player_no = 153
+Day: 05/31
+Exp: 0x477F (18303) 
+MP: 0x4FAF (20399)
+Attack: 0x5E8C (24204)
+Defense: 0xFFF0 (65520)
+HP: 0x0667 (1639)
+--------------------
+@player_no = 154
+Day: 01/31
+Exp: 0x23B3 (9139) 
+MP: 0xC2C6 (49862)
+Attack: 0xD31E (54046)
+Defense: 0x69F3 (27123)
+HP: 0xF1F1 (61937)
+--------------------
+@player_no = 155
+Day: 08/06
+Exp: 0x8CE5 (36069) 
+MP: 0x23F3 (9203)
+Attack: 0x8167 (33127)
+Defense: 0x9979 (39289)
+HP: 0x3A74 (14964)
+--------------------
+@player_no = 156
+Day: 05/29
+Exp: 0x5272 (21106) 
+MP: 0x6026 (24614)
+Attack: 0xFD35 (64821)
+Defense: 0x3DAB (15787)
+HP: 0xFDD8 (64984)
+--------------------
+@player_no = 157
+Day: 02/19
+Exp: 0x2000 (8192) 
+MP: 0x1F8D (8077)
+Attack: 0xECF4 (60660)
+Defense: 0x4CB8 (19640)
+HP: 0x8232 (33330)
+--------------------
+@player_no = 158
+Day: 08/09
+Exp: 0x5DB1 (23985) 
+MP: 0xC92A (51498)
+Attack: 0xBB49 (47945)
+Defense: 0x4DC0 (19904)
+HP: 0x7CF3 (31987)
+--------------------
+@player_no = 159
+Day: 02/18
+Exp: 0x8F7F (36735) 
+MP: 0x8D80 (36224)
+Attack: 0x1A23 (6691)
+Defense: 0xC41E (50206)
+HP: 0x9F4D (40781)
+--------------------
+@player_no = 160
+Day: 10/20
+Exp: 0x5930 (22832) 
+MP: 0x58E8 (22760)
+Attack: 0xCD8A (52618)
+Defense: 0x3FB9 (16313)
+HP: 0xD971 (55665)
+--------------------
+@player_no = 161
+Day: 06/25
+Exp: 0x2E0B (11787) 
+MP: 0x22E2 (8930)
+Attack: 0xF7C9 (63433)
+Defense: 0x794E (31054)
+HP: 0xCC26 (52262)
+--------------------
+@player_no = 162
+Day: 09/13
+Exp: 0xFACB (64203) 
+MP: 0xEA56 (59990)
+Attack: 0x5726 (22310)
+Defense: 0x900F (36879)
+HP: 0x69C0 (27072)
+--------------------
+@player_no = 163
+Day: 02/02
+Exp: 0x7726 (30502) 
+MP: 0x31AC (12716)
+Attack: 0xA2FE (41726)
+Defense: 0x0453 (1107)
+HP: 0x5283 (21123)
+--------------------
+@player_no = 164
+Day: 07/17
+Exp: 0x5509 (21769) 
+MP: 0xE14B (57675)
+Attack: 0xE760 (59232)
+Defense: 0x98C1 (39105)
+HP: 0x3A6B (14955)
+--------------------
+@player_no = 165
+Day: 12/15
+Exp: 0x7B8C (31628) 
+MP: 0xB9A5 (47525)
+Attack: 0x40D4 (16596)
+Defense: 0xC6C5 (50885)
+HP: 0x269B (9883)
+--------------------
+@player_no = 166
+Day: 04/11
+Exp: 0x257C (9596) 
+MP: 0x1C8E (7310)
+Attack: 0x543D (21565)
+Defense: 0x8115 (33045)
+HP: 0x2FD9 (12249)
+--------------------
+@player_no = 167
+Day: 08/06
+Exp: 0xEC74 (60532) 
+MP: 0x76E1 (30433)
+Attack: 0x3CD4 (15572)
+Defense: 0xA0EF (41199)
+HP: 0xA8D2 (43218)
+--------------------
+@player_no = 168
+Day: 11/16
+Exp: 0x3401 (13313) 
+MP: 0x3993 (14739)
+Attack: 0xB486 (46214)
+Defense: 0x65B2 (26034)
+HP: 0xD72B (55083)
+--------------------
+@player_no = 169
+Day: 07/17
+Exp: 0xF3F5 (62453) 
+MP: 0xCF94 (53140)
+Attack: 0x9B5E (39774)
+Defense: 0x777C (30588)
+HP: 0x488C (18572)
+--------------------
+@player_no = 170
+Day: 03/22
+Exp: 0xE671 (58993) 
+MP: 0x07D0 (2000)
+Attack: 0x917F (37247)
+Defense: 0xDE41 (56897)
+HP: 0xEDF8 (60920)
+--------------------
+@player_no = 171
+Day: 04/15
+Exp: 0x9A30 (39472) 
+MP: 0xF09E (61598)
+Attack: 0xC6EE (50926)
+Defense: 0x72B0 (29360)
+HP: 0x9955 (39253)
+--------------------
+@player_no = 172
+Day: 05/06
+Exp: 0x0FB9 (4025) 
+MP: 0x42B8 (17080)
+Attack: 0x2D9F (11679)
+Defense: 0x5DB5 (23989)
+HP: 0x5BCD (23501)
+--------------------
+@player_no = 173
+Day: 04/30
+Exp: 0x1C6D (7277) 
+MP: 0x8C32 (35890)
+Attack: 0x7F1D (32541)
+Defense: 0xED63 (60771)
+HP: 0x067C (1660)
+--------------------
+@player_no = 174
+Day: 08/12
+Exp: 0x84C3 (33987) 
+MP: 0x86CB (34507)
+Attack: 0xEA8C (60044)
+Defense: 0x45A2 (17826)
+HP: 0x67DB (26587)
+--------------------
+@player_no = 175
+Day: 08/11
+Exp: 0xEF86 (61318) 
+MP: 0x4244 (16964)
+Attack: 0x075A (1882)
+Defense: 0xE27E (57982)
+HP: 0x1B77 (7031)
+--------------------
+@player_no = 176
+Day: 07/09
+Exp: 0xD51F (54559) 
+MP: 0xF880 (63616)
+Attack: 0x6784 (26500)
+Defense: 0xB100 (45312)
+HP: 0x3B25 (15141)
+--------------------
+@player_no = 177
+Day: 05/05
+Exp: 0x962F (38447) 
+MP: 0x5747 (22343)
+Attack: 0x624C (25164)
+Defense: 0x958A (38282)
+HP: 0x4B4A (19274)
+--------------------
+@player_no = 178
+Day: 12/04
+Exp: 0x4A51 (19025) 
+MP: 0xB33F (45887)
+Attack: 0x0207 (0519)
+Defense: 0x2A62 (10850)
+HP: 0x06DB (1755)
+--------------------
+@player_no = 179
+Day: 09/23
+Exp: 0xFAD5 (64213) 
+MP: 0xA792 (42898)
+Attack: 0xADD2 (44498)
+Defense: 0xD389 (54153)
+HP: 0xE12F (57647)
+--------------------
+@player_no = 180
+Day: 01/21
+Exp: 0xEABB (60091) 
+MP: 0xCAFB (51963)
+Attack: 0xE28E (57998)
+Defense: 0x8A2D (35373)
+HP: 0x01B8 (0440)
+--------------------
+@player_no = 181
+Day: 03/20
+Exp: 0x149B (5275) 
+MP: 0xF24C (62028)
+Attack: 0x0FBA (4026)
+Defense: 0x57D4 (22484)
+HP: 0x5655 (22101)
+--------------------
+@player_no = 182
+Day: 06/18
+Exp: 0xFB56 (64342) 
+MP: 0x0FDE (4062)
+Attack: 0x2FE9 (12265)
+Defense: 0xA509 (42249)
+HP: 0x6611 (26129)
+--------------------
+@player_no = 183
+Day: 02/19
+Exp: 0xD62E (54830) 
+MP: 0xCF81 (53121)
+Attack: 0xC6E1 (50913)
+Defense: 0x613C (24892)
+HP: 0x852C (34092)
+--------------------
+@player_no = 184
+Day: 09/06
+Exp: 0xEA0F (59919) 
+MP: 0x20A5 (8357)
+Attack: 0x7BF6 (31734)
+Defense: 0x5649 (22089)
+HP: 0xCB1F (51999)
+--------------------
+@player_no = 185
+Day: 06/09
+Exp: 0x9717 (38679) 
+MP: 0x4C11 (19473)
+Attack: 0x8379 (33657)
+Defense: 0x7E04 (32260)
+HP: 0x91F7 (37367)
+--------------------
+@player_no = 186
+Day: 09/01
+Exp: 0x47F2 (18418) 
+MP: 0x4C56 (19542)
+Attack: 0x1214 (4628)
+Defense: 0xB064 (45156)
+HP: 0x4FAE (20398)
+--------------------
+@player_no = 187
+Day: 11/06
+Exp: 0xE42D (58413) 
+MP: 0xA9B3 (43443)
+Attack: 0x233E (9022)
+Defense: 0x960E (38414)
+HP: 0xF836 (63542)
+--------------------
+@player_no = 188
+Day: 09/27
+Exp: 0x165A (5722) 
+MP: 0x4BFD (19453)
+Attack: 0xDC31 (56369)
+Defense: 0x8969 (35177)
+HP: 0x195B (6491)
+--------------------
+@player_no = 189
+Day: 10/01
+Exp: 0xD473 (54387) 
+MP: 0x65C0 (26048)
+Attack: 0x635F (25439)
+Defense: 0x6780 (26496)
+HP: 0x4693 (18067)
+--------------------
+@player_no = 190
+Day: 07/19
+Exp: 0x293F (10559) 
+MP: 0x503B (20539)
+Attack: 0xBB70 (47984)
+Defense: 0xE416 (58390)
+HP: 0xD903 (55555)
+--------------------
+@player_no = 191
+Day: 11/25
+Exp: 0xD79E (55198) 
+MP: 0x03C3 (0963)
+Attack: 0xBA4F (47695)
+Defense: 0xEC6F (60527)
+HP: 0xEE4D (61005)
+--------------------
+@player_no = 192
+Day: 04/17
+Exp: 0x7E4E (32334) 
+MP: 0xE125 (57637)
+Attack: 0x6435 (25653)
+Defense: 0x738D (29581)
+HP: 0xE436 (58422)
+--------------------
+@player_no = 193
+Day: 01/21
+Exp: 0x01BC (0444) 
+MP: 0xE451 (58449)
+Attack: 0xBA5C (47708)
+Defense: 0xDE1E (56862)
+HP: 0x7148 (29000)
+--------------------
+@player_no = 194
+Day: 02/12
+Exp: 0x3C1B (15387) 
+MP: 0xD5F3 (54771)
+Attack: 0x5C1C (23580)
+Defense: 0x1B51 (6993)
+HP: 0x7051 (28753)
+--------------------
+@player_no = 195
+Day: 04/27
+Exp: 0x59FB (23035) 
+MP: 0x4304 (17156)
+Attack: 0xF330 (62256)
+Defense: 0x10A0 (4256)
+HP: 0xB9E9 (47593)
+--------------------
+@player_no = 196
+Day: 11/04
+Exp: 0x26FC (9980) 
+MP: 0x37B8 (14264)
+Attack: 0x52DF (21215)
+Defense: 0x089B (2203)
+HP: 0x1741 (5953)
+--------------------
+@player_no = 197
+Day: 07/26
+Exp: 0x742B (29739) 
+MP: 0xDDF7 (56823)
+Attack: 0xBB23 (47907)
+Defense: 0xBF4B (48971)
+HP: 0x35CC (13772)
+--------------------
+@player_no = 198
+Day: 02/01
+Exp: 0x2F03 (12035) 
+MP: 0xB91C (47388)
+Attack: 0xD02C (53292)
+Defense: 0x5E46 (24134)
+HP: 0x9FFF (40959)
+--------------------
+@player_no = 199
+Day: 09/13
+Exp: 0x3694 (13972) 
+MP: 0x890C (35084)
+Attack: 0x3EDF (16095)
+Defense: 0xCE1F (52767)
+HP: 0x16A8 (5800)
+--------------------
+@player_no = 200
+Day: 09/21
+Exp: 0x676E (26478) 
+MP: 0x3DED (15853)
+Attack: 0x95F6 (38390)
+Defense: 0x08C5 (2245)
+HP: 0xD86C (55404)
+--------------------
+@player_no = 201
+Day: 04/06
+Exp: 0xE016 (57366) 
+MP: 0xF314 (62228)
+Attack: 0x70DE (28894)
+Defense: 0x86C8 (34504)
+HP: 0xFD0E (64782)
+--------------------
+@player_no = 202
+Day: 12/03
+Exp: 0x1883 (6275) 
+MP: 0x8BC5 (35781)
+Attack: 0x3747 (14151)
+Defense: 0x0F46 (3910)
+HP: 0x124A (4682)
+--------------------
+@player_no = 203
+Day: 08/27
+Exp: 0xE556 (58710) 
+MP: 0xD65C (54876)
+Attack: 0xCBEB (52203)
+Defense: 0x517A (20858)
+HP: 0x2AA2 (10914)
+--------------------
+@player_no = 204
+Day: 12/18
+Exp: 0xBA44 (47684) 
+MP: 0xC658 (50776)
+Attack: 0x448C (17548)
+Defense: 0xDE7D (56957)
+HP: 0x9D9C (40348)
+--------------------
+@player_no = 205
+Day: 12/17
+Exp: 0x60EB (24811) 
+MP: 0xADCC (44492)
+Attack: 0x93DC (37852)
+Defense: 0x700C (28684)
+HP: 0xA22A (41514)
+--------------------
+@player_no = 206
+Day: 04/11
+Exp: 0x9E5E (40542) 
+MP: 0x6798 (26520)
+Attack: 0x8C72 (35954)
+Defense: 0x7B89 (31625)
+HP: 0x4F9D (20381)
+--------------------
+@player_no = 207
+Day: 03/09
+Exp: 0xB3E1 (46049) 
+MP: 0xBA06 (47622)
+Attack: 0x89ED (35309)
+Defense: 0x397F (14719)
+HP: 0xB972 (47474)
+--------------------
+@player_no = 208
+Day: 11/01
+Exp: 0x4C0A (19466) 
+MP: 0x92B7 (37559)
+Attack: 0xFC95 (64661)
+Defense: 0x62DF (25311)
+HP: 0x93A0 (37792)
+--------------------
+@player_no = 209
+Day: 10/04
+Exp: 0xCE79 (52857) 
+MP: 0x70AD (28845)
+Attack: 0x8495 (33941)
+Defense: 0xC5A3 (50595)
+HP: 0x8092 (32914)
+--------------------
+@player_no = 210
+Day: 04/07
+Exp: 0x8DC1 (36289) 
+MP: 0x8BAD (35757)
+Attack: 0xE206 (57862)
+Defense: 0x8219 (33305)
+HP: 0xD2FD (54013)
+--------------------
+@player_no = 211
+Day: 10/24
+Exp: 0xBAFC (47868) 
+MP: 0xA193 (41363)
+Attack: 0xDB31 (56113)
+Defense: 0x9C8A (40074)
+HP: 0x7FFC (32764)
+--------------------
+@player_no = 212
+Day: 02/13
+Exp: 0xE721 (59169) 
+MP: 0x196C (6508)
+Attack: 0x079C (1948)
+Defense: 0x4C3B (19515)
+HP: 0xA65B (42587)
+--------------------
+@player_no = 213
+Day: 07/16
+Exp: 0x9814 (38932) 
+MP: 0x2978 (10616)
+Attack: 0x005A (0090)
+Defense: 0xE2DE (58078)
+HP: 0xE68E (59022)
+--------------------
+@player_no = 214
+Day: 11/14
+Exp: 0x2AD1 (10961) 
+MP: 0xD026 (53286)
+Attack: 0xAE5E (44638)
+Defense: 0x0EF0 (3824)
+HP: 0x0262 (0610)
+--------------------
+@player_no = 215
+Day: 04/26
+Exp: 0xE141 (57665) 
+MP: 0xF0DF (61663)
+Attack: 0xB4CF (46287)
+Defense: 0xB55B (46427)
+HP: 0x492E (18734)
+--------------------
+@player_no = 216
+Day: 04/27
+Exp: 0x89E5 (35301) 
+MP: 0x8513 (34067)
+Attack: 0xC475 (50293)
+Defense: 0x86B0 (34480)
+HP: 0x2ECA (11978)
+--------------------
+@player_no = 217
+Day: 08/16
+Exp: 0x94F6 (38134) 
+MP: 0x0580 (1408)
+Attack: 0x0979 (2425)
+Defense: 0x0C84 (3204)
+HP: 0x4822 (18466)
+--------------------
+@player_no = 218
+Day: 04/02
+Exp: 0x2DB7 (11703) 
+MP: 0x03AB (0939)
+Attack: 0x9CA5 (40101)
+Defense: 0x4DCB (19915)
+HP: 0x507B (20603)
+--------------------
+@player_no = 219
+Day: 10/12
+Exp: 0x4214 (16916) 
+MP: 0xCCE4 (52452)
+Attack: 0xC9E6 (51686)
+Defense: 0x0052 (0082)
+HP: 0xAFF8 (45048)
+--------------------
+@player_no = 220
+Day: 08/11
+Exp: 0xE05D (57437) 
+MP: 0xB3CF (46031)
+Attack: 0x7AF2 (31474)
+Defense: 0x387A (14458)
+HP: 0x2119 (8473)
+--------------------
+@player_no = 221
+Day: 04/29
+Exp: 0xFBB1 (64433) 
+MP: 0x3ADF (15071)
+Attack: 0xD462 (54370)
+Defense: 0x5686 (22150)
+HP: 0x46DE (18142)
+--------------------
+@player_no = 222
+Day: 03/04
+Exp: 0xE36A (58218) 
+MP: 0x4B46 (19270)
+Attack: 0xA2FC (41724)
+Defense: 0x62DE (25310)
+HP: 0x1BD9 (7129)
+--------------------
+@player_no = 223
+Day: 03/10
+Exp: 0x36E5 (14053) 
+MP: 0x2C01 (11265)
+Attack: 0x50EE (20718)
+Defense: 0x0978 (2424)
+HP: 0xD04C (53324)
+--------------------
+@player_no = 224
+Day: 12/27
+Exp: 0xAC0E (44046) 
+MP: 0x16CD (5837)
+Attack: 0x7E25 (32293)
+Defense: 0x478C (18316)
+HP: 0x52E9 (21225)
+--------------------
+@player_no = 225
+Day: 11/14
+Exp: 0x1FFD (8189) 
+MP: 0xA69F (42655)
+Attack: 0x560D (22029)
+Defense: 0x57E2 (22498)
+HP: 0xD4D5 (54485)
+--------------------
+@player_no = 226
+Day: 10/03
+Exp: 0x92A4 (37540) 
+MP: 0x67C2 (26562)
+Attack: 0x8840 (34880)
+Defense: 0x763E (30270)
+HP: 0xFB8F (64399)
+--------------------
+@player_no = 227
+Day: 02/12
+Exp: 0x98E1 (39137) 
+MP: 0xFEC7 (65223)
+Attack: 0x2EAB (11947)
+Defense: 0x456C (17772)
+HP: 0x1023 (4131)
+--------------------
+@player_no = 228
+Day: 03/06
+Exp: 0xF3F8 (62456) 
+MP: 0x82E5 (33509)
+Attack: 0x3454 (13396)
+Defense: 0xE484 (58500)
+HP: 0x287F (10367)
+--------------------
+@player_no = 229
+Day: 03/15
+Exp: 0x59F9 (23033) 
+MP: 0xDD86 (56710)
+Attack: 0x4403 (17411)
+Defense: 0x90AF (37039)
+HP: 0x2A35 (10805)
+--------------------
+@player_no = 230
+Day: 04/26
+Exp: 0x63B2 (25522) 
+MP: 0xF078 (61560)
+Attack: 0x2462 (9314)
+Defense: 0xE05B (57435)
+HP: 0xCC59 (52313)
+--------------------
+@player_no = 231
+Day: 07/23
+Exp: 0xAD4D (44365) 
+MP: 0x52CF (21199)
+Attack: 0x34BE (13502)
+Defense: 0x79E6 (31206)
+HP: 0xD20A (53770)
+--------------------
+@player_no = 232
+Day: 05/29
+Exp: 0xE073 (57459) 
+MP: 0xE79A (59290)
+Attack: 0xA947 (43335)
+Defense: 0xFB62 (64354)
+HP: 0x5242 (21058)
+--------------------
+@player_no = 233
+Day: 10/14
+Exp: 0xEF0E (61198) 
+MP: 0x344B (13387)
+Attack: 0x6D43 (27971)
+Defense: 0xF9E1 (63969)
+HP: 0x951D (38173)
+--------------------
+@player_no = 234
+Day: 09/10
+Exp: 0x4954 (18772) 
+MP: 0xD36B (54123)
+Attack: 0x947B (38011)
+Defense: 0x3D07 (15623)
+HP: 0x6802 (26626)
+--------------------
+@player_no = 235
+Day: 10/04
+Exp: 0x2AAF (10927) 
+MP: 0x2370 (9072)
+Attack: 0x33E0 (13280)
+Defense: 0x5DC0 (24000)
+HP: 0x6F2A (28458)
+--------------------
+@player_no = 236
+Day: 02/24
+Exp: 0x0BC6 (3014) 
+MP: 0x47F0 (18416)
+Attack: 0x553C (21820)
+Defense: 0x48D7 (18647)
+HP: 0x5136 (20790)
+--------------------
+@player_no = 237
+Day: 01/18
+Exp: 0xC837 (51255) 
+MP: 0x541B (21531)
+Attack: 0x828A (33418)
+Defense: 0x8CA0 (36000)
+HP: 0xCF49 (53065)
+--------------------
+@player_no = 238
+Day: 02/27
+Exp: 0x30CE (12494) 
+MP: 0xB014 (45076)
+Attack: 0xA442 (42050)
+Defense: 0xB029 (45097)
+HP: 0x394B (14667)
+--------------------
+@player_no = 239
+Day: 07/11
+Exp: 0x3ABC (15036) 
+MP: 0xC6F6 (50934)
+Attack: 0x5263 (21091)
+Defense: 0xE7C4 (59332)
+HP: 0x9F9C (40860)
+--------------------
+@player_no = 240
+Day: 02/16
+Exp: 0x603E (24638) 
+MP: 0xB1DA (45530)
+Attack: 0xC99B (51611)
+Defense: 0x9002 (36866)
+HP: 0xC761 (51041)
+--------------------
+@player_no = 241
+Day: 03/13
+Exp: 0xD6D8 (55000) 
+MP: 0x7ABF (31423)
+Attack: 0x24B6 (9398)
+Defense: 0x71FD (29181)
+HP: 0x50E1 (20705)
+--------------------
+@player_no = 242
+Day: 05/03
+Exp: 0x040A (1034) 
+MP: 0xDF62 (57186)
+Attack: 0xB063 (45155)
+Defense: 0x7215 (29205)
+HP: 0xD758 (55128)
+--------------------
+@player_no = 243
+Day: 02/03
+Exp: 0x56DC (22236) 
+MP: 0xC61E (50718)
+Attack: 0x7ECA (32458)
+Defense: 0x3A5C (14940)
+HP: 0xD03B (53307)
+--------------------
+@player_no = 244
+Day: 11/15
+Exp: 0x7660 (30304) 
+MP: 0x7019 (28697)
+Attack: 0x5BC0 (23488)
+Defense: 0x77EC (30700)
+HP: 0xAD0C (44300)
+--------------------
+@player_no = 245
+Day: 09/20
+Exp: 0x0B54 (2900) 
+MP: 0x2A70 (10864)
+Attack: 0xEA26 (59942)
+Defense: 0x2F98 (12184)
+HP: 0x12E3 (4835)
+--------------------
+@player_no = 246
+Day: 04/09
+Exp: 0xCF24 (53028) 
+MP: 0x11CC (4556)
+Attack: 0x5543 (21827)
+Defense: 0xBB2C (47916)
+HP: 0x4590 (17808)
+--------------------
+@player_no = 247
+Day: 02/10
+Exp: 0x7311 (29457) 
+MP: 0x8252 (33362)
+Attack: 0x3951 (14673)
+Defense: 0x3862 (14434)
+HP: 0x5BD4 (23508)
+--------------------
+@player_no = 248
+Day: 12/25
+Exp: 0x302C (12332) 
+MP: 0x88B3 (34995)
+Attack: 0x8D51 (36177)
+Defense: 0x55F9 (22009)
+HP: 0x9D85 (40325)
+--------------------
+@player_no = 249
+Day: 11/19
+Exp: 0x15F4 (5620) 
+MP: 0x2F07 (12039)
+Attack: 0xE32D (58157)
+Defense: 0xB5F6 (46582)
+HP: 0xB2D4 (45780)
+--------------------
+@player_no = 250
+Day: 02/20
+Exp: 0x6091 (24721) 
+MP: 0x3E14 (15892)
+Attack: 0x8E7C (36476)
+Defense: 0x1E7D (7805)
+HP: 0x17F2 (6130)
+--------------------
+@player_no = 251
+Day: 10/16
+Exp: 0x28A9 (10409) 
+MP: 0xA7AD (42925)
+Attack: 0x0C22 (3106)
+Defense: 0x6253 (25171)
+HP: 0xA078 (41080)
+--------------------
+@player_no = 252
+Day: 04/27
+Exp: 0xF992 (63890) 
+MP: 0x8B5D (35677)
+Attack: 0x5C97 (23703)
+Defense: 0x76EB (30443)
+HP: 0x6B39 (27449)
+--------------------
+@player_no = 253
+Day: 02/27
+Exp: 0x9D6F (40303) 
+MP: 0x6ABD (27325)
+Attack: 0xA89E (43166)
+Defense: 0xD574 (54644)
+HP: 0x9ED1 (40657)
+--------------------
+@player_no = 254
+Day: 03/29
+Exp: 0x26AB (9899) 
+MP: 0xEF96 (61334)
+Attack: 0x61CD (25037)
+Defense: 0xE7D7 (59351)
+HP: 0xC562 (50530)
+--------------------
+@player_no = 255
+Day: 09/07
+Exp: 0xF405 (62469) 
+MP: 0x0453 (1107)
+Attack: 0xC003 (49155)
+Defense: 0x4F82 (20354)
+HP: 0xFED5 (65237)
+--------------------

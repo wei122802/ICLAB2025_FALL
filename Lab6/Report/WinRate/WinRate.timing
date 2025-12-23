@@ -1,0 +1,284 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : WinRate
+Version: T-2022.03
+Date   : Mon Oct 20 01:24:16 2025
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: predict1_cnt_reg[4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: winner_reg[4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WinRate            enG100K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  predict1_cnt_reg[4]/CK (QDFFRBT)         0.00       0.00 r
+  predict1_cnt_reg[4]/Q (QDFFRBT)          0.57       0.57 r
+  U7724/O (INV2)                           0.11       0.68 f
+  U3559/O (ND2P)                           0.20       0.88 r
+  U7675/O (NR2F)                           0.11       0.99 f
+  U7719/O (INV3)                           0.15       1.14 r
+  U7722/O (NR2F)                           0.14       1.28 f
+  U7742/O (AOI22S)                         0.34       1.63 r
+  U7740/O (ND3P)                           0.15       1.78 f
+  U7013/O (NR3HP)                          0.22       2.00 r
+  U7012/O (ND3HT)                          0.31       2.31 f
+  U7005/O (INV12)                          0.23       2.55 r
+  U10130/O (ND3P)                          0.12       2.66 f
+  U8134/O (ND2)                            0.18       2.84 r
+  U6993/O (ND3HT)                          0.22       3.06 f
+  U4876/O (BUF12CK)                        0.22       3.29 f
+  U8665/O (XNR2H)                          0.21       3.50 f
+  U11594/O (OAI12H)                        0.26       3.76 r
+  U23292/O (ND2)                           0.21       3.97 f
+  U6889/O (XOR2H)                          0.23       4.20 f
+  U23718/O (ND2S)                          0.24       4.44 r
+  U10512/O (NR2T)                          0.13       4.57 f
+  U9920/O (NR2T)                           0.22       4.79 r
+  U23722/O (ND3HT)                         0.15       4.94 f
+  U23723/O (NR2F)                          0.27       5.21 r
+  U23739/O (OAI12H)                        0.17       5.38 f
+  U23740/O (OAI12HP)                       0.15       5.53 r
+  U23741/O (OR2T)                          0.34       5.87 r
+  U9905/O (OR2T)                           0.25       6.12 r
+  U9904/O (NR2T)                           0.09       6.22 f
+  U9903/O (NR2)                            0.28       6.49 r
+  U9902/O (OR2)                            0.29       6.78 r
+  U10513/O (NR2P)                          0.09       6.87 f
+  U23760/O (ND3)                           0.17       7.05 r
+  U23761/O (OAI12HS)                       0.24       7.29 f
+  U8393/O (OA12P)                          0.31       7.60 f
+  U23842/O (INV3)                          0.14       7.74 r
+  U14243/O (ND3HT)                         0.57       8.31 f
+  U24144/O (NR2)                           0.36       8.67 r
+  U24146/O (NR3)                           0.23       8.91 f
+  U11186/O (OA12)                          0.35       9.25 f
+  U24148/O (ND3P)                          0.17       9.42 r
+  U2439/O (BUF4CK)                         0.33       9.75 r
+  U7696/O (ND2)                            0.27      10.03 f
+  U5228/O (AN2)                            0.36      10.39 f
+  U25624/O (ND3)                           0.19      10.58 r
+  U9080/O (INV1S)                          0.21      10.79 f
+  U7695/O (AOI12H)                         0.24      11.02 r
+  U7694/O (OAI12H)                         0.10      11.12 f
+  U7693/O (AO12T)                          0.28      11.41 f
+  U7692/O (AO12T)                          0.25      11.66 f
+  U5013/O (AOI22S)                         0.28      11.94 r
+  U25933/O (AN4B1)                         0.27      12.21 r
+  U25960/O (AN4B1)                         0.28      12.49 r
+  U10510/O (ND3HT)                         0.14      12.63 f
+  U10509/O (NR3HT)                         0.11      12.73 r
+  winner_reg[4]/D (QDFFRBS)                0.00      12.73 r
+  data arrival time                                  12.73
+
+  clock clk (rise edge)                   13.00      13.00
+  clock network delay (ideal)              0.00      13.00
+  clock uncertainty                       -0.10      12.90
+  winner_reg[4]/CK (QDFFRBS)               0.00      12.90 r
+  library setup time                      -0.17      12.73
+  data required time                                 12.73
+  -----------------------------------------------------------
+  data required time                                 12.73
+  data arrival time                                 -12.73
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: predict2_cnt_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: winner_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WinRate            enG100K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  predict2_cnt_reg[2]/CK (QDFFRBT)         0.00       0.00 r
+  predict2_cnt_reg[2]/Q (QDFFRBT)          0.54       0.54 f
+  U13683/O (INV2)                          0.16       0.70 r
+  U9923/O (NR3HT)                          0.17       0.87 f
+  U9921/O (INV8)                           0.18       1.05 r
+  U9922/O (INV12)                          0.11       1.16 f
+  U15515/O (AOI22S)                        0.22       1.38 r
+  U7408/O (AN2T)                           0.26       1.64 r
+  U3517/O (ND3P)                           0.10       1.75 f
+  U6272/O (AOI22H)                         0.29       2.04 r
+  U6629/O (OAI112HT)                       0.28       2.31 f
+  U6671/O (INV3CK)                         0.10       2.42 r
+  U6670/O (NR2P)                           0.15       2.57 f
+  U7830/O (INV4)                           0.11       2.68 r
+  U7828/O (NR2T)                           0.14       2.82 f
+  U3479/O (INV2)                           0.13       2.95 r
+  U9137/O (NR2T)                           0.12       3.06 f
+  U15614/O (BUF6)                          0.23       3.29 f
+  U16486/O (AO12)                          0.37       3.66 f
+  U16490/O (INV1S)                         0.23       3.90 r
+  U6814/O (ND2S)                           0.19       4.09 f
+  U6813/O (ND2P)                           0.17       4.26 r
+  U6812/O (OAI12H)                         0.26       4.52 f
+  U10401/O (ND2P)                          0.23       4.75 r
+  U10397/O (OAI112H)                       0.18       4.93 f
+  U16593/O (NR3H)                          0.22       5.15 r
+  U16596/O (ND3HT)                         0.27       5.42 f
+  U16597/O (INV1)                          0.31       5.74 r
+  U16608/O (AO12P)                         0.35       6.09 r
+  U16615/O (OR2)                           0.31       6.40 r
+  U16616/O (OR2)                           0.24       6.64 r
+  U8024/O (OR2)                            0.22       6.86 r
+  U8022/O (OR2T)                           0.30       7.16 r
+  U6707/O (INV4CK)                         0.31       7.46 f
+  U6665/O (OAI12H)                         0.17       7.63 r
+  U6650/O (OR2T)                           0.21       7.84 r
+  U6649/O (OR2T)                           0.18       8.02 r
+  U16780/O (OR2T)                          0.28       8.30 r
+  U13199/O (OR2)                           0.34       8.64 r
+  U6658/O (INV3)                           0.22       8.86 f
+  U17274/O (ND2S)                          0.28       9.14 r
+  U4518/O (ND2T)                           0.27       9.40 f
+  U2428/O (INV2)                           0.41       9.81 r
+  U26864/O (ND2S)                          0.20      10.01 f
+  U26865/O (OA112)                         0.36      10.37 f
+  U13697/O (INV1)                          0.12      10.49 r
+  U26915/O (AO13)                          0.24      10.72 r
+  U13696/O (AO13P)                         0.25      10.98 r
+  U13326/O (OAI112H)                       0.13      11.11 f
+  U13693/O (MOAI1H)                        0.25      11.36 f
+  U7766/O (MAOI1)                          0.23      11.59 r
+  U7765/O (MOAI1)                          0.13      11.72 f
+  U7764/O (ND2)                            0.15      11.86 r
+  U7763/O (ND3)                            0.18      12.05 f
+  U7762/O (NR2P)                           0.17      12.22 r
+  U7392/O (ND3P)                           0.12      12.34 f
+  U7391/O (NR3HP)                          0.13      12.47 r
+  U7390/O (AN4B1)                          0.26      12.74 r
+  winner_reg[8]/D (QDFFRBS)                0.00      12.74 r
+  data arrival time                                  12.74
+
+  clock clk (rise edge)                   13.00      13.00
+  clock network delay (ideal)              0.00      13.00
+  clock uncertainty                       -0.10      12.90
+  winner_reg[8]/CK (QDFFRBS)               0.00      12.90 r
+  library setup time                      -0.16      12.74
+  data required time                                 12.74
+  -----------------------------------------------------------
+  data required time                                 12.74
+  data arrival time                                 -12.74
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: state_c_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: winner_reg[3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  WinRate            enG100K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  state_c_reg[1]/CK (QDFFRBP)              0.00       0.00 r
+  state_c_reg[1]/Q (QDFFRBP)               0.59       0.59 r
+  U6569/O (INV4)                           0.08       0.66 f
+  U6568/O (NR2F)                           0.10       0.77 r
+  U6570/O (ND3HT)                          0.14       0.90 f
+  U8547/O (BUF3)                           0.22       1.13 f
+  U7585/O (NR2F)                           0.19       1.32 r
+  U7580/O (ND2)                            0.17       1.49 f
+  U9734/O (OAI12H)                         0.13       1.62 r
+  U6066/O (NR2P)                           0.14       1.75 f
+  U15891/O (ND3P)                          0.14       1.89 r
+  U6966/O (NR2T)                           0.16       2.05 f
+  U6965/O (ND3HT)                          0.15       2.19 r
+  U6023/O (BUF6CK)                         0.23       2.42 r
+  U7587/O (NR2T)                           0.14       2.56 f
+  U6960/O (NR2F)                           0.27       2.83 r
+  U6949/O (BUF1CK)                         0.30       3.13 r
+  U6956/O (NR2)                            0.11       3.24 f
+  U18524/O (NR2)                           0.30       3.54 r
+  U18528/O (NR2)                           0.14       3.68 f
+  U8151/O (ND3)                            0.21       3.88 r
+  U8150/O (ND3HT)                          0.35       4.24 f
+  U8149/O (XNR2H)                          0.29       4.53 f
+  U8146/O (NR2F)                           0.39       4.92 r
+  U9633/O (MOAI1)                          0.36       5.27 r
+  U9632/O (AN4B1)                          0.18       5.45 f
+  U9631/O (ND3HT)                          0.20       5.65 r
+  U4295/O (INV6)                           0.13       5.79 f
+  U4762/O (INV2)                           0.12       5.91 r
+  U8924/O (NR2T)                           0.13       6.03 f
+  U18901/O (ND2P)                          0.13       6.16 r
+  U4721/O (ND3P)                           0.14       6.31 f
+  U18903/O (ND2P)                          0.19       6.49 r
+  U18904/O (OAI12HT)                       0.14       6.64 f
+  U5595/O (INV4)                           0.16       6.79 r
+  U11893/O (AO12)                          0.30       7.09 r
+  U5568/O (INV3)                           0.13       7.22 f
+  U10314/O (AOI13HS)                       0.26       7.48 r
+  U18914/O (OA12P)                         0.30       7.78 r
+  U14135/O (ND3HT)                         0.19       7.98 f
+  U12302/O (INV1)                          0.19       8.16 r
+  U10390/O (AOI12H)                        0.15       8.31 f
+  U8914/O (NR2T)                           0.21       8.52 r
+  U8912/O (ND3HT)                          0.16       8.69 f
+  U5417/O (INV4)                           0.19       8.88 r
+  U19278/O (MAOI1H)                        0.27       9.15 r
+  U10057/O (ND3HT)                         0.28       9.43 f
+  U2522/O (INV4)                           0.26       9.69 r
+  U24824/O (OR2)                           0.34      10.03 r
+  U2288/O (INV1S)                          0.19      10.22 f
+  U24826/O (NR2P)                          0.19      10.41 r
+  U24827/O (ND2S)                          0.14      10.55 f
+  U24835/O (AOI13HS)                       0.22      10.77 r
+  U7497/O (OA12P)                          0.27      11.04 r
+  U7496/O (OAI12H)                         0.09      11.12 f
+  U7495/O (AOI12HS)                        0.22      11.34 r
+  U7494/O (OAI12HS)                        0.14      11.48 f
+  U24854/O (AO12)                          0.28      11.77 f
+  U13662/O (AN4B1)                         0.28      12.04 f
+  U14295/O (AN4B1)                         0.27      12.32 f
+  U25127/O (AN4B1)                         0.23      12.55 f
+  U25148/O (AN4)                           0.25      12.80 f
+  winner_reg[3]/D (QDFFRBS)                0.00      12.80 f
+  data arrival time                                  12.80
+
+  clock clk (rise edge)                   13.00      13.00
+  clock network delay (ideal)              0.00      13.00
+  clock uncertainty                       -0.10      12.90
+  winner_reg[3]/CK (QDFFRBS)               0.00      12.90 r
+  library setup time                      -0.10      12.80
+  data required time                                 12.80
+  -----------------------------------------------------------
+  data required time                                 12.80
+  data arrival time                                 -12.80
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

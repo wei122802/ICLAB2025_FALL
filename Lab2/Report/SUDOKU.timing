@@ -1,0 +1,178 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : SUDOKU
+Version: T-2022.03
+Date   : Mon Sep 22 02:56:51 2025
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: board_reg[0][2][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: board_reg[4][2][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  board_reg[0][2][1]/CK (DFFRHQXL)         0.00       0.00 r
+  board_reg[0][2][1]/Q (DFFRHQXL)          0.56       0.56 f
+  U19805/Y (INVXL)                         0.24       0.80 r
+  U20050/Y (NOR2X1)                        0.11       0.91 f
+  U20051/Y (NOR2BX1)                       0.22       1.13 f
+  U17461/Y (NOR3BXL)                       0.28       1.41 r
+  U18247/Y (NAND4XL)                       0.15       1.56 f
+  U18246/Y (NOR2BX1)                       0.30       1.86 r
+  U18806/Y (NAND2XL)                       0.19       2.04 f
+  U15892/Y (NOR3XL)                        0.62       2.66 r
+  U14341/Y (NOR2X1)                        0.21       2.87 f
+  U20906/Y (NAND2XL)                       0.20       3.08 r
+  U20907/Y (OR2X1)                         0.21       3.29 r
+  U20909/Y (AND2X1)                        0.21       3.50 r
+  U20913/Y (OAI32X1)                       0.18       3.68 f
+  U18218/Y (NOR2XL)                        0.26       3.95 r
+  U23951/Y (AOI21XL)                       0.17       4.12 f
+  U12518/Y (NOR2XL)                        0.22       4.34 r
+  U13736/Y (NAND2XL)                       0.12       4.45 f
+  U23964/Y (NAND2BX1)                      0.23       4.68 f
+  U23965/Y (AOI22X1)                       0.24       4.92 r
+  U15989/Y (AOI31XL)                       0.10       5.01 f
+  U19208/Y (OAI211XL)                      0.16       5.17 r
+  U19207/Y (AOI22XL)                       0.12       5.29 f
+  U15159/Y (OAI2BB1X1)                     0.15       5.44 r
+  board_reg[4][2][2]/D (DFFRHQXL)          0.00       5.44 r
+  data arrival time                                   5.44
+
+  clock clk (rise edge)                    5.70       5.70
+  clock network delay (ideal)              0.00       5.70
+  clock uncertainty                       -0.10       5.60
+  board_reg[4][2][2]/CK (DFFRHQXL)         0.00       5.60 r
+  library setup time                      -0.16       5.44
+  data required time                                  5.44
+  -----------------------------------------------------------
+  data required time                                  5.44
+  data arrival time                                  -5.44
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: board_reg[1][6][3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: board_reg[0][6][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  board_reg[1][6][3]/CK (DFFRHQXL)         0.00       0.00 r
+  board_reg[1][6][3]/Q (DFFRHQXL)          0.67       0.67 r
+  U14886/Y (INVX1)                         0.13       0.80 f
+  U20013/Y (NAND2X1)                       0.17       0.97 r
+  U20077/Y (INVX2)                         0.07       1.05 f
+  U16232/Y (AND2XL)                        0.22       1.26 f
+  U17871/Y (NOR3XL)                        0.30       1.57 r
+  U21357/Y (NAND2XL)                       0.10       1.67 f
+  U17502/Y (NOR2X1)                        0.15       1.82 r
+  U16311/Y (NAND2XL)                       0.11       1.94 f
+  U18176/Y (INVXL)                         0.13       2.07 r
+  U14324/Y (NAND2XL)                       0.11       2.18 f
+  U12255/Y (NOR2XL)                        0.24       2.42 r
+  U12350/Y (INVXL)                         0.16       2.57 f
+  U22233/Y (NAND2XL)                       0.19       2.76 r
+  U17424/Y (AOI211XL)                      0.15       2.91 f
+  U17423/Y (AOI22XL)                       0.25       3.16 r
+  U18182/Y (NOR2X1)                        0.09       3.25 f
+  U13979/Y (OAI2BB1XL)                     0.21       3.46 f
+  U13156/Y (OAI21XL)                       0.16       3.62 r
+  U15203/Y (NAND2XL)                       0.14       3.76 f
+  U16772/Y (AOI2BB1XL)                     0.33       4.09 f
+  U24132/Y (NOR2X1)                        0.16       4.25 r
+  U14959/Y (NAND2X1)                       0.10       4.36 f
+  U18883/Y (NOR2BX1)                       0.16       4.52 r
+  U24134/Y (INVXL)                         0.08       4.60 f
+  U24135/Y (AOI211X1)                      0.23       4.83 r
+  U24136/Y (OAI21X1)                       0.12       4.96 f
+  U12987/Y (AOI31XL)                       0.25       5.21 r
+  U13562/Y (AOI21XL)                       0.09       5.30 f
+  U13554/Y (OAI2BB1XL)                     0.13       5.43 r
+  board_reg[0][6][0]/D (DFFRX1)            0.00       5.43 r
+  data arrival time                                   5.43
+
+  clock clk (rise edge)                    5.70       5.70
+  clock network delay (ideal)              0.00       5.70
+  clock uncertainty                       -0.10       5.60
+  board_reg[0][6][0]/CK (DFFRX1)           0.00       5.60 r
+  library setup time                      -0.17       5.43
+  data required time                                  5.43
+  -----------------------------------------------------------
+  data required time                                  5.43
+  data arrival time                                  -5.43
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: board_reg[5][0][2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: board_reg[8][0][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  board_reg[5][0][2]/CK (DFFRX2)           0.00       0.00 r
+  board_reg[5][0][2]/Q (DFFRX2)            0.73       0.73 r
+  U15034/Y (AND2X2)                        0.20       0.93 r
+  U19962/Y (NAND2X1)                       0.10       1.03 f
+  U14719/Y (NOR2X1)                        0.25       1.28 r
+  U20035/Y (NOR3BX1)                       0.15       1.43 f
+  U19400/Y (NAND4X1)                       0.19       1.62 r
+  U12236/Y (NOR2XL)                        0.15       1.77 f
+  U20089/Y (NAND2X1)                       0.17       1.94 r
+  U17800/Y (NOR3X1)                        0.21       2.15 f
+  U14207/Y (NOR2X1)                        0.23       2.38 r
+  U14149/Y (NAND2X1)                       0.18       2.56 f
+  U17729/Y (NOR2X1)                        0.19       2.75 r
+  U15059/Y (NAND2XL)                       0.11       2.86 f
+  U14004/Y (AND2XL)                        0.22       3.09 f
+  U21232/Y (OAI32XL)                       0.34       3.43 r
+  U13140/Y (OAI211X1)                      0.35       3.78 f
+  U22372/Y (AOI21X1)                       0.28       4.06 r
+  U18932/Y (NOR2X1)                        0.13       4.19 f
+  U15433/Y (NAND2X2)                       0.10       4.29 r
+  U12023/Y (NOR2X1)                        0.12       4.41 f
+  U15179/Y (AOI221X1)                      0.37       4.78 r
+  U15452/Y (AOI211X1)                      0.12       4.90 f
+  U13583/Y (OR2XL)                         0.25       5.15 f
+  U13546/Y (NAND2XL)                       0.09       5.24 r
+  U19131/Y (NAND2XL)                       0.07       5.31 f
+  board_reg[8][0][0]/D (DFFRX1)            0.00       5.31 f
+  data arrival time                                   5.31
+
+  clock clk (rise edge)                    5.70       5.70
+  clock network delay (ideal)              0.00       5.70
+  clock uncertainty                       -0.10       5.60
+  board_reg[8][0][0]/CK (DFFRX1)           0.00       5.60 r
+  library setup time                      -0.29       5.31
+  data required time                                  5.31
+  -----------------------------------------------------------
+  data required time                                  5.31
+  data arrival time                                  -5.31
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

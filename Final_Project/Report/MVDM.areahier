@@ -1,0 +1,951 @@
+ 
+****************************************
+Report : area
+Design : MVDM
+Version: T-2022.03
+Date   : Mon Dec 15 22:56:21 2025
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+    SRAM_1024_128_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Final_Project/04_MEM/SRAM_1024_128_WC.db)
+
+Number of ports:                        25863
+Number of nets:                         66964
+Number of cells:                        36682
+Number of combinational cells:          31737
+Number of sequential cells:              4409
+Number of macros/black boxes:               2
+Number of buf/inv:                       9104
+Number of references:                     172
+
+Combinational area:             754526.708540
+Buf/Inv area:                    72192.253633
+Noncombinational area:          261892.615189
+Macro/Black Box area:          1721047.250000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:               2737466.573729
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area                  Local cell area
+                                  ---------------------  -------------------------------------- 
+Hierarchical cell                 Absolute      Percent  Combi-       Noncombi-    Black-
+                                  Total         Total    national     national     boxes         Design
+--------------------------------  ------------  -------  -----------  -----------  ------------  ------------------------------------------------
+MVDM                              2737466.5737    100.0  269017.1574  204658.7778        0.0000  MVDM
+S0                                 860523.6250     31.4       0.0000       0.0000   860523.6250  SRAM_1024X128_0
+S1                                 860523.6250     31.4       0.0000       0.0000   860523.6250  SRAM_1024X128_1
+add_0_root_add_0_root_add_869_S2_3
+                                     1049.9328      0.0    1049.9328       0.0000        0.0000  MVDM_DW01_add_2_DW01_add_160
+add_1006                              359.3520      0.0     359.3520       0.0000        0.0000  MVDM_DW01_inc_0_DW01_inc_2
+add_1_root_add_0_root_add_869_S2_3
+                                      990.5616      0.0     990.5616       0.0000        0.0000  MVDM_DW01_add_4_DW01_add_162
+add_2_root_add_0_root_add_869_S2_3
+                                      990.5616      0.0     990.5616       0.0000        0.0000  MVDM_DW01_add_3_DW01_add_161
+add_434_aco                           393.7248      0.0     393.7248       0.0000        0.0000  MVDM_DW01_add_5_DW01_add_163
+add_467                               331.2288      0.0     331.2288       0.0000        0.0000  MVDM_DW01_inc_3_DW01_inc_5
+add_996                               359.3520      0.0     359.3520       0.0000        0.0000  MVDM_DW01_inc_1_DW01_inc_3
+blue_interpolation_point1            5224.6656      0.2    2962.3104       0.0000        0.0000  interpolation_blue_0
+blue_interpolation_point1/add_0_root_sub_0_root_add_1116_3
+                                      868.6944      0.0     868.6944       0.0000        0.0000  interpolation_blue_0_DW01_add_0_DW01_add_252
+blue_interpolation_point1/add_1_root_sub_0_root_add_1116_3
+                                      746.8272      0.0     746.8272       0.0000        0.0000  interpolation_blue_0_DW01_add_1_DW01_add_253
+blue_interpolation_point1/sub_1116
+                                      646.8336      0.0     646.8336       0.0000        0.0000  interpolation_blue_0_DW01_sub_1_DW01_sub_305
+blue_interpolation_point10           5134.0464      0.2    3740.3856       0.0000        0.0000  interpolation_blue_1
+blue_interpolation_point10/add_0_root_sub_0_root_add_1116_3
+                                      746.8272      0.0     746.8272       0.0000        0.0000  interpolation_blue_1_DW01_add_0_DW01_add_237
+blue_interpolation_point10/sub_1116
+                                      646.8336      0.0     646.8336       0.0000        0.0000  interpolation_blue_1_DW01_sub_1_DW01_sub_295
+blue_interpolation_point2            5224.6656      0.2    2962.3104       0.0000        0.0000  interpolation_blue_9
+blue_interpolation_point2/add_0_root_sub_0_root_add_1116_3
+                                      868.6944      0.0     868.6944       0.0000        0.0000  interpolation_blue_9_DW01_add_0_DW01_add_246
+blue_interpolation_point2/add_1_root_sub_0_root_add_1116_3
+                                      746.8272      0.0     746.8272       0.0000        0.0000  interpolation_blue_9_DW01_add_1_DW01_add_247
+blue_interpolation_point2/sub_1116
+                                      646.8336      0.0     646.8336       0.0000        0.0000  interpolation_blue_9_DW01_sub_1_DW01_sub_301
+blue_interpolation_point3            5224.6656      0.2    2962.3104       0.0000        0.0000  interpolation_blue_8
+blue_interpolation_point3/add_0_root_sub_0_root_add_1116_3
+                                      868.6944      0.0     868.6944       0.0000        0.0000  interpolation_blue_8_DW01_add_0_DW01_add_249
+blue_interpolation_point3/add_1_root_sub_0_root_add_1116_3
+                                      746.8272      0.0     746.8272       0.0000        0.0000  interpolation_blue_8_DW01_add_1_DW01_add_250
+blue_interpolation_point3/sub_1116
+                                      646.8336      0.0     646.8336       0.0000        0.0000  interpolation_blue_8_DW01_sub_1_DW01_sub_303
+blue_interpolation_point4            5224.6656      0.2    2962.3104       0.0000        0.0000  interpolation_blue_7
+blue_interpolation_point4/add_0_root_sub_0_root_add_1116_3
+                                      868.6944      0.0     868.6944       0.0000        0.0000  interpolation_blue_7_DW01_add_0_DW01_add_243
+blue_interpolation_point4/add_1_root_sub_0_root_add_1116_3
+                                      746.8272      0.0     746.8272       0.0000        0.0000  interpolation_blue_7_DW01_add_1_DW01_add_244
+blue_interpolation_point4/sub_1116
+                                      646.8336      0.0     646.8336       0.0000        0.0000  interpolation_blue_7_DW01_sub_1_DW01_sub_299
+blue_interpolation_point5            5224.6656      0.2    2962.3104       0.0000        0.0000  interpolation_blue_6
+blue_interpolation_point5/add_0_root_sub_0_root_add_1116_3
+                                      868.6944      0.0     868.6944       0.0000        0.0000  interpolation_blue_6_DW01_add_0_DW01_add_240
+blue_interpolation_point5/add_1_root_sub_0_root_add_1116_3
+                                      746.8272      0.0     746.8272       0.0000        0.0000  interpolation_blue_6_DW01_add_1_DW01_add_241
+blue_interpolation_point5/sub_1116
+                                      646.8336      0.0     646.8336       0.0000        0.0000  interpolation_blue_6_DW01_sub_1_DW01_sub_297
+blue_interpolation_point6            5224.6656      0.2    2962.3104       0.0000        0.0000  interpolation_blue_5
+blue_interpolation_point6/add_0_root_sub_0_root_add_1116_3
+                                      868.6944      0.0     868.6944       0.0000        0.0000  interpolation_blue_5_DW01_add_0_DW01_add_225
+blue_interpolation_point6/add_1_root_sub_0_root_add_1116_3
+                                      746.8272      0.0     746.8272       0.0000        0.0000  interpolation_blue_5_DW01_add_1_DW01_add_226
+blue_interpolation_point6/sub_1116
+                                      646.8336      0.0     646.8336       0.0000        0.0000  interpolation_blue_5_DW01_sub_1_DW01_sub_287
+blue_interpolation_point7            5134.0464      0.2    3740.3856       0.0000        0.0000  interpolation_blue_4
+blue_interpolation_point7/add_0_root_sub_0_root_add_1116_3
+                                      746.8272      0.0     746.8272       0.0000        0.0000  interpolation_blue_4_DW01_add_0_DW01_add_228
+blue_interpolation_point7/sub_1116
+                                      646.8336      0.0     646.8336       0.0000        0.0000  interpolation_blue_4_DW01_sub_1_DW01_sub_289
+blue_interpolation_point8            5134.0464      0.2    3740.3856       0.0000        0.0000  interpolation_blue_3
+blue_interpolation_point8/add_0_root_sub_0_root_add_1116_3
+                                      746.8272      0.0     746.8272       0.0000        0.0000  interpolation_blue_3_DW01_add_0_DW01_add_231
+blue_interpolation_point8/sub_1116
+                                      646.8336      0.0     646.8336       0.0000        0.0000  interpolation_blue_3_DW01_sub_1_DW01_sub_291
+blue_interpolation_point9            5134.0464      0.2    3740.3856       0.0000        0.0000  interpolation_blue_2
+blue_interpolation_point9/add_0_root_sub_0_root_add_1116_3
+                                      746.8272      0.0     746.8272       0.0000        0.0000  interpolation_blue_2_DW01_add_0_DW01_add_234
+blue_interpolation_point9/sub_1116
+                                      646.8336      0.0     646.8336       0.0000        0.0000  interpolation_blue_2_DW01_sub_1_DW01_sub_293
+green_interpolation_point1           9074.4193      0.3    2599.8336       0.0000        0.0000  interpolation_green_0
+green_interpolation_point1/add_0_root_sub_0_root_add_1125_3
+                                     1165.5504      0.0    1165.5504       0.0000        0.0000  interpolation_green_0_DW01_add_0_DW01_add_157
+green_interpolation_point1/add_1_root_sub_0_root_add_1125_3
+                                     1071.8064      0.0    1071.8064       0.0000        0.0000  interpolation_green_0_DW01_add_1_DW01_add_158
+green_interpolation_point1/mult_1125
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_0_DW_mult_tc_3_DW_mult_tc_39
+green_interpolation_point1/mult_1125_4
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_0_DW_mult_tc_0_DW_mult_tc_36
+green_interpolation_point1/sub_2_root_sub_0_root_add_1125_3
+                                     1231.1712      0.0    1231.1712       0.0000        0.0000  interpolation_green_0_DW01_sub_1_DW01_sub_284
+green_interpolation_point1/sub_3_root_sub_0_root_add_1125_3
+                                     1281.1680      0.0    1281.1680       0.0000        0.0000  interpolation_green_0_DW01_sub_0_DW01_sub_283
+green_interpolation_point10          9074.4193      0.3    2599.8336       0.0000        0.0000  interpolation_green_1
+green_interpolation_point10/add_0_root_sub_0_root_add_1125_3
+                                     1165.5504      0.0    1165.5504       0.0000        0.0000  interpolation_green_1_DW01_add_0_DW01_add_130
+green_interpolation_point10/add_1_root_sub_0_root_add_1125_3
+                                     1071.8064      0.0    1071.8064       0.0000        0.0000  interpolation_green_1_DW01_add_1_DW01_add_131
+green_interpolation_point10/mult_1125
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_1_DW_mult_tc_3
+green_interpolation_point10/mult_1125_4
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_1_DW_mult_tc_0
+green_interpolation_point10/sub_2_root_sub_0_root_add_1125_3
+                                     1231.1712      0.0    1231.1712       0.0000        0.0000  interpolation_green_1_DW01_sub_1_DW01_sub_266
+green_interpolation_point10/sub_3_root_sub_0_root_add_1125_3
+                                     1281.1680      0.0    1281.1680       0.0000        0.0000  interpolation_green_1_DW01_sub_0_DW01_sub_265
+green_interpolation_point2           9074.4193      0.3    2599.8336       0.0000        0.0000  interpolation_green_9
+green_interpolation_point2/add_0_root_sub_0_root_add_1125_3
+                                     1165.5504      0.0    1165.5504       0.0000        0.0000  interpolation_green_9_DW01_add_0_DW01_add_154
+green_interpolation_point2/add_1_root_sub_0_root_add_1125_3
+                                     1071.8064      0.0    1071.8064       0.0000        0.0000  interpolation_green_9_DW01_add_1_DW01_add_155
+green_interpolation_point2/mult_1125
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_9_DW_mult_tc_3_DW_mult_tc_35
+green_interpolation_point2/mult_1125_4
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_9_DW_mult_tc_0_DW_mult_tc_32
+green_interpolation_point2/sub_2_root_sub_0_root_add_1125_3
+                                     1231.1712      0.0    1231.1712       0.0000        0.0000  interpolation_green_9_DW01_sub_1_DW01_sub_282
+green_interpolation_point2/sub_3_root_sub_0_root_add_1125_3
+                                     1281.1680      0.0    1281.1680       0.0000        0.0000  interpolation_green_9_DW01_sub_0_DW01_sub_281
+green_interpolation_point3           9074.4193      0.3    2599.8336       0.0000        0.0000  interpolation_green_8
+green_interpolation_point3/add_0_root_sub_0_root_add_1125_3
+                                     1165.5504      0.0    1165.5504       0.0000        0.0000  interpolation_green_8_DW01_add_0_DW01_add_151
+green_interpolation_point3/add_1_root_sub_0_root_add_1125_3
+                                     1071.8064      0.0    1071.8064       0.0000        0.0000  interpolation_green_8_DW01_add_1_DW01_add_152
+green_interpolation_point3/mult_1125
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_8_DW_mult_tc_3_DW_mult_tc_31
+green_interpolation_point3/mult_1125_4
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_8_DW_mult_tc_0_DW_mult_tc_28
+green_interpolation_point3/sub_2_root_sub_0_root_add_1125_3
+                                     1231.1712      0.0    1231.1712       0.0000        0.0000  interpolation_green_8_DW01_sub_1_DW01_sub_280
+green_interpolation_point3/sub_3_root_sub_0_root_add_1125_3
+                                     1281.1680      0.0    1281.1680       0.0000        0.0000  interpolation_green_8_DW01_sub_0_DW01_sub_279
+green_interpolation_point4           9074.4193      0.3    2599.8336       0.0000        0.0000  interpolation_green_7
+green_interpolation_point4/add_0_root_sub_0_root_add_1125_3
+                                     1165.5504      0.0    1165.5504       0.0000        0.0000  interpolation_green_7_DW01_add_0_DW01_add_148
+green_interpolation_point4/add_1_root_sub_0_root_add_1125_3
+                                     1071.8064      0.0    1071.8064       0.0000        0.0000  interpolation_green_7_DW01_add_1_DW01_add_149
+green_interpolation_point4/mult_1125
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_7_DW_mult_tc_3_DW_mult_tc_27
+green_interpolation_point4/mult_1125_4
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_7_DW_mult_tc_0_DW_mult_tc_24
+green_interpolation_point4/sub_2_root_sub_0_root_add_1125_3
+                                     1231.1712      0.0    1231.1712       0.0000        0.0000  interpolation_green_7_DW01_sub_1_DW01_sub_278
+green_interpolation_point4/sub_3_root_sub_0_root_add_1125_3
+                                     1281.1680      0.0    1281.1680       0.0000        0.0000  interpolation_green_7_DW01_sub_0_DW01_sub_277
+green_interpolation_point5           9074.4193      0.3    2599.8336       0.0000        0.0000  interpolation_green_6
+green_interpolation_point5/add_0_root_sub_0_root_add_1125_3
+                                     1165.5504      0.0    1165.5504       0.0000        0.0000  interpolation_green_6_DW01_add_0_DW01_add_145
+green_interpolation_point5/add_1_root_sub_0_root_add_1125_3
+                                     1071.8064      0.0    1071.8064       0.0000        0.0000  interpolation_green_6_DW01_add_1_DW01_add_146
+green_interpolation_point5/mult_1125
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_6_DW_mult_tc_3_DW_mult_tc_23
+green_interpolation_point5/mult_1125_4
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_6_DW_mult_tc_0_DW_mult_tc_20
+green_interpolation_point5/sub_2_root_sub_0_root_add_1125_3
+                                     1231.1712      0.0    1231.1712       0.0000        0.0000  interpolation_green_6_DW01_sub_1_DW01_sub_276
+green_interpolation_point5/sub_3_root_sub_0_root_add_1125_3
+                                     1281.1680      0.0    1281.1680       0.0000        0.0000  interpolation_green_6_DW01_sub_0_DW01_sub_275
+green_interpolation_point6           9074.4193      0.3    2599.8336       0.0000        0.0000  interpolation_green_5
+green_interpolation_point6/add_0_root_sub_0_root_add_1125_3
+                                     1165.5504      0.0    1165.5504       0.0000        0.0000  interpolation_green_5_DW01_add_0_DW01_add_142
+green_interpolation_point6/add_1_root_sub_0_root_add_1125_3
+                                     1071.8064      0.0    1071.8064       0.0000        0.0000  interpolation_green_5_DW01_add_1_DW01_add_143
+green_interpolation_point6/mult_1125
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_5_DW_mult_tc_3_DW_mult_tc_19
+green_interpolation_point6/mult_1125_4
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_5_DW_mult_tc_0_DW_mult_tc_16
+green_interpolation_point6/sub_2_root_sub_0_root_add_1125_3
+                                     1231.1712      0.0    1231.1712       0.0000        0.0000  interpolation_green_5_DW01_sub_1_DW01_sub_274
+green_interpolation_point6/sub_3_root_sub_0_root_add_1125_3
+                                     1281.1680      0.0    1281.1680       0.0000        0.0000  interpolation_green_5_DW01_sub_0_DW01_sub_273
+green_interpolation_point7           9074.4193      0.3    2599.8336       0.0000        0.0000  interpolation_green_4
+green_interpolation_point7/add_0_root_sub_0_root_add_1125_3
+                                     1165.5504      0.0    1165.5504       0.0000        0.0000  interpolation_green_4_DW01_add_0_DW01_add_139
+green_interpolation_point7/add_1_root_sub_0_root_add_1125_3
+                                     1071.8064      0.0    1071.8064       0.0000        0.0000  interpolation_green_4_DW01_add_1_DW01_add_140
+green_interpolation_point7/mult_1125
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_4_DW_mult_tc_3_DW_mult_tc_15
+green_interpolation_point7/mult_1125_4
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_4_DW_mult_tc_0_DW_mult_tc_12
+green_interpolation_point7/sub_2_root_sub_0_root_add_1125_3
+                                     1231.1712      0.0    1231.1712       0.0000        0.0000  interpolation_green_4_DW01_sub_1_DW01_sub_272
+green_interpolation_point7/sub_3_root_sub_0_root_add_1125_3
+                                     1281.1680      0.0    1281.1680       0.0000        0.0000  interpolation_green_4_DW01_sub_0_DW01_sub_271
+green_interpolation_point8           9074.4193      0.3    2599.8336       0.0000        0.0000  interpolation_green_3
+green_interpolation_point8/add_0_root_sub_0_root_add_1125_3
+                                     1165.5504      0.0    1165.5504       0.0000        0.0000  interpolation_green_3_DW01_add_0_DW01_add_136
+green_interpolation_point8/add_1_root_sub_0_root_add_1125_3
+                                     1071.8064      0.0    1071.8064       0.0000        0.0000  interpolation_green_3_DW01_add_1_DW01_add_137
+green_interpolation_point8/mult_1125
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_3_DW_mult_tc_3_DW_mult_tc_11
+green_interpolation_point8/mult_1125_4
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_3_DW_mult_tc_0_DW_mult_tc_8
+green_interpolation_point8/sub_2_root_sub_0_root_add_1125_3
+                                     1231.1712      0.0    1231.1712       0.0000        0.0000  interpolation_green_3_DW01_sub_1_DW01_sub_270
+green_interpolation_point8/sub_3_root_sub_0_root_add_1125_3
+                                     1281.1680      0.0    1281.1680       0.0000        0.0000  interpolation_green_3_DW01_sub_0_DW01_sub_269
+green_interpolation_point9           9074.4193      0.3    2599.8336       0.0000        0.0000  interpolation_green_2
+green_interpolation_point9/add_0_root_sub_0_root_add_1125_3
+                                     1165.5504      0.0    1165.5504       0.0000        0.0000  interpolation_green_2_DW01_add_0_DW01_add_133
+green_interpolation_point9/add_1_root_sub_0_root_add_1125_3
+                                     1071.8064      0.0    1071.8064       0.0000        0.0000  interpolation_green_2_DW01_add_1_DW01_add_134
+green_interpolation_point9/mult_1125
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_2_DW_mult_tc_3_DW_mult_tc_7
+green_interpolation_point9/mult_1125_4
+                                      862.4448      0.0     862.4448       0.0000        0.0000  interpolation_green_2_DW_mult_tc_0_DW_mult_tc_4
+green_interpolation_point9/sub_2_root_sub_0_root_add_1125_3
+                                     1231.1712      0.0    1231.1712       0.0000        0.0000  interpolation_green_2_DW01_sub_1_DW01_sub_268
+green_interpolation_point9/sub_3_root_sub_0_root_add_1125_3
+                                     1281.1680      0.0    1281.1680       0.0000        0.0000  interpolation_green_2_DW01_sub_0_DW01_sub_267
+r1574                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_36_DW01_inc_38
+r1575                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_35_DW01_inc_37
+r1576                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_34_DW01_inc_36
+r1577                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_33_DW01_inc_35
+r1578                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_32_DW01_inc_34
+r1579                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_31_DW01_inc_33
+r1580                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_30_DW01_inc_32
+r1581                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_29_DW01_inc_31
+r1582                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_28_DW01_inc_30
+r1583                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_27_DW01_inc_29
+r1584                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_26_DW01_inc_28
+r1585                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_25_DW01_inc_27
+r1586                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_24_DW01_inc_26
+r1587                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_23_DW01_inc_25
+r1588                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_22_DW01_inc_24
+r1589                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_21_DW01_inc_23
+r1590                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_20_DW01_inc_22
+r1591                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_19_DW01_inc_21
+r1592                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_18_DW01_inc_20
+r1593                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_17_DW01_inc_19
+r1594                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_16_DW01_inc_18
+r1595                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_15_DW01_inc_17
+r1596                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_14_DW01_inc_16
+r1597                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_13_DW01_inc_15
+r1598                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_12_DW01_inc_14
+r1599                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_11_DW01_inc_13
+r1600                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_10_DW01_inc_12
+r1601                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_9_DW01_inc_11
+r1602                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_8_DW01_inc_10
+r1603                                 353.1024      0.0     353.1024       0.0000        0.0000  MVDM_DW01_inc_7_DW01_inc_9
+r1669                                 884.3184      0.0     884.3184       0.0000        0.0000  MVDM_DW_cmp_1
+satd_inst_00                        85941.3746      3.1   20636.1790   14308.4593        0.0000  SATD_calculation_0
+satd_inst_00/add_0_root_add_0_root_add_1196_15
+                                      931.1904      0.0     931.1904       0.0000        0.0000  SATD_calculation_0_DW01_add_0_DW01_add_210
+satd_inst_00/add_1_root_add_0_root_add_1196_15
+                                      871.8192      0.0     871.8192       0.0000        0.0000  SATD_calculation_0_DW01_add_1_DW01_add_211
+satd_inst_00/add_2_root_add_0_root_add_1196_15
+                                      871.8192      0.0     871.8192       0.0000        0.0000  SATD_calculation_0_DW01_add_2_DW01_add_212
+satd_inst_00/add_3_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_0_DW01_add_5_DW01_add_215
+satd_inst_00/add_4_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_0_DW01_add_6_DW01_add_216
+satd_inst_00/add_5_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_0_DW01_add_3_DW01_add_213
+satd_inst_00/add_6_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_0_DW01_add_8_DW01_add_218
+satd_inst_00/hadamard_inst          45072.1154      1.6       0.0000       0.0000        0.0000  Hadamard_WIDTH10_0
+satd_inst_00/hadamard_inst/u_col0    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_0
+satd_inst_00/hadamard_inst/u_col0/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_0_DW01_add_3_DW01_add_129
+satd_inst_00/hadamard_inst/u_col0/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_0_DW01_add_2_DW01_add_128
+satd_inst_00/hadamard_inst/u_col0/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_0_DW01_add_1_DW01_add_127
+satd_inst_00/hadamard_inst/u_col0/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_0_DW01_add_0_DW01_add_126
+satd_inst_00/hadamard_inst/u_col0/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_0_DW01_sub_3_DW01_sub_264
+satd_inst_00/hadamard_inst/u_col0/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_0_DW01_sub_2_DW01_sub_263
+satd_inst_00/hadamard_inst/u_col0/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_0_DW01_sub_1_DW01_sub_262
+satd_inst_00/hadamard_inst/u_col0/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_0_DW01_sub_0_DW01_sub_261
+satd_inst_00/hadamard_inst/u_col1    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_15
+satd_inst_00/hadamard_inst/u_col1/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_15_DW01_add_3_DW01_add_125
+satd_inst_00/hadamard_inst/u_col1/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_15_DW01_add_2_DW01_add_124
+satd_inst_00/hadamard_inst/u_col1/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_15_DW01_add_1_DW01_add_123
+satd_inst_00/hadamard_inst/u_col1/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_15_DW01_add_0_DW01_add_122
+satd_inst_00/hadamard_inst/u_col1/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_15_DW01_sub_3_DW01_sub_260
+satd_inst_00/hadamard_inst/u_col1/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_15_DW01_sub_2_DW01_sub_259
+satd_inst_00/hadamard_inst/u_col1/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_15_DW01_sub_1_DW01_sub_258
+satd_inst_00/hadamard_inst/u_col1/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_15_DW01_sub_0_DW01_sub_257
+satd_inst_00/hadamard_inst/u_col2    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_14
+satd_inst_00/hadamard_inst/u_col2/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_14_DW01_add_3_DW01_add_121
+satd_inst_00/hadamard_inst/u_col2/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_14_DW01_add_2_DW01_add_120
+satd_inst_00/hadamard_inst/u_col2/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_14_DW01_add_1_DW01_add_119
+satd_inst_00/hadamard_inst/u_col2/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_14_DW01_add_0_DW01_add_118
+satd_inst_00/hadamard_inst/u_col2/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_14_DW01_sub_3_DW01_sub_256
+satd_inst_00/hadamard_inst/u_col2/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_14_DW01_sub_2_DW01_sub_255
+satd_inst_00/hadamard_inst/u_col2/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_14_DW01_sub_1_DW01_sub_254
+satd_inst_00/hadamard_inst/u_col2/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_14_DW01_sub_0_DW01_sub_253
+satd_inst_00/hadamard_inst/u_col3    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_13
+satd_inst_00/hadamard_inst/u_col3/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_13_DW01_add_3_DW01_add_117
+satd_inst_00/hadamard_inst/u_col3/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_13_DW01_add_2_DW01_add_116
+satd_inst_00/hadamard_inst/u_col3/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_13_DW01_add_1_DW01_add_115
+satd_inst_00/hadamard_inst/u_col3/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_13_DW01_add_0_DW01_add_114
+satd_inst_00/hadamard_inst/u_col3/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_13_DW01_sub_3_DW01_sub_252
+satd_inst_00/hadamard_inst/u_col3/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_13_DW01_sub_2_DW01_sub_251
+satd_inst_00/hadamard_inst/u_col3/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_13_DW01_sub_1_DW01_sub_250
+satd_inst_00/hadamard_inst/u_col3/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_13_DW01_sub_0_DW01_sub_249
+satd_inst_00/hadamard_inst/u_row0    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_0
+satd_inst_00/hadamard_inst/u_row0/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_0_DW01_add_3_DW01_add_113
+satd_inst_00/hadamard_inst/u_row0/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_0_DW01_add_2_DW01_add_112
+satd_inst_00/hadamard_inst/u_row0/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_0_DW01_add_1_DW01_add_111
+satd_inst_00/hadamard_inst/u_row0/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_0_DW01_add_0_DW01_add_110
+satd_inst_00/hadamard_inst/u_row0/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_0_DW01_sub_3_DW01_sub_248
+satd_inst_00/hadamard_inst/u_row0/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_0_DW01_sub_2_DW01_sub_247
+satd_inst_00/hadamard_inst/u_row0/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_0_DW01_sub_1_DW01_sub_246
+satd_inst_00/hadamard_inst/u_row0/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_0_DW01_sub_0_DW01_sub_245
+satd_inst_00/hadamard_inst/u_row1    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_15
+satd_inst_00/hadamard_inst/u_row1/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_15_DW01_add_3_DW01_add_109
+satd_inst_00/hadamard_inst/u_row1/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_15_DW01_add_2_DW01_add_108
+satd_inst_00/hadamard_inst/u_row1/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_15_DW01_add_1_DW01_add_107
+satd_inst_00/hadamard_inst/u_row1/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_15_DW01_add_0_DW01_add_106
+satd_inst_00/hadamard_inst/u_row1/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_15_DW01_sub_3_DW01_sub_244
+satd_inst_00/hadamard_inst/u_row1/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_15_DW01_sub_2_DW01_sub_243
+satd_inst_00/hadamard_inst/u_row1/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_15_DW01_sub_1_DW01_sub_242
+satd_inst_00/hadamard_inst/u_row1/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_15_DW01_sub_0_DW01_sub_241
+satd_inst_00/hadamard_inst/u_row2    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_14
+satd_inst_00/hadamard_inst/u_row2/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_14_DW01_add_3_DW01_add_105
+satd_inst_00/hadamard_inst/u_row2/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_14_DW01_add_2_DW01_add_104
+satd_inst_00/hadamard_inst/u_row2/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_14_DW01_add_1_DW01_add_103
+satd_inst_00/hadamard_inst/u_row2/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_14_DW01_add_0_DW01_add_102
+satd_inst_00/hadamard_inst/u_row2/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_14_DW01_sub_3_DW01_sub_240
+satd_inst_00/hadamard_inst/u_row2/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_14_DW01_sub_2_DW01_sub_239
+satd_inst_00/hadamard_inst/u_row2/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_14_DW01_sub_1_DW01_sub_238
+satd_inst_00/hadamard_inst/u_row2/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_14_DW01_sub_0_DW01_sub_237
+satd_inst_00/hadamard_inst/u_row3    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_13
+satd_inst_00/hadamard_inst/u_row3/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_13_DW01_add_3_DW01_add_101
+satd_inst_00/hadamard_inst/u_row3/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_13_DW01_add_2_DW01_add_100
+satd_inst_00/hadamard_inst/u_row3/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_13_DW01_add_1_DW01_add_99
+satd_inst_00/hadamard_inst/u_row3/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_13_DW01_add_0_DW01_add_98
+satd_inst_00/hadamard_inst/u_row3/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_13_DW01_sub_3_DW01_sub_236
+satd_inst_00/hadamard_inst/u_row3/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_13_DW01_sub_2_DW01_sub_235
+satd_inst_00/hadamard_inst/u_row3/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_13_DW01_sub_1_DW01_sub_234
+satd_inst_00/hadamard_inst/u_row3/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_13_DW01_sub_0_DW01_sub_233
+satd_inst_01                        85941.3746      3.1   20636.1790   14308.4593        0.0000  SATD_calculation_3
+satd_inst_01/add_0_root_add_0_root_add_1196_15
+                                      931.1904      0.0     931.1904       0.0000        0.0000  SATD_calculation_3_DW01_add_0_DW01_add_195
+satd_inst_01/add_1_root_add_0_root_add_1196_15
+                                      871.8192      0.0     871.8192       0.0000        0.0000  SATD_calculation_3_DW01_add_1_DW01_add_196
+satd_inst_01/add_2_root_add_0_root_add_1196_15
+                                      871.8192      0.0     871.8192       0.0000        0.0000  SATD_calculation_3_DW01_add_2_DW01_add_197
+satd_inst_01/add_3_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_3_DW01_add_5_DW01_add_200
+satd_inst_01/add_4_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_3_DW01_add_6_DW01_add_201
+satd_inst_01/add_5_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_3_DW01_add_3_DW01_add_198
+satd_inst_01/add_6_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_3_DW01_add_8_DW01_add_203
+satd_inst_01/hadamard_inst          45072.1154      1.6       0.0000       0.0000        0.0000  Hadamard_WIDTH10_3
+satd_inst_01/hadamard_inst/u_col0    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_12
+satd_inst_01/hadamard_inst/u_col0/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_12_DW01_add_3_DW01_add_97
+satd_inst_01/hadamard_inst/u_col0/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_12_DW01_add_2_DW01_add_96
+satd_inst_01/hadamard_inst/u_col0/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_12_DW01_add_1_DW01_add_95
+satd_inst_01/hadamard_inst/u_col0/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_12_DW01_add_0_DW01_add_94
+satd_inst_01/hadamard_inst/u_col0/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_12_DW01_sub_3_DW01_sub_216
+satd_inst_01/hadamard_inst/u_col0/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_12_DW01_sub_2_DW01_sub_215
+satd_inst_01/hadamard_inst/u_col0/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_12_DW01_sub_1_DW01_sub_214
+satd_inst_01/hadamard_inst/u_col0/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_12_DW01_sub_0_DW01_sub_213
+satd_inst_01/hadamard_inst/u_col1    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_11
+satd_inst_01/hadamard_inst/u_col1/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_11_DW01_add_3_DW01_add_93
+satd_inst_01/hadamard_inst/u_col1/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_11_DW01_add_2_DW01_add_92
+satd_inst_01/hadamard_inst/u_col1/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_11_DW01_add_1_DW01_add_91
+satd_inst_01/hadamard_inst/u_col1/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_11_DW01_add_0_DW01_add_90
+satd_inst_01/hadamard_inst/u_col1/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_11_DW01_sub_3_DW01_sub_212
+satd_inst_01/hadamard_inst/u_col1/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_11_DW01_sub_2_DW01_sub_211
+satd_inst_01/hadamard_inst/u_col1/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_11_DW01_sub_1_DW01_sub_210
+satd_inst_01/hadamard_inst/u_col1/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_11_DW01_sub_0_DW01_sub_209
+satd_inst_01/hadamard_inst/u_col2    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_10
+satd_inst_01/hadamard_inst/u_col2/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_10_DW01_add_3_DW01_add_89
+satd_inst_01/hadamard_inst/u_col2/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_10_DW01_add_2_DW01_add_88
+satd_inst_01/hadamard_inst/u_col2/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_10_DW01_add_1_DW01_add_87
+satd_inst_01/hadamard_inst/u_col2/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_10_DW01_add_0_DW01_add_86
+satd_inst_01/hadamard_inst/u_col2/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_10_DW01_sub_3_DW01_sub_208
+satd_inst_01/hadamard_inst/u_col2/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_10_DW01_sub_2_DW01_sub_207
+satd_inst_01/hadamard_inst/u_col2/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_10_DW01_sub_1_DW01_sub_206
+satd_inst_01/hadamard_inst/u_col2/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_10_DW01_sub_0_DW01_sub_205
+satd_inst_01/hadamard_inst/u_col3    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_9
+satd_inst_01/hadamard_inst/u_col3/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_9_DW01_add_3_DW01_add_85
+satd_inst_01/hadamard_inst/u_col3/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_9_DW01_add_2_DW01_add_84
+satd_inst_01/hadamard_inst/u_col3/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_9_DW01_add_1_DW01_add_83
+satd_inst_01/hadamard_inst/u_col3/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_9_DW01_add_0_DW01_add_82
+satd_inst_01/hadamard_inst/u_col3/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_9_DW01_sub_3_DW01_sub_204
+satd_inst_01/hadamard_inst/u_col3/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_9_DW01_sub_2_DW01_sub_203
+satd_inst_01/hadamard_inst/u_col3/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_9_DW01_sub_1_DW01_sub_202
+satd_inst_01/hadamard_inst/u_col3/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_9_DW01_sub_0_DW01_sub_201
+satd_inst_01/hadamard_inst/u_row0    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_12
+satd_inst_01/hadamard_inst/u_row0/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_12_DW01_add_3_DW01_add_81
+satd_inst_01/hadamard_inst/u_row0/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_12_DW01_add_2_DW01_add_80
+satd_inst_01/hadamard_inst/u_row0/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_12_DW01_add_1_DW01_add_79
+satd_inst_01/hadamard_inst/u_row0/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_12_DW01_add_0_DW01_add_78
+satd_inst_01/hadamard_inst/u_row0/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_12_DW01_sub_3_DW01_sub_200
+satd_inst_01/hadamard_inst/u_row0/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_12_DW01_sub_2_DW01_sub_199
+satd_inst_01/hadamard_inst/u_row0/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_12_DW01_sub_1_DW01_sub_198
+satd_inst_01/hadamard_inst/u_row0/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_12_DW01_sub_0_DW01_sub_197
+satd_inst_01/hadamard_inst/u_row1    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_11
+satd_inst_01/hadamard_inst/u_row1/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_11_DW01_add_3_DW01_add_77
+satd_inst_01/hadamard_inst/u_row1/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_11_DW01_add_2_DW01_add_76
+satd_inst_01/hadamard_inst/u_row1/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_11_DW01_add_1_DW01_add_75
+satd_inst_01/hadamard_inst/u_row1/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_11_DW01_add_0_DW01_add_74
+satd_inst_01/hadamard_inst/u_row1/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_11_DW01_sub_3_DW01_sub_196
+satd_inst_01/hadamard_inst/u_row1/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_11_DW01_sub_2_DW01_sub_195
+satd_inst_01/hadamard_inst/u_row1/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_11_DW01_sub_1_DW01_sub_194
+satd_inst_01/hadamard_inst/u_row1/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_11_DW01_sub_0_DW01_sub_193
+satd_inst_01/hadamard_inst/u_row2    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_10
+satd_inst_01/hadamard_inst/u_row2/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_10_DW01_add_3_DW01_add_73
+satd_inst_01/hadamard_inst/u_row2/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_10_DW01_add_2_DW01_add_72
+satd_inst_01/hadamard_inst/u_row2/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_10_DW01_add_1_DW01_add_71
+satd_inst_01/hadamard_inst/u_row2/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_10_DW01_add_0_DW01_add_70
+satd_inst_01/hadamard_inst/u_row2/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_10_DW01_sub_3_DW01_sub_192
+satd_inst_01/hadamard_inst/u_row2/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_10_DW01_sub_2_DW01_sub_191
+satd_inst_01/hadamard_inst/u_row2/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_10_DW01_sub_1_DW01_sub_190
+satd_inst_01/hadamard_inst/u_row2/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_10_DW01_sub_0_DW01_sub_189
+satd_inst_01/hadamard_inst/u_row3    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_9
+satd_inst_01/hadamard_inst/u_row3/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_9_DW01_add_3_DW01_add_69
+satd_inst_01/hadamard_inst/u_row3/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_9_DW01_add_2_DW01_add_68
+satd_inst_01/hadamard_inst/u_row3/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_9_DW01_add_1_DW01_add_67
+satd_inst_01/hadamard_inst/u_row3/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_9_DW01_add_0_DW01_add_66
+satd_inst_01/hadamard_inst/u_row3/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_9_DW01_sub_3_DW01_sub_188
+satd_inst_01/hadamard_inst/u_row3/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_9_DW01_sub_2_DW01_sub_187
+satd_inst_01/hadamard_inst/u_row3/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_9_DW01_sub_1_DW01_sub_186
+satd_inst_01/hadamard_inst/u_row3/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_9_DW01_sub_0_DW01_sub_185
+satd_inst_10                        85941.3746      3.1   20636.1790   14308.4593        0.0000  SATD_calculation_2
+satd_inst_10/add_0_root_add_0_root_add_1196_15
+                                      931.1904      0.0     931.1904       0.0000        0.0000  SATD_calculation_2_DW01_add_0_DW01_add_180
+satd_inst_10/add_1_root_add_0_root_add_1196_15
+                                      871.8192      0.0     871.8192       0.0000        0.0000  SATD_calculation_2_DW01_add_1_DW01_add_181
+satd_inst_10/add_2_root_add_0_root_add_1196_15
+                                      871.8192      0.0     871.8192       0.0000        0.0000  SATD_calculation_2_DW01_add_2_DW01_add_182
+satd_inst_10/add_3_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_2_DW01_add_5_DW01_add_185
+satd_inst_10/add_4_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_2_DW01_add_6_DW01_add_186
+satd_inst_10/add_5_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_2_DW01_add_3_DW01_add_183
+satd_inst_10/add_6_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_2_DW01_add_8_DW01_add_188
+satd_inst_10/hadamard_inst          45072.1154      1.6       0.0000       0.0000        0.0000  Hadamard_WIDTH10_2
+satd_inst_10/hadamard_inst/u_col0    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_8
+satd_inst_10/hadamard_inst/u_col0/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_8_DW01_add_3_DW01_add_65
+satd_inst_10/hadamard_inst/u_col0/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_8_DW01_add_2_DW01_add_64
+satd_inst_10/hadamard_inst/u_col0/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_8_DW01_add_1_DW01_add_63
+satd_inst_10/hadamard_inst/u_col0/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_8_DW01_add_0_DW01_add_62
+satd_inst_10/hadamard_inst/u_col0/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_8_DW01_sub_3_DW01_sub_168
+satd_inst_10/hadamard_inst/u_col0/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_8_DW01_sub_2_DW01_sub_167
+satd_inst_10/hadamard_inst/u_col0/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_8_DW01_sub_1_DW01_sub_166
+satd_inst_10/hadamard_inst/u_col0/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_8_DW01_sub_0_DW01_sub_165
+satd_inst_10/hadamard_inst/u_col1    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_7
+satd_inst_10/hadamard_inst/u_col1/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_7_DW01_add_3_DW01_add_61
+satd_inst_10/hadamard_inst/u_col1/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_7_DW01_add_2_DW01_add_60
+satd_inst_10/hadamard_inst/u_col1/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_7_DW01_add_1_DW01_add_59
+satd_inst_10/hadamard_inst/u_col1/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_7_DW01_add_0_DW01_add_58
+satd_inst_10/hadamard_inst/u_col1/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_7_DW01_sub_3_DW01_sub_164
+satd_inst_10/hadamard_inst/u_col1/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_7_DW01_sub_2_DW01_sub_163
+satd_inst_10/hadamard_inst/u_col1/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_7_DW01_sub_1_DW01_sub_162
+satd_inst_10/hadamard_inst/u_col1/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_7_DW01_sub_0_DW01_sub_161
+satd_inst_10/hadamard_inst/u_col2    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_6
+satd_inst_10/hadamard_inst/u_col2/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_6_DW01_add_3_DW01_add_57
+satd_inst_10/hadamard_inst/u_col2/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_6_DW01_add_2_DW01_add_56
+satd_inst_10/hadamard_inst/u_col2/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_6_DW01_add_1_DW01_add_55
+satd_inst_10/hadamard_inst/u_col2/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_6_DW01_add_0_DW01_add_54
+satd_inst_10/hadamard_inst/u_col2/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_6_DW01_sub_3_DW01_sub_160
+satd_inst_10/hadamard_inst/u_col2/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_6_DW01_sub_2_DW01_sub_159
+satd_inst_10/hadamard_inst/u_col2/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_6_DW01_sub_1_DW01_sub_158
+satd_inst_10/hadamard_inst/u_col2/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_6_DW01_sub_0_DW01_sub_157
+satd_inst_10/hadamard_inst/u_col3    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_5
+satd_inst_10/hadamard_inst/u_col3/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_5_DW01_add_3_DW01_add_53
+satd_inst_10/hadamard_inst/u_col3/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_5_DW01_add_2_DW01_add_52
+satd_inst_10/hadamard_inst/u_col3/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_5_DW01_add_1_DW01_add_51
+satd_inst_10/hadamard_inst/u_col3/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_5_DW01_add_0_DW01_add_50
+satd_inst_10/hadamard_inst/u_col3/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_5_DW01_sub_3_DW01_sub_156
+satd_inst_10/hadamard_inst/u_col3/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_5_DW01_sub_2_DW01_sub_155
+satd_inst_10/hadamard_inst/u_col3/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_5_DW01_sub_1_DW01_sub_154
+satd_inst_10/hadamard_inst/u_col3/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_5_DW01_sub_0_DW01_sub_153
+satd_inst_10/hadamard_inst/u_row0    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_8
+satd_inst_10/hadamard_inst/u_row0/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_8_DW01_add_3_DW01_add_49
+satd_inst_10/hadamard_inst/u_row0/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_8_DW01_add_2_DW01_add_48
+satd_inst_10/hadamard_inst/u_row0/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_8_DW01_add_1_DW01_add_47
+satd_inst_10/hadamard_inst/u_row0/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_8_DW01_add_0_DW01_add_46
+satd_inst_10/hadamard_inst/u_row0/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_8_DW01_sub_3_DW01_sub_152
+satd_inst_10/hadamard_inst/u_row0/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_8_DW01_sub_2_DW01_sub_151
+satd_inst_10/hadamard_inst/u_row0/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_8_DW01_sub_1_DW01_sub_150
+satd_inst_10/hadamard_inst/u_row0/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_8_DW01_sub_0_DW01_sub_149
+satd_inst_10/hadamard_inst/u_row1    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_7
+satd_inst_10/hadamard_inst/u_row1/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_7_DW01_add_3_DW01_add_45
+satd_inst_10/hadamard_inst/u_row1/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_7_DW01_add_2_DW01_add_44
+satd_inst_10/hadamard_inst/u_row1/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_7_DW01_add_1_DW01_add_43
+satd_inst_10/hadamard_inst/u_row1/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_7_DW01_add_0_DW01_add_42
+satd_inst_10/hadamard_inst/u_row1/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_7_DW01_sub_3_DW01_sub_148
+satd_inst_10/hadamard_inst/u_row1/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_7_DW01_sub_2_DW01_sub_147
+satd_inst_10/hadamard_inst/u_row1/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_7_DW01_sub_1_DW01_sub_146
+satd_inst_10/hadamard_inst/u_row1/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_7_DW01_sub_0_DW01_sub_145
+satd_inst_10/hadamard_inst/u_row2    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_6
+satd_inst_10/hadamard_inst/u_row2/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_6_DW01_add_3_DW01_add_41
+satd_inst_10/hadamard_inst/u_row2/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_6_DW01_add_2_DW01_add_40
+satd_inst_10/hadamard_inst/u_row2/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_6_DW01_add_1_DW01_add_39
+satd_inst_10/hadamard_inst/u_row2/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_6_DW01_add_0_DW01_add_38
+satd_inst_10/hadamard_inst/u_row2/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_6_DW01_sub_3_DW01_sub_144
+satd_inst_10/hadamard_inst/u_row2/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_6_DW01_sub_2_DW01_sub_143
+satd_inst_10/hadamard_inst/u_row2/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_6_DW01_sub_1_DW01_sub_142
+satd_inst_10/hadamard_inst/u_row2/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_6_DW01_sub_0_DW01_sub_141
+satd_inst_10/hadamard_inst/u_row3    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_5
+satd_inst_10/hadamard_inst/u_row3/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_5_DW01_add_3_DW01_add_37
+satd_inst_10/hadamard_inst/u_row3/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_5_DW01_add_2_DW01_add_36
+satd_inst_10/hadamard_inst/u_row3/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_5_DW01_add_1_DW01_add_35
+satd_inst_10/hadamard_inst/u_row3/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_5_DW01_add_0_DW01_add_34
+satd_inst_10/hadamard_inst/u_row3/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_5_DW01_sub_3_DW01_sub_140
+satd_inst_10/hadamard_inst/u_row3/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_5_DW01_sub_2_DW01_sub_139
+satd_inst_10/hadamard_inst/u_row3/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_5_DW01_sub_1_DW01_sub_138
+satd_inst_10/hadamard_inst/u_row3/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_5_DW01_sub_0_DW01_sub_137
+satd_inst_11                        85941.3746      3.1   20636.1790   14308.4593        0.0000  SATD_calculation_1
+satd_inst_11/add_0_root_add_0_root_add_1196_15
+                                      931.1904      0.0     931.1904       0.0000        0.0000  SATD_calculation_1_DW01_add_0_DW01_add_165
+satd_inst_11/add_1_root_add_0_root_add_1196_15
+                                      871.8192      0.0     871.8192       0.0000        0.0000  SATD_calculation_1_DW01_add_1_DW01_add_166
+satd_inst_11/add_2_root_add_0_root_add_1196_15
+                                      871.8192      0.0     871.8192       0.0000        0.0000  SATD_calculation_1_DW01_add_2_DW01_add_167
+satd_inst_11/add_3_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_1_DW01_add_5_DW01_add_170
+satd_inst_11/add_4_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_1_DW01_add_6_DW01_add_171
+satd_inst_11/add_5_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_1_DW01_add_3_DW01_add_168
+satd_inst_11/add_6_root_add_0_root_add_1196_15
+                                      812.4480      0.0     812.4480       0.0000        0.0000  SATD_calculation_1_DW01_add_8_DW01_add_173
+satd_inst_11/hadamard_inst          45072.1154      1.6       0.0000       0.0000        0.0000  Hadamard_WIDTH10_1
+satd_inst_11/hadamard_inst/u_col0    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_4
+satd_inst_11/hadamard_inst/u_col0/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_4_DW01_add_3_DW01_add_33
+satd_inst_11/hadamard_inst/u_col0/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_4_DW01_add_2_DW01_add_32
+satd_inst_11/hadamard_inst/u_col0/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_4_DW01_add_1_DW01_add_31
+satd_inst_11/hadamard_inst/u_col0/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_4_DW01_add_0_DW01_add_30
+satd_inst_11/hadamard_inst/u_col0/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_4_DW01_sub_3_DW01_sub_120
+satd_inst_11/hadamard_inst/u_col0/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_4_DW01_sub_2_DW01_sub_119
+satd_inst_11/hadamard_inst/u_col0/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_4_DW01_sub_1_DW01_sub_118
+satd_inst_11/hadamard_inst/u_col0/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_4_DW01_sub_0_DW01_sub_117
+satd_inst_11/hadamard_inst/u_col1    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_3
+satd_inst_11/hadamard_inst/u_col1/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_3_DW01_add_3_DW01_add_29
+satd_inst_11/hadamard_inst/u_col1/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_3_DW01_add_2_DW01_add_28
+satd_inst_11/hadamard_inst/u_col1/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_3_DW01_add_1_DW01_add_27
+satd_inst_11/hadamard_inst/u_col1/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_3_DW01_add_0_DW01_add_26
+satd_inst_11/hadamard_inst/u_col1/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_3_DW01_sub_3_DW01_sub_116
+satd_inst_11/hadamard_inst/u_col1/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_3_DW01_sub_2_DW01_sub_115
+satd_inst_11/hadamard_inst/u_col1/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_3_DW01_sub_1_DW01_sub_114
+satd_inst_11/hadamard_inst/u_col1/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_3_DW01_sub_0_DW01_sub_113
+satd_inst_11/hadamard_inst/u_col2    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_2
+satd_inst_11/hadamard_inst/u_col2/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_2_DW01_add_3_DW01_add_25
+satd_inst_11/hadamard_inst/u_col2/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_2_DW01_add_2_DW01_add_24
+satd_inst_11/hadamard_inst/u_col2/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_2_DW01_add_1_DW01_add_23
+satd_inst_11/hadamard_inst/u_col2/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_2_DW01_add_0_DW01_add_22
+satd_inst_11/hadamard_inst/u_col2/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_2_DW01_sub_3_DW01_sub_112
+satd_inst_11/hadamard_inst/u_col2/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_2_DW01_sub_2_DW01_sub_111
+satd_inst_11/hadamard_inst/u_col2/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_2_DW01_sub_1_DW01_sub_110
+satd_inst_11/hadamard_inst/u_col2/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_2_DW01_sub_0_DW01_sub_109
+satd_inst_11/hadamard_inst/u_col3    5134.0464      0.2      59.3712       0.0000        0.0000  addsub_BW10_1
+satd_inst_11/hadamard_inst/u_col3/add_1291
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_1_DW01_add_3_DW01_add_21
+satd_inst_11/hadamard_inst/u_col3/add_1293
+                                      571.8384      0.0     571.8384       0.0000        0.0000  addsub_BW10_1_DW01_add_2_DW01_add_20
+satd_inst_11/hadamard_inst/u_col3/add_1296
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_1_DW01_add_1_DW01_add_19
+satd_inst_11/hadamard_inst/u_col3/add_1299
+                                      631.2096      0.0     631.2096       0.0000        0.0000  addsub_BW10_1_DW01_add_0_DW01_add_18
+satd_inst_11/hadamard_inst/u_col3/sub_1292
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_1_DW01_sub_3_DW01_sub_108
+satd_inst_11/hadamard_inst/u_col3/sub_1294
+                                      637.4592      0.0     637.4592       0.0000        0.0000  addsub_BW10_1_DW01_sub_2_DW01_sub_107
+satd_inst_11/hadamard_inst/u_col3/sub_1297
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_1_DW01_sub_1_DW01_sub_106
+satd_inst_11/hadamard_inst/u_col3/sub_1298
+                                      696.8304      0.0     696.8304       0.0000        0.0000  addsub_BW10_1_DW01_sub_0_DW01_sub_105
+satd_inst_11/hadamard_inst/u_row0    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_4
+satd_inst_11/hadamard_inst/u_row0/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_4_DW01_add_3_DW01_add_17
+satd_inst_11/hadamard_inst/u_row0/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_4_DW01_add_2_DW01_add_16
+satd_inst_11/hadamard_inst/u_row0/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_4_DW01_add_1_DW01_add_15
+satd_inst_11/hadamard_inst/u_row0/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_4_DW01_add_0_DW01_add_14
+satd_inst_11/hadamard_inst/u_row0/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_4_DW01_sub_3_DW01_sub_104
+satd_inst_11/hadamard_inst/u_row0/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_4_DW01_sub_2_DW01_sub_103
+satd_inst_11/hadamard_inst/u_row0/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_4_DW01_sub_1_DW01_sub_102
+satd_inst_11/hadamard_inst/u_row0/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_4_DW01_sub_0_DW01_sub_101
+satd_inst_11/hadamard_inst/u_row1    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_3
+satd_inst_11/hadamard_inst/u_row1/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_3_DW01_add_3_DW01_add_13
+satd_inst_11/hadamard_inst/u_row1/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_3_DW01_add_2_DW01_add_12
+satd_inst_11/hadamard_inst/u_row1/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_3_DW01_add_1_DW01_add_11
+satd_inst_11/hadamard_inst/u_row1/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_3_DW01_add_0_DW01_add_10
+satd_inst_11/hadamard_inst/u_row1/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_3_DW01_sub_3_DW01_sub_100
+satd_inst_11/hadamard_inst/u_row1/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_3_DW01_sub_2_DW01_sub_99
+satd_inst_11/hadamard_inst/u_row1/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_3_DW01_sub_1_DW01_sub_98
+satd_inst_11/hadamard_inst/u_row1/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_3_DW01_sub_0_DW01_sub_97
+satd_inst_11/hadamard_inst/u_row2    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_2
+satd_inst_11/hadamard_inst/u_row2/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_2_DW01_add_3_DW01_add_9
+satd_inst_11/hadamard_inst/u_row2/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_2_DW01_add_2_DW01_add_8
+satd_inst_11/hadamard_inst/u_row2/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_2_DW01_add_1_DW01_add_7
+satd_inst_11/hadamard_inst/u_row2/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_2_DW01_add_0_DW01_add_6
+satd_inst_11/hadamard_inst/u_row2/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_2_DW01_sub_3_DW01_sub_96
+satd_inst_11/hadamard_inst/u_row2/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_2_DW01_sub_2_DW01_sub_95
+satd_inst_11/hadamard_inst/u_row2/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_2_DW01_sub_1_DW01_sub_94
+satd_inst_11/hadamard_inst/u_row2/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_2_DW01_sub_0_DW01_sub_93
+satd_inst_11/hadamard_inst/u_row3    6133.9824      0.2      59.3712       0.0000        0.0000  addsub_BW12_1
+satd_inst_11/hadamard_inst/u_row3/add_1291
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_1_DW01_add_3_DW01_add_5
+satd_inst_11/hadamard_inst/u_row3/add_1293
+                                      690.5808      0.0     690.5808       0.0000        0.0000  addsub_BW12_1_DW01_add_2_DW01_add_4
+satd_inst_11/hadamard_inst/u_row3/add_1296
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_1_DW01_add_1_DW01_add_3
+satd_inst_11/hadamard_inst/u_row3/add_1299
+                                      749.9520      0.0     749.9520       0.0000        0.0000  addsub_BW12_1_DW01_add_0_DW01_add_2
+satd_inst_11/hadamard_inst/u_row3/sub_1292
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_1_DW01_sub_3_DW01_sub_92
+satd_inst_11/hadamard_inst/u_row3/sub_1294
+                                      768.7008      0.0     768.7008       0.0000        0.0000  addsub_BW12_1_DW01_sub_2_DW01_sub_91
+satd_inst_11/hadamard_inst/u_row3/sub_1297
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_1_DW01_sub_1_DW01_sub_90
+satd_inst_11/hadamard_inst/u_row3/sub_1298
+                                      828.0720      0.0     828.0720       0.0000        0.0000  addsub_BW12_1_DW01_sub_0_DW01_sub_89
+sub_839                               631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_63_DW01_sub_64
+sub_839_I2                            631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_55_DW01_sub_56
+sub_839_I2_I1                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_62_DW01_sub_63
+sub_839_I2_I2                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_54_DW01_sub_55
+sub_839_I2_I3                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_46_DW01_sub_47
+sub_839_I2_I4                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_38_DW01_sub_39
+sub_839_I2_I5                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_30_DW01_sub_31
+sub_839_I2_I6                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_22_DW01_sub_23
+sub_839_I2_I7                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_14_DW01_sub_15
+sub_839_I2_I8                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_6_DW01_sub_7
+sub_839_I3                            631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_47_DW01_sub_48
+sub_839_I3_I1                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_61_DW01_sub_62
+sub_839_I3_I2                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_53_DW01_sub_54
+sub_839_I3_I3                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_45_DW01_sub_46
+sub_839_I3_I4                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_37_DW01_sub_38
+sub_839_I3_I5                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_29_DW01_sub_30
+sub_839_I3_I6                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_21_DW01_sub_22
+sub_839_I3_I7                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_13_DW01_sub_14
+sub_839_I3_I8                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_5_DW01_sub_6
+sub_839_I4                            631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_39_DW01_sub_40
+sub_839_I4_I1                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_60_DW01_sub_61
+sub_839_I4_I2                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_52_DW01_sub_53
+sub_839_I4_I3                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_44_DW01_sub_45
+sub_839_I4_I4                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_36_DW01_sub_37
+sub_839_I4_I5                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_28_DW01_sub_29
+sub_839_I4_I6                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_20_DW01_sub_21
+sub_839_I4_I7                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_12_DW01_sub_13
+sub_839_I4_I8                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_4_DW01_sub_5
+sub_839_I5                            631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_31_DW01_sub_32
+sub_839_I5_I1                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_59_DW01_sub_60
+sub_839_I5_I2                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_51_DW01_sub_52
+sub_839_I5_I3                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_43_DW01_sub_44
+sub_839_I5_I4                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_35_DW01_sub_36
+sub_839_I5_I5                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_27_DW01_sub_28
+sub_839_I5_I6                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_19_DW01_sub_20
+sub_839_I5_I7                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_11_DW01_sub_12
+sub_839_I5_I8                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_3_DW01_sub_4
+sub_839_I6                            631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_23_DW01_sub_24
+sub_839_I6_I1                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_58_DW01_sub_59
+sub_839_I6_I2                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_50_DW01_sub_51
+sub_839_I6_I3                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_42_DW01_sub_43
+sub_839_I6_I4                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_34_DW01_sub_35
+sub_839_I6_I5                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_26_DW01_sub_27
+sub_839_I6_I6                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_18_DW01_sub_19
+sub_839_I6_I7                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_10_DW01_sub_11
+sub_839_I6_I8                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_2_DW01_sub_3
+sub_839_I7                            631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_15_DW01_sub_16
+sub_839_I7_I1                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_57_DW01_sub_58
+sub_839_I7_I2                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_49_DW01_sub_50
+sub_839_I7_I3                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_41_DW01_sub_42
+sub_839_I7_I4                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_33_DW01_sub_34
+sub_839_I7_I5                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_25_DW01_sub_26
+sub_839_I7_I6                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_17_DW01_sub_18
+sub_839_I7_I7                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_9_DW01_sub_10
+sub_839_I7_I8                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_1_DW01_sub_2
+sub_839_I8                            631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_7_DW01_sub_8
+sub_839_I8_I1                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_56_DW01_sub_57
+sub_839_I8_I2                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_48_DW01_sub_49
+sub_839_I8_I3                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_40_DW01_sub_41
+sub_839_I8_I4                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_32_DW01_sub_33
+sub_839_I8_I5                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_24_DW01_sub_25
+sub_839_I8_I6                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_16_DW01_sub_17
+sub_839_I8_I7                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_8_DW01_sub_9
+sub_839_I8_I8                         631.2096      0.0     631.2096       0.0000        0.0000  MVDM_DW01_sub_0_DW01_sub_1
+--------------------------------  ------------  -------  -----------  -----------  ------------  ------------------------------------------------
+Total                                                    754526.7085  261892.6152  1721047.2500
+
+1

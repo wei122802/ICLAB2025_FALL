@@ -1,0 +1,82 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : NTT_TOP
+Version: P-2019.03-SP5-1
+Date   : Sun Nov  2 15:00:42 2025
+****************************************
+
+
+  Startpoint: u_NTT_GMb_stage6_reg_5_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_NTT_x_output_stage6_pipe_reg_10_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_NTT_GMb_stage6_reg_5_/CK (QDFFRBP)                    0.00       0.00 r
+  u_NTT_GMb_stage6_reg_5_/Q (QDFFRBP)                     0.52 *     0.52 r
+  U12406/O (BUF12CK)                                      0.27 *     0.78 r
+  U1925/O (INV4)                                          0.07 *     0.85 f
+  U8195/O (BUF3)                                          0.28 *     1.13 f
+  U3403/O (INV2)                                          0.21 *     1.34 r
+  U9216/O (MOAI1H)                                        0.28 *     1.62 r
+  U9215/O (MAO222P)                                       0.31 *     1.92 r
+  U8928/O (INV2)                                          0.06 *     1.99 f
+  U11044/C (HA1P)                                         0.21 *     2.20 f
+  U1691/S (HA1)                                           0.41 *     2.61 f
+  U12461/O (ND2P)                                         0.27 *     2.88 r
+  U9553/O (OAI12HT)                                       0.17 *     3.05 f
+  U9554/O (AO12T)                                         0.33 *     3.38 f
+  U8915/O (XNR2HT)                                        0.19 *     3.57 f
+  U12579/S (HA1)                                          0.42 *     3.99 f
+  U4131/O (AN2T)                                          0.29 *     4.28 f
+  U2397/O (AOI12HP)                                       0.26 *     4.53 r
+  U3201/O (OAI12HP)                                       0.12 *     4.65 f
+  U3914/O (AOI12HT)                                       0.27 *     4.92 r
+  U3913/O (XOR2HP)                                        0.19 *     5.11 r
+  U12608/S (FA1)                                          0.40 *     5.51 f
+  U9192/O (XOR2H)                                         0.22 *     5.73 f
+  U9191/O (AN2T)                                          0.26 *     6.00 f
+  U9232/O (NR2F)                                          0.16 *     6.16 r
+  U4309/O (ND2T)                                          0.10 *     6.25 f
+  U8691/O (OAI12HP)                                       0.22 *     6.47 r
+  U9112/O (AOI12HT)                                       0.13 *     6.60 f
+  U12640/O (XNR2HT)                                       0.29 *     6.88 f
+  U12655/O (OAI12HT)                                      0.26 *     7.14 r
+  U12656/O (XNR2HT)                                       0.21 *     7.36 r
+  U12702/O (OR2T)                                         0.26 *     7.62 r
+  U12720/O (ND2)                                          0.16 *     7.78 f
+  U972/O (XNR2HS)                                         0.42 *     8.20 r
+  U10708/O (NR2T)                                         0.28 *     8.48 f
+  U10707/O (ND3HT)                                        0.30 *     8.78 r
+  U10736/O (NR3HT)                                        0.19 *     8.97 f
+  U12724/O (ND2F)                                         0.22 *     9.20 r
+  U3924/O (OR2T)                                          0.20 *     9.40 r
+  U799/O (XOR2HS)                                         0.14 *     9.54 r
+  U17520/O (MUX2)                                         0.30 *     9.84 r
+  u_NTT_x_output_stage6_pipe_reg_10_/D (QDFFRBT)          0.00 *     9.84 r
+  data arrival time                                                  9.84
+
+  clock clk2 (rise edge)                                 10.10      10.10
+  clock network delay (ideal)                             0.00      10.10
+  clock reconvergence pessimism                           0.00      10.10
+  clock uncertainty                                      -0.10      10.00
+  u_NTT_x_output_stage6_pipe_reg_10_/CK (QDFFRBT)                   10.00 r
+  library setup time                                     -0.16 *     9.84
+  data required time                                                 9.84
+  ------------------------------------------------------------------------------
+  data required time                                                 9.84
+  data arrival time                                                 -9.84
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

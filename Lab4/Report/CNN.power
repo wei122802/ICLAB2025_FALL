@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CNN
+Version: T-2022.03
+Date   : Mon Oct  6 10:55:04 2025
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/umc018/Synthesis/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  33.1607 mW   (98%)
+  Net Switching Power  = 828.3277 uW    (2%)
+                         ---------
+Total Dynamic Power    =  33.9890 mW  (100%)
+
+Cell Leakage Power     = 254.0092 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     32.3594            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.1010        2.7438e-02        6.0099e+07           32.5480  (  95.06%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.6982            0.8008        1.9391e+08            1.6930  (   4.94%)
+--------------------------------------------------------------------------------------------------
+Total             33.1585 mW         0.8283 mW     2.5401e+08 pW        34.2410 mW
+1

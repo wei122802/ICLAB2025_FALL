@@ -1,0 +1,24 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Mon Sep 22 02:53:39 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+
+Nets                                                                6
+    Unloaded nets (LINT-2)                                          6
+--------------------------------------------------------------------------------
+
+Warning: In design 'SUDOKU', cell 'B_3191' does not drive any nets. (LINT-1)
+Warning: In design 'SUDOKU', net 'net24795' driven by pin 'div_95/QUOTIENT_4' has no loads. (LINT-2)
+Warning: In design 'SUDOKU', net 'net24794' driven by pin 'div_95/QUOTIENT_5' has no loads. (LINT-2)
+Warning: In design 'SUDOKU', net 'net24793' driven by pin 'div_95/QUOTIENT_6' has no loads. (LINT-2)
+Warning: In design 'SUDOKU', net 'net24792' driven by pin 'C1374929/Z' has no loads. (LINT-2)
+Warning: In design 'SUDOKU', net 'net24791' driven by pin 'C1144321/Z' has no loads. (LINT-2)
+Warning: In design 'SUDOKU', net 'net24790' driven by pin 'C1144315/Z' has no loads. (LINT-2)
+1

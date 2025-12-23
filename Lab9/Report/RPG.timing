@@ -1,0 +1,150 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : RPG
+Version: T-2022.03
+Date   : Sun Nov 23 17:22:57 2025
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: A_reg[1][9]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: delta_reg[0][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RPG                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  A_reg[1][9]/CK (QDFFRBS)                 0.00       0.00 r
+  A_reg[1][9]/Q (QDFFRBS)                  0.42       0.42 r
+  U5457/O (INV1S)                          0.17       0.58 f
+  U3790/O (NR2)                            0.40       0.98 r
+  U2676/O (OAI12HS)                        0.21       1.18 f
+  U3993/O (AOI12HS)                        0.33       1.51 r
+  U3594/O (OAI12HS)                        0.17       1.68 f
+  U4734/O (AOI12H)                         0.25       1.94 r
+  U4733/O (OAI12H)                         0.13       2.07 f
+  U4732/O (AOI12HS)                        0.23       2.30 r
+  U7015/O (XOR2HS)                         0.21       2.51 r
+  U3593/O (AOI22H)                         0.11       2.62 f
+  U3502/O (OR2T)                           0.24       2.85 f
+  U3500/OB (MXL2HS)                        0.17       3.02 r
+  delta_reg[0][15]/D (QDFFRBN)             0.00       3.02 r
+  data arrival time                                   3.02
+
+  clock clk (rise edge)                    3.30       3.30
+  clock network delay (ideal)              0.00       3.30
+  clock uncertainty                       -0.10       3.20
+  delta_reg[0][15]/CK (QDFFRBN)            0.00       3.20 r
+  library setup time                      -0.18       3.02
+  data required time                                  3.02
+  -----------------------------------------------------------
+  data required time                                  3.02
+  data arrival time                                  -3.02
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: player_data_reg[HP][12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: exp_new_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RPG                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  player_data_reg[HP][12]/CK (QDFFRBT)                    0.00       0.00 r
+  player_data_reg[HP][12]/Q (QDFFRBT)                     0.58       0.58 r
+  U4909/O (NR2T)                                          0.20       0.79 f
+  U2871/O (INV2)                                          0.13       0.91 r
+  U4752/O (ND2)                                           0.22       1.14 f
+  U2705/O (OR2P)                                          0.29       1.43 f
+  U3176/O (INV2)                                          0.07       1.50 r
+  U3175/O (ND2S)                                          0.13       1.63 f
+  U4856/O (OAI22H)                                        0.28       1.91 r
+  U3173/O (OAI12HP)                                       0.11       2.02 f
+  U3710/O (NR3HP)                                         0.29       2.31 r
+  U3709/O (NR2T)                                          0.13       2.44 f
+  U2799/O (ND2P)                                          0.23       2.67 r
+  U4223/O (MOAI1S)                                        0.32       2.99 r
+  exp_new_reg[5]/D (QDFFRBS)                              0.00       2.99 r
+  data arrival time                                                  2.99
+
+  clock clk (rise edge)                                   3.30       3.30
+  clock network delay (ideal)                             0.00       3.30
+  clock uncertainty                                      -0.10       3.20
+  exp_new_reg[5]/CK (QDFFRBS)                             0.00       3.20 r
+  library setup time                                     -0.21       2.99
+  data required time                                                 2.99
+  --------------------------------------------------------------------------
+  data required time                                                 2.99
+  data arrival time                                                 -2.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: player_data_reg[HP][12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: exp_new_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RPG                enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  player_data_reg[HP][12]/CK (QDFFRBT)                    0.00       0.00 r
+  player_data_reg[HP][12]/Q (QDFFRBT)                     0.58       0.58 r
+  U4909/O (NR2T)                                          0.20       0.79 f
+  U2871/O (INV2)                                          0.13       0.91 r
+  U4752/O (ND2)                                           0.22       1.14 f
+  U2705/O (OR2P)                                          0.29       1.43 f
+  U3176/O (INV2)                                          0.07       1.50 r
+  U3175/O (ND2S)                                          0.13       1.63 f
+  U4856/O (OAI22H)                                        0.28       1.91 r
+  U3173/O (OAI12HP)                                       0.11       2.02 f
+  U3710/O (NR3HP)                                         0.29       2.31 r
+  U3709/O (NR2T)                                          0.13       2.44 f
+  U2799/O (ND2P)                                          0.23       2.67 r
+  U4224/O (MOAI1S)                                        0.32       2.99 r
+  exp_new_reg[6]/D (QDFFRBS)                              0.00       2.99 r
+  data arrival time                                                  2.99
+
+  clock clk (rise edge)                                   3.30       3.30
+  clock network delay (ideal)                             0.00       3.30
+  clock uncertainty                                      -0.10       3.20
+  exp_new_reg[6]/CK (QDFFRBS)                             0.00       3.20 r
+  library setup time                                     -0.21       2.99
+  data required time                                                 2.99
+  --------------------------------------------------------------------------
+  data required time                                                 2.99
+  data arrival time                                                 -2.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,150 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Mon Sep 15 00:13:42 2025
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              62
+    Cells do not drive (LINT-1)                                    12
+    Connected to power or ground (LINT-32)                         47
+    Nets connected to multiple pins on same cell (LINT-33)          3
+
+Nets                                                               19
+    Unloaded nets (LINT-2)                                         19
+--------------------------------------------------------------------------------
+
+Warning: In design 'MPCA', cell 'B_138' does not drive any nets. (LINT-1)
+Warning: In design 'MPCA', cell 'B_139' does not drive any nets. (LINT-1)
+Warning: In design 'MPCA', cell 'B_141' does not drive any nets. (LINT-1)
+Warning: In design 'MPCA', cell 'B_142' does not drive any nets. (LINT-1)
+Warning: In design 'MPCA', cell 'B_144' does not drive any nets. (LINT-1)
+Warning: In design 'Packet_allocator', cell 'C414' does not drive any nets. (LINT-1)
+Warning: In design 'Packet_allocator', cell 'C450' does not drive any nets. (LINT-1)
+Warning: In design 'Packet_allocator', cell 'C451' does not drive any nets. (LINT-1)
+Warning: In design 'Packet_allocator', cell 'C456' does not drive any nets. (LINT-1)
+Warning: In design 'Packet_allocator', cell 'C457' does not drive any nets. (LINT-1)
+Warning: In design 'Packet_allocator', cell 'C462' does not drive any nets. (LINT-1)
+Warning: In design 'Packet_allocator', cell 'C463' does not drive any nets. (LINT-1)
+Warning: In design 'MPCA', net 'o_pack[5][0]' driven by pin 'D54/y0[0]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'o_pack[4][0]' driven by pin 'D54/x0[0]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'o_pack[3][0]' driven by pin 'D32/y0[0]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'o_pack[2][0]' driven by pin 'D32/x0[0]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'o_pack[1][0]' driven by pin 'D10/y0[0]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'o_pack[0][0]' driven by pin 'D10/x0[0]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'pivot_init[8]' driven by pin 'alloc7/pivot_init_next' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'pivot_state[8][0]' driven by pin 'alloc7/next_pivot[0]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'pivot_state[8][1]' driven by pin 'alloc7/next_pivot[1]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'packet_before_sorting[7][6]' driven by pin 'packetsort/out8[6]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'packet_before_sorting[6][6]' driven by pin 'packetsort/out7[6]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'packet_before_sorting[5][6]' driven by pin 'packetsort/out6[6]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'packet_before_sorting[4][6]' driven by pin 'packetsort/out5[6]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'packet_before_sorting[3][6]' driven by pin 'packetsort/out4[6]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'packet_before_sorting[2][6]' driven by pin 'packetsort/out3[6]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'packet_before_sorting[1][6]' driven by pin 'packetsort/out2[6]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'packet_before_sorting[0][6]' driven by pin 'packetsort/out1[6]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'o_pack[7][0]' driven by pin 'D76/y0[0]' has no loads. (LINT-2)
+Warning: In design 'MPCA', net 'o_pack[6][0]' driven by pin 'D76/x0[0]' has no loads. (LINT-2)
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in1[5]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in1[4]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in1[3]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in2[5]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in2[4]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in2[3]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in3[5]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in3[4]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in3[3]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in4[5]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in4[4]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in4[3]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in5[5]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in5[4]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in5[3]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in6[5]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in6[4]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in6[3]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in7[5]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in7[4]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in7[3]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in8[5]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in8[4]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'packetsort' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'in8[3]' is connected to logic 1. 
+Warning: In design 'MPCA', a pin on submodule 'maskpack0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'priority_score[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'maskpack1' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'priority_score[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'maskpack2' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'priority_score[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'maskpack3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'priority_score[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'maskpack4' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'priority_score[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'maskpack5' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'priority_score[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'maskpack6' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'priority_score[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'maskpack7' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'priority_score[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ch0_used[2]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ch0_used[1]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ch0_used[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ch1_used[2]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ch1_used[1]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ch1_used[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ch2_used[2]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ch2_used[1]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'ch2_used[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'capacity_full[2]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'capacity_full[1]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'capacity_full[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'current_pivot[1]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'current_pivot[0]' is connected to logic 0. 
+Warning: In design 'MPCA', a pin on submodule 'alloc0' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'pivot_initialized' is connected to logic 0. 
+Warning: In design 'MPCA', the same net is connected to more than one pin on submodule 'packetsort'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'in1[5]', 'in1[4]'', 'in1[3]', 'in2[5]', 'in2[4]', 'in3[5]', 'in3[3]', 'in4[5]', 'in5[4]', 'in5[3]', 'in6[4]', 'in7[3]'.
+Warning: In design 'MPCA', the same net is connected to more than one pin on submodule 'packetsort'. (LINT-33)
+   Net '*Logic1*' is connected to pins 'in2[3]', 'in3[4]'', 'in4[4]', 'in4[3]', 'in5[5]', 'in6[5]', 'in6[3]', 'in7[5]', 'in7[4]', 'in8[5]', 'in8[4]', 'in8[3]'.
+Warning: In design 'MPCA', the same net is connected to more than one pin on submodule 'alloc0'. (LINT-33)
+   Net '*Logic0*' is connected to pins 'ch0_used[2]', 'ch0_used[1]'', 'ch0_used[0]', 'ch1_used[2]', 'ch1_used[1]', 'ch1_used[0]', 'ch2_used[2]', 'ch2_used[1]', 'ch2_used[0]', 'capacity_full[2]', 'capacity_full[1]', 'capacity_full[0]', 'current_pivot[1]', 'current_pivot[0]', 'pivot_initialized'.
+1

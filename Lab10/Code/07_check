@@ -1,0 +1,39 @@
+echo -e "*************************************"
+echo -e "* Wei Checker and Pattern Testing *"
+echo -e "*************************************"
+MAIN=(8 5 1 6 6 1 1 6 1)
+./09_clean_up > check.log
+for((i=1; i<=9; i++))
+do
+    for((j=1; j<=${MAIN[$i-1]}; j++))
+    do
+        ./01_run SPEC_$i\_$j > check.log
+        if  grep -i -q "Assertion $i is violated" 'irun.log'; then
+                echo -e "\033[32m--- SPEC-$i-$j check Pass ---\033[0m"
+        else
+                echo -e "\033[31m--- SPEC-$i-$j check Fail ---\033[0m"
+                exit 0
+        fi
+    done
+    echo -e "\033[42m--- CHECK check SPEC-$i Pass ---\033[0m"
+done
+
+./00_run_cov > check.log
+if  grep -i -q "Congratulations" 'irun.log'; then
+        echo -e "\033[32m--- CORRECT PATTERN check Pass ---\033[0m"
+else
+        echo -e "\033[31m--- CORRECT PATTERN check Fail ---\033[0m"
+        exit 0
+fi
+
+for((i=1; i<=7; i++))
+do
+        ./00_run_cov FAIL_$i > check.log
+        if  grep -i -q "Wrong Answer" 'irun.log'; then
+                echo -e "\033[32m--- FAIL_$i check Pass ---\033[0m"
+        else
+                echo -e "\033[31m--- FAIL_$i check Fail ---\033[0m"
+                exit 0
+        fi
+done
+echo -e "\033[42m--- PATTERN PASS !!! ---\033[0m"

@@ -1,0 +1,7 @@
+setPlaceMode -prerouteAsObs {2 3}
+fit
+setMultiCpuUsage -localCpu 8 -cpuPerRemoteHost 1 -remoteHost 0 -keepLicense true
+setDistributeHost -local
+setPlaceMode -fp false
+place_design -noPrePlaceOpt
+setDrawView place

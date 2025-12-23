@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : SUDOKU
+Version: T-2022.03
+Date   : Mon Sep 22 02:56:51 2025
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/umc018/Synthesis/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   5.3597 mW   (95%)
+  Net Switching Power  = 287.8664 uW    (5%)
+                         ---------
+Total Dynamic Power    =   5.6476 mW  (100%)
+
+Cell Leakage Power     =  12.1132 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      5.0454            0.0000            0.0000            0.0000  (   0.00%)  i
+register           0.1648        1.0027e-02        1.9927e+06            5.2222  (  92.27%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1495            0.2778        1.0121e+07            0.4375  (   7.73%)
+--------------------------------------------------------------------------------------------------
+Total              5.3597 mW         0.2879 mW     1.2113e+07 pW         5.6597 mW
+1

@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : MVDM
+Version: T-2022.03
+Date   : Sat Dec 20 16:58:44 2025
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+    SRAM_1024_128_WC (File: /RAID2/COURSE/2025_Fall/iclab/iclab103/Final_Project/04_MEM/SRAM_1024_128_WC.db)
+
+Number of ports:                           15
+Number of nets:                         37796
+Number of cells:                        31749
+Number of combinational cells:          26655
+Number of sequential cells:              5092
+Number of macros/black boxes:               2
+Number of buf/inv:                       4539
+Number of references:                     118
+
+Combinational area:             677403.522012
+Buf/Inv area:                    30244.938900
+Noncombinational area:          273210.643665
+Macro/Black Box area:          1721047.250000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:               2671661.415678
+Total area:                 undefined
+1

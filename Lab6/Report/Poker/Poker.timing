@@ -1,0 +1,266 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : Poker
+Version: T-2022.03
+Date   : Sat Oct 18 15:11:18 2025
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: IN_PUB_CARD_NUM[7]
+              (input port)
+  Endpoint: OUT_WINNER[2]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Poker              enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  IN_PUB_CARD_NUM[7] (in)                  0.00       0.00 f
+  U1741/O (INV2)                           0.10       0.10 r
+  U5918/O (ND2P)                           0.15       0.25 f
+  U5616/O (NR2T)                           0.79       1.04 r
+  U8459/S (FA1S)                           0.59       1.63 f
+  U8461/CO (FA1S)                          0.54       2.17 f
+  U8462/S (FA1S)                           0.88       3.04 r
+  U364/O (NR2)                             0.47       3.51 f
+  U5724/O (INV1S)                          0.63       4.14 r
+  U608/O (ND2S)                            0.32       4.46 f
+  U8581/O (NR2)                            0.34       4.80 r
+  U8585/O (AN3B2S)                         0.51       5.31 r
+  U8586/O (AOI13HS)                        0.14       5.45 f
+  U1582/O (ND3)                            0.37       5.82 r
+  U1528/O (OR3S)                           0.40       6.22 r
+  U8589/O (NR2)                            0.16       6.38 f
+  U8591/O (AOI13HS)                        0.30       6.67 r
+  U1453/O (ND3)                            0.31       6.98 f
+  U1425/O (ND3S)                           0.26       7.24 r
+  U8592/O (NR3)                            0.39       7.63 f
+  U4986/O (NR2)                            0.75       8.38 r
+  U454/O (ND2)                             1.35       9.73 f
+  U4768/O (NR2)                            0.59      10.32 r
+  U4822/O (AN2B1S)                         0.65      10.96 r
+  U4414/O (ND2)                            0.28      11.25 f
+  U1234/O (NR2P)                           0.45      11.70 r
+  U5723/O (INV1S)                          0.36      12.06 f
+  U5342/O (NR2P)                           1.02      13.08 r
+  U8941/O (AOI22S)                         0.17      13.26 f
+  U5402/O (ND3)                            1.16      14.42 r
+  U14882/O (INV1S)                         1.65      16.07 f
+  U15033/O (OR2)                           0.46      16.53 f
+  U15034/O (MAO222)                        0.33      16.86 f
+  U15035/O (NR2)                           0.17      17.03 r
+  U15036/O (MOAI1S)                        0.30      17.32 f
+  U15037/O (OAI12HS)                       0.33      17.65 r
+  U5759/O (MOAI1S)                         0.38      18.03 r
+  U1846/O (NR2)                            0.12      18.15 f
+  U15038/O (MOAI1S)                        0.38      18.53 r
+  U15039/O (ND2S)                          0.15      18.68 f
+  U15040/O (AN4B1S)                        0.20      18.88 r
+  U15045/O (OA222)                         0.52      19.40 r
+  U15046/O (OR2)                           0.22      19.62 r
+  U851/O (ND2)                             0.18      19.79 f
+  U15047/O (AN4B1P)                        0.21      20.00 r
+  OUT_WINNER[2] (out)                      0.00      20.00 r
+  data arrival time                                  20.00
+
+  max_delay                               20.00      20.00
+  output external delay                    0.00      20.00
+  data required time                                 20.00
+  -----------------------------------------------------------
+  data required time                                 20.00
+  data arrival time                                 -20.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: IN_PUB_CARD_SUIT[2]
+              (input port)
+  Endpoint: OUT_WINNER[1]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Poker              enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  IN_PUB_CARD_SUIT[2] (in)                 0.00       0.00 r
+  U5371/O (INV2)                           0.06       0.06 f
+  U353/O (NR2T)                            0.43       0.48 r
+  U9422/S (FA1S)                           0.59       1.08 f
+  U9424/CO (FA1S)                          0.56       1.63 f
+  U9426/O (OR2)                            0.26       1.89 f
+  U9427/O (ND3S)                           0.15       2.04 r
+  U9428/O (MOAI1)                          0.28       2.32 r
+  U9429/O (ND2)                            0.87       3.19 f
+  U9440/O (MOAI1S)                         0.70       3.89 r
+  U9441/O (NR2P)                           0.62       4.50 f
+  U9442/O (AOI22S)                         0.35       4.86 r
+  U805/O (ND3)                             0.29       5.15 f
+  U585/O (OAI22H)                          0.36       5.51 r
+  U566/O (INV2)                            0.14       5.65 f
+  U560/O (NR2P)                            0.25       5.89 r
+  U9610/O (AN2B1T)                         0.26       6.16 r
+  U9612/O (ND3P)                           0.14       6.30 f
+  U9613/O (NR2T)                           0.21       6.51 r
+  U9615/O (OA12P)                          0.27       6.78 r
+  U5620/O (NR2P)                           0.12       6.90 f
+  U9616/O (ND3P)                           0.27       7.17 r
+  U9707/O (OA12)                           0.32       7.49 r
+  U9708/O (INV1S)                          0.27       7.76 f
+  U9710/O (AN4B1P)                         0.44       8.20 f
+  U9716/O (OR3B2S)                         0.27       8.47 r
+  U9718/O (MOAI1)                          0.14       8.61 f
+  U715/O (AN2B1S)                          0.30       8.90 r
+  U9820/O (ND3P)                           0.20       9.11 f
+  U9821/O (INV2)                           0.18       9.29 r
+  U9822/O (ND2P)                           0.10       9.39 f
+  U2214/O (INV2)                           0.14       9.53 r
+  U1228/O (NR2T)                           0.20       9.73 f
+  U9827/O (NR2P)                           0.18       9.90 r
+  U9831/O (AN3B2T)                         0.43      10.34 r
+  U118/O (INV3)                            0.14      10.48 f
+  U9938/O (OAI22H)                         0.35      10.83 r
+  U2485/O (NR2P)                           0.22      11.05 f
+  U9951/O (ND2P)                           0.17      11.22 r
+  U9953/O (AN2)                            0.30      11.52 r
+  U9954/O (AN3B2T)                         0.37      11.89 f
+  U516/O (ND3)                             0.22      12.11 r
+  U2260/O (OA12)                           0.36      12.47 r
+  U5480/O (ND3P)                           0.20      12.67 f
+  U1788/O (OAI12HS)                        0.37      13.04 r
+  U9973/O (ND2P)                           0.14      13.18 f
+  U9976/O (NR2)                            0.26      13.45 r
+  U9977/O (INV1S)                          0.17      13.62 f
+  U10018/O (OAI12HS)                       1.45      15.06 r
+  U654/O (INV3)                            0.45      15.51 f
+  U14189/O (AN2S)                          0.37      15.88 f
+  U3192/O (MAO222S)                        0.35      16.23 f
+  U14190/O (OA222)                         0.33      16.56 f
+  U14192/O (OR2)                           0.27      16.82 f
+  U14193/O (NR2)                           0.18      17.00 r
+  U14194/O (MOAI1)                         0.11      17.11 f
+  U2513/O (OA112S)                         0.31      17.42 f
+  U357/O (MOAI1S)                          0.38      17.80 r
+  U903/O (MOAI1)                           0.20      17.99 f
+  U14205/O (NR2)                           0.21      18.20 r
+  U14206/O (MOAI1)                         0.11      18.32 f
+  U14207/O (ND2S)                          0.20      18.52 r
+  U14208/O (AN4B1S)                        0.14      18.66 f
+  U14212/O (OA222)                         0.42      19.08 f
+  U14214/O (OR2)                           0.24      19.32 f
+  U616/O (AN4S)                            0.29      19.61 f
+  U842/O (AN4B1)                           0.39      20.00 f
+  OUT_WINNER[1] (out)                      0.00      20.00 f
+  data arrival time                                  20.00
+
+  max_delay                               20.00      20.00
+  output external delay                    0.00      20.00
+  data required time                                 20.00
+  -----------------------------------------------------------
+  data required time                                 20.00
+  data arrival time                                 -20.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: IN_PUB_CARD_NUM[2]
+              (input port)
+  Endpoint: OUT_WINNER[0]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Poker              enG30K                fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 f
+  IN_PUB_CARD_NUM[2] (in)                  0.00       0.00 f
+  U838/O (INV2)                            0.10       0.10 r
+  U832/O (ND2P)                            0.22       0.32 f
+  U5817/O (NR2T)                           0.81       1.13 r
+  U8364/S (FA1S)                           0.59       1.72 f
+  U8365/CO (FA1S)                          0.52       2.24 f
+  U8366/S (FA1S)                           0.63       2.87 f
+  U8367/O (AN2B1S)                         0.36       3.23 f
+  U1687/O (AN2B1S)                         0.39       3.61 f
+  U1633/O (NR2)                            0.32       3.94 r
+  U394/O (ND3S)                            0.27       4.21 f
+  U1592/O (NR3HP)                          0.57       4.78 r
+  U1579/O (INV2)                           0.09       4.87 f
+  U1535/O (AO12S)                          0.35       5.22 f
+  U5687/O (ND2)                            0.22       5.44 r
+  U8522/O (INV2)                           0.12       5.56 f
+  U1461/O (OAI12HS)                        0.25       5.81 r
+  U8523/O (AOI13H)                         0.19       6.00 f
+  U1398/O (ND2)                            0.33       6.33 r
+  U1368/O (INV1)                           0.12       6.45 f
+  U8676/O (AN2)                            0.29       6.74 f
+  U8775/O (NR2)                            0.33       7.07 r
+  U8776/O (INV1S)                          0.25       7.32 f
+  U8777/O (ND2)                            0.23       7.55 r
+  U5722/O (NR3)                            0.64       8.18 f
+  U1291/O (OA12S)                          0.48       8.67 f
+  U8795/O (NR2)                            0.27       8.93 r
+  U8796/O (INV1S)                          0.16       9.09 f
+  U8797/O (AOI13HS)                        0.33       9.42 r
+  U8798/O (ND2)                            0.27       9.69 f
+  U8799/O (INV1S)                          0.33      10.01 r
+  U2209/O (ND2S)                           0.19      10.20 f
+  U9000/O (OAI12HS)                        0.46      10.66 r
+  U9001/O (INV1S)                          0.25      10.91 f
+  U9002/O (NR2)                            0.32      11.23 r
+  U3927/O (ND2S)                           0.12      11.35 f
+  U91/O (MOAI1S)                           1.08      12.42 r
+  U9150/O (NR2)                            0.27      12.69 f
+  U9151/O (AN2B1S)                         0.32      13.01 r
+  U9156/O (ND3)                            0.39      13.41 f
+  U9209/O (AOI22S)                         0.35      13.75 r
+  U5348/O (ND2)                            1.10      14.85 f
+  U66/O (INV2)                             1.01      15.86 r
+  U14650/O (ND2S)                          0.19      16.05 f
+  U14651/O (MAO222)                        0.38      16.43 f
+  U14652/O (NR2)                           0.18      16.61 r
+  U2713/O (MAOI1S)                         0.34      16.95 r
+  U14653/O (MAO222)                        0.31      17.26 r
+  U2711/O (MOAI1S)                         0.17      17.43 f
+  U5755/O (MOAI1S)                         0.53      17.96 r
+  U14658/O (NR2)                           0.14      18.10 f
+  U14659/O (MOAI1)                         0.23      18.33 r
+  U636/O (ND2)                             0.13      18.46 f
+  U873/O (AN4B1S)                          0.19      18.65 r
+  U14665/O (OA222)                         0.52      19.17 r
+  U857/O (OR2)                             0.22      19.38 r
+  U14769/O (AN4)                           0.22      19.60 r
+  U5803/O (AN4B1)                          0.40      20.00 r
+  OUT_WINNER[0] (out)                      0.00      20.00 r
+  data arrival time                                  20.00
+
+  max_delay                               20.00      20.00
+  output external delay                    0.00      20.00
+  data required time                                 20.00
+  -----------------------------------------------------------
+  data required time                                 20.00
+  data arrival time                                 -20.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

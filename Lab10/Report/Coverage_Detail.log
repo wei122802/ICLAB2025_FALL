@@ -1,0 +1,403 @@
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+<> User: iclab103
+
+Host: ee28
+
+Report date: Sun 23 Nov 2025 17:20:28 CST
+
+Report options: -detail -text -metrics covergroup -out ./Report/Coverage_Detail.log -type -covered
+
+Coverage database path: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab10/Exercise/01_RTL/cov_work/scope/test
+
+Coverage model files: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab10/Exercise/01_RTL/cov_work/scope/icc_00000000_675734ea.ucm
+
+Coverage data files: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab10/Exercise/01_RTL/cov_work/scope/test/icc_00000000_675734ea.ucd
+
+CCF files:  None
+
+
+Coverage database date: Sun 23 Nov 2025 17:20:06 CST
+
+*** There were no refinement files applied ***
+
+  <>
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+Coverage Table Legend
+---------------------
+  EXCL   excluded using refinement rule
+  P-EXCL excluded from parent
+  U-EXCL excluded and unreachable by IEV
+  T-EXCL excluded from type
+  S-EXCL smart excluded using refinement rule
+  EXCL(S) smart indirect excluded
+  EMPTY  all children are excluded
+  CONST  marked constant during simulation
+  IGN    marked ignored during simulation
+  UNG    marked ungradeable during simulation
+  DES    marked deselected during simulation
+  UNR    marked unreachable by IEV
+
+
+Covered CoverGroup Detail Report, Type Based
+============================================
+
+Type name: Checker
+File name: /RAID2/COURSE/2025_Fall/iclab/iclab103/Lab10/Exercise/01_RTL/CHECKER.sv
+Number of covered cover bins: 338 of 338
+
+Name                           Average, Covered Grade         Line  Source Code                    
+---------------------------------------------------------------------------------------------------
+SPEC1                          100.00%, 100.00% (4/4)         32    covergroup SPEC1 @(posedge clk iff (inf.type_valid)); 
+|--fm_info_f_type              100.00% (4/4)                  36    coverpoint fm_info.f_type {    
+| |--b_type[Type_A]            100.00% (600/200)              37    bins b_type[] = {[Type_A : Type_D]}; 
+| |--b_type[Type_B]            100.00% (600/200)              37    bins b_type[] = {[Type_A : Type_D]}; 
+| |--b_type[Type_C]            100.00% (600/200)              37    bins b_type[] = {[Type_A : Type_D]}; 
+| |--b_type[Type_D]            100.00% (600/200)              37    bins b_type[] = {[Type_A : Type_D]}; 
+SPEC2                          100.00%, 100.00% (3/3)         41    covergroup SPEC2 @(posedge clk iff (inf.mode_valid)); 
+|--fm_info_f_mode              100.00% (3/3)                  45    coverpoint fm_info.f_mode {    
+| |--b_mode[Easy]              100.00% (800/200)              46    bins b_mode[] = {[Easy : Hard]}; 
+| |--b_mode[Normal]            100.00% (800/200)              46    bins b_mode[] = {[Easy : Hard]}; 
+| |--b_mode[Hard]              100.00% (800/200)              46    bins b_mode[] = {[Easy : Hard]}; 
+SPEC3                          100.00%, 100.00% (12/12)       51    covergroup SPEC3 @(posedge clk iff (inf.mode_valid)); 
+|--__fm_info_f_type_X_fm_info_f_mode 100.00% (12/12)                55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_A],auto[Easy]   100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_A],auto[Normal] 100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_A],auto[Hard]   100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_B],auto[Easy]   100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_B],auto[Normal] 100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_B],auto[Hard]   100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_C],auto[Easy]   100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_C],auto[Normal] 100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_C],auto[Hard]   100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_D],auto[Easy]   100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_D],auto[Normal] 100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+| |--auto[Type_D],auto[Hard]   100.00% (200/200)              55    cross fm_info.f_type, fm_info.f_mode; 
+SPEC4                          100.00%, 100.00% (256/256)     59    covergroup SPEC4 @(posedge clk iff (inf.player_no_valid)); 
+|--__coverpoint_0              100.00% (256/256)              63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[0]                   100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[1]                   100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[2]                   100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[3]                   100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[4]                   100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[5]                   100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[6]                   100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[7]                   100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[8]                   100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[9]                   100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[10]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[11]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[12]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[13]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[14]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[15]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[16]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[17]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[18]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[19]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[20]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[21]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[22]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[23]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[24]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[25]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[26]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[27]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[28]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[29]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[30]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[31]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[32]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[33]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[34]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[35]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[36]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[37]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[38]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[39]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[40]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[41]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[42]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[43]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[44]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[45]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[46]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[47]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[48]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[49]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[50]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[51]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[52]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[53]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[54]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[55]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[56]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[57]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[58]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[59]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[60]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[61]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[62]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[63]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[64]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[65]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[66]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[67]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[68]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[69]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[70]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[71]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[72]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[73]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[74]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[75]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[76]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[77]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[78]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[79]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[80]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[81]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[82]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[83]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[84]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[85]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[86]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[87]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[88]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[89]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[90]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[91]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[92]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[93]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[94]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[95]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[96]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[97]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[98]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[99]                  100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[100]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[101]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[102]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[103]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[104]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[105]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[106]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[107]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[108]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[109]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[110]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[111]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[112]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[113]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[114]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[115]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[116]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[117]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[118]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[119]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[120]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[121]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[122]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[123]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[124]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[125]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[126]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[127]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[128]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[129]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[130]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[131]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[132]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[133]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[134]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[135]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[136]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[137]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[138]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[139]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[140]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[141]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[142]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[143]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[144]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[145]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[146]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[147]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[148]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[149]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[150]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[151]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[152]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[153]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[154]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[155]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[156]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[157]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[158]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[159]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[160]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[161]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[162]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[163]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[164]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[165]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[166]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[167]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[168]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[169]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[170]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[171]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[172]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[173]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[174]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[175]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[176]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[177]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[178]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[179]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[180]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[181]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[182]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[183]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[184]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[185]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[186]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[187]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[188]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[189]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[190]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[191]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[192]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[193]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[194]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[195]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[196]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[197]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[198]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[199]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[200]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[201]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[202]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[203]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[204]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[205]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[206]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[207]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[208]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[209]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[210]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[211]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[212]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[213]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[214]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[215]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[216]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[217]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[218]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[219]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[220]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[221]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[222]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[223]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[224]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[225]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[226]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[227]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[228]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[229]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[230]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[231]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[232]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[233]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[234]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[235]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[236]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[237]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[238]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[239]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[240]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[241]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[242]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[243]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[244]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[245]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[246]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[247]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[248]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[249]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[250]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[251]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[252]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[253]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[254]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+| |--auto[255]                 100.00% (25/2)                 63    coverpoint inf.D.d_player_no[0] { 
+SPEC5                          100.00%, 100.00% (25/25)       68    covergroup SPEC5 @(posedge clk iff (inf.sel_action_valid)); 
+|--__coverpoint_0              100.00% (25/25)                72    coverpoint inf.D.d_act[0] {    
+| |--b_act[Login=>Login]       100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Login=>Level_Up]    100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Login=>Battle]      100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Login=>Use_Skill]   100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Login=>Check_Inactive] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Level_Up=>Login]    100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Level_Up=>Level_Up] 100.00% (1599/200)             73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Level_Up=>Battle]   100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Level_Up=>Use_Skill] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Level_Up=>Check_Inactive] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Battle=>Login]      100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Battle=>Level_Up]   100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Battle=>Battle]     100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Battle=>Use_Skill]  100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Battle=>Check_Inactive] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Use_Skill=>Login]   100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Use_Skill=>Level_Up] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Use_Skill=>Battle]  100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Use_Skill=>Use_Skill] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Use_Skill=>Check_Inactive] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Check_Inactive=>Login] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Check_Inactive=>Level_Up] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Check_Inactive=>Battle] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Check_Inactive=>Use_Skill] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+| |--b_act[Check_Inactive=>Check_Inactive] 100.00% (200/200)              73    bins b_act [] = ([Login:Check_Inactive] => [Login:Check_Inactive]); 
+SPEC6                          100.00%, 100.00% (32/32)       77    covergroup SPEC6 @(posedge clk iff (inf.MP_valid)); 
+|--__coverpoint_0              100.00% (32/32)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[0:2047]              100.00% (122/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[2048:4095]           100.00% (125/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[4096:6143]           100.00% (128/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[6144:8191]           100.00% (126/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[8192:10239]          100.00% (125/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[10240:12287]         100.00% (121/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[12288:14335]         100.00% (119/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[14336:16383]         100.00% (130/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[16384:18431]         100.00% (131/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[18432:20479]         100.00% (122/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[20480:22527]         100.00% (122/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[22528:24575]         100.00% (125/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[24576:26623]         100.00% (130/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[26624:28671]         100.00% (127/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[28672:30719]         100.00% (127/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[30720:32767]         100.00% (122/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[32768:34815]         100.00% (120/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[34816:36863]         100.00% (123/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[36864:38911]         100.00% (131/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[38912:40959]         100.00% (131/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[40960:43007]         100.00% (118/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[43008:45055]         100.00% (122/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[45056:47103]         100.00% (124/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[47104:49151]         100.00% (129/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[49152:51199]         100.00% (129/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[51200:53247]         100.00% (124/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[53248:55295]         100.00% (124/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[55296:57343]         100.00% (120/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[57344:59391]         100.00% (126/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[59392:61439]         100.00% (133/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[61440:63487]         100.00% (126/1)                83    coverpoint inf.D.d_attribute[0] { 
+| |--auto[63488:65535]         100.00% (118/1)                83    coverpoint inf.D.d_attribute[0] { 
+SPEC7                          100.00%, 100.00% (6/6)         88    covergroup SPEC7 @(posedge clk iff (inf.out_valid)); 
+|--inf_warn_msg                100.00% (6/6)                  92    coverpoint inf.warn_msg {      
+| |--b_warn_msg[No_Warn]       100.00% (3891/20)              94    bins b_warn_msg [] = {[No_Warn : Saturation_Warn]}; 
+| |--b_warn_msg[Date_Warn]     100.00% (751/20)               94    bins b_warn_msg [] = {[No_Warn : Saturation_Warn]}; 
+| |--b_warn_msg[Exp_Warn]      100.00% (623/20)               94    bins b_warn_msg [] = {[No_Warn : Saturation_Warn]}; 
+| |--b_warn_msg[HP_Warn]       100.00% (105/20)               94    bins b_warn_msg [] = {[No_Warn : Saturation_Warn]}; 
+| |--b_warn_msg[MP_Warn]       100.00% (383/20)               94    bins b_warn_msg [] = {[No_Warn : Saturation_Warn]}; 
+| |--b_warn_msg[Saturation_Warn] 100.00% (646/20)               94    bins b_warn_msg [] = {[No_Warn : Saturation_Warn]}; 
+
