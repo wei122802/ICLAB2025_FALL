@@ -43,7 +43,4 @@
   - 把 *src_hint xor 0x3* 看成 src_hint[1:0]要做反向
   - 因Threshold使用到除法跟加法，一樣可以用LUT去做處理
 - 可以使用case(1)的方式去替代多層的if elseif else這種電路 [case(1)的用法](https://zhuanlan.zhihu.com/p/410412547)
-  ```verilog
-
-    ```
 ---

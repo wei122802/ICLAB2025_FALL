@@ -66,5 +66,4 @@ repeat(4) @(negedge clk);
 ---
 ## Tips
 - 當算Cross Product時，發現是負號，就將起點和終點都+1，繞完一圈後，只要發現是2就代表是負Cross區間，該值就要丟掉，若是1則是負Cross區間的起和頭，可以減少運算
-- 可以用列舉法把Hull有多少個點先算出來，這樣可以減少不必要的運算 ![Hull](hullnum.jpg)
-- 
+- 可以用列舉法把Hull有多少個點先算出來，這樣可以減少不必要的運算 ![Hull](Hullnum.jpg)
