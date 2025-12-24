@@ -1,15 +1,19 @@
 # Lab02 SUDOKU
 ## 題目說明
 
-### **▲  Inputs**
-- clk
-- rst_n
-- in_valid
-- in (4 bits)：1~9，0則是空位(使用raster scan oder，81cycle結束)
+### **▲ Inputs**
+| Signal    | Bits  | Description                                      |
+|-----------|-------|--------------------------------------------------|
+| clk       | 1     | 時鐘信號                                         |
+| rst_n     | 1     | 重置信號                                         |
+| in_valid  | 1     | 輸入有效信號                                     |
+| in        | 4     | 輸入數字（1~9，0表示空位，使用raster scan order，81 cycle結束） |
 
 ### **▲ Output**
-- out_valid 
-- out(4 bits)：1~9，一個(使用raster scan oder，81cycle結束)
+| Signal     | Bits  | Description                                      |
+|------------|-------|--------------------------------------------------|
+| out_valid  | 1     | 輸出有效信號                                     |
+| out        | 4     | 輸出數字（1~9，使用raster scan order，81 cycle結束） |
   
 ### **▲ 主要流程**
 - 封包解密：
