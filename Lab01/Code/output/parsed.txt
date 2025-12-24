@@ -1,0 +1,11 @@
+1
+Testcase 1:
+  Packet0: {'req_valid': 0, 'qos': 2, 'pkt_len': 2, 'congestion': 1, 'prefer_ch': 2, 'src_hint': 2, 'mode': 1}
+  Packet1: {'req_valid': 0, 'qos': 1, 'pkt_len': 0, 'congestion': 0, 'prefer_ch': 2, 'src_hint': 3, 'mode': 1}
+  Packet2: {'req_valid': 1, 'qos': 0, 'pkt_len': 1, 'congestion': 1, 'prefer_ch': 0, 'src_hint': 6, 'mode': 0}
+  Packet3: {'req_valid': 0, 'qos': 1, 'pkt_len': 14, 'congestion': 0, 'prefer_ch': 2, 'src_hint': 7, 'mode': 1}
+  Packet4: {'req_valid': 1, 'qos': 3, 'pkt_len': 14, 'congestion': 3, 'prefer_ch': 1, 'src_hint': 2, 'mode': 0}
+  Packet5: {'req_valid': 1, 'qos': 3, 'pkt_len': 3, 'congestion': 0, 'prefer_ch': 1, 'src_hint': 0, 'mode': 1}
+  Packet6: {'req_valid': 1, 'qos': 3, 'pkt_len': 8, 'congestion': 3, 'prefer_ch': 2, 'src_hint': 2, 'mode': 1}
+  Packet7: {'req_valid': 1, 'qos': 2, 'pkt_len': 1, 'congestion': 0, 'prefer_ch': 2, 'src_hint': 7, 'mode': 0}
+

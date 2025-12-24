@@ -30,8 +30,8 @@
 
 ---
 ## 注意事項
-- 開始前就先想好要開多少的SRAM、register、counter以及FSM要怎麼設計，因為本次使用到的變數較多，也可以用EXCEL先記錄起來，如下圖
-<!-- - ![EXCEL](EXCEL.jpg) -->
+- 開始前就先想好要開多少的SRAM、register、counter以及FSM要怎麼設計，因為本次使用到的變數較多，也可以用[EXCEL](./Lab5.xlsx)先記錄起來，如下圖
+![excel](EXC.png)
 - SAD即使算錯，因為最終只是比較SAD大小而已，所以可能會因此打中很多case，所以測試時務必使用多一點的pattern來測試
 - 將SRAM設定成接近正方形，可避免總體等效電容過大，而未來在APR時可以避免空間浪費
 - 先計算中間的transform、quantization、dequantization、inverse transform所需要的bits數，避免overflow
@@ -41,9 +41,9 @@
 ---
 ## $Performance$ =  $Total Latency$ * $Cycle time$ * $Area^{2}$
 
-| 1st_demo Rate | demo         | Cycle time | Area    | Total Latency |
-| ------------- | ------------ | ---------- | ------- | ------------- |
-| %             | **1st_demo** | 13.0       | 2361697 | 5357703       |
+| 1st_demo Rate | demo         | Cycle time | Area    | Total Latency | Rank         |
+| ------------- | ------------ | ---------- | ------- | ------------- |------------- |
+| 50.34%             | **1st_demo** | 13.0       | 2361697 | 412131   |76            |
 
 ---
 ## Tips

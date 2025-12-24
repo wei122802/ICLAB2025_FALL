@@ -62,7 +62,7 @@
   - 若不需要做interpolation的話我**只需要10個Cycle**就可以把10X10的區域都取出來
   - 但若要做interpolation的話就需要**10~15個Cycle**從SRAM取值(因為Interpolation需要算到邊界外的pixel)
   - 在SRAM取值的時候就順便把邊界狀況給考慮進去，這樣後續的interpolation就不需要再花時間去判斷邊界狀況
-  - 非常非常建議設計SRAM的時候都稍微畫一下Excel，讓自己腦袋更加清晰如何設計
+  - 非常非常建議設計SRAM的時候都稍微畫一下[EXCEL](./Control.xlsx)，讓自己腦袋更加清晰如何設計
       |                            | 8bits SRAM | 128bits SRAM | Matrix Size |
       | -------------------------- | ---------- | ------------ | ----------- |
       | No interpolation           | 100 Cycle  | **10 Cycle** | 10X10       |
