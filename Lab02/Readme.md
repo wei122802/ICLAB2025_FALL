@@ -2,35 +2,38 @@
 ## 題目說明
 
 ### **▲ Inputs**
-| Signal    | Bits  | Description                                      |
-|-----------|-------|--------------------------------------------------|
-| clk       | 1     | 時鐘信號                                         |
-| rst_n     | 1     | 重置信號                                         |
-| in_valid  | 1     | 輸入有效信號                                     |
-| in        | 4     | 輸入數字（1~9，0表示空位，使用raster scan order，81 cycle結束） |
+| Signal   | Bits | Description                                                     |
+| -------- | ---- | --------------------------------------------------------------- |
+| clk      | 1    | 時鐘信號                                                        |
+| rst_n    | 1    | 重置信號                                                        |
+| in_valid | 1    | 輸入有效信號                                                    |
+| in       | 4    | 輸入數字（1~9，0表示空位，使用raster scan order，81 cycle結束） |
 
 ### **▲ Output**
-| Signal     | Bits  | Description                                      |
-|------------|-------|--------------------------------------------------|
-| out_valid  | 1     | 輸出有效信號                                     |
-| out        | 4     | 輸出數字（1~9，使用raster scan order，81 cycle結束） |
+| Signal    | Bits | Description                                          |
+| --------- | ---- | ---------------------------------------------------- |
+| out_valid | 1    | 輸出有效信號                                         |
+| out       | 4    | 輸出數字（1~9，使用raster scan order，81 cycle結束） |
   
 ### **▲ 主要流程**
-- 封包解密：
-    1. 解碼每個封包的內部資訊，包含 req_valid、QoS、mode等等...
-    2. 使用類似於簡單版的SPECK32/64密碼解密輸入的封包
-- 優先度計算與排序：依據封包解密結果計算優先分數，並依規則排序封包順序
+| State        | Description                             |
+| ------------ | --------------------------------------- |
+| INPUT        | 接收 81 筆數獨輸入資料                  |
+| SOLVE_UPDATE | 反覆執行 Naked / Hidden Single 更新棋盤 |
+| OUTPUT       | 依序輸出完成後的棋盤                    |
 
-- 通道分配：若通道未滿，則直接分配；若滿則依0 > 1 > 2 的順序找替代通道
+- Possible Value 計算 : 對每個空格 (row, col)，計算 1~9 是否可填同時檢查Row 、Column、3X3是否已有該數字
+- Naked Single : 若某一格board[row][col] == 0，且possible_values 只剩一個bit為 1
+- Hidden Single :
+  - Row Hidden Single : 同一個Row中某數字只出現在唯一一個 possible cell
+  - Column Hidden Single: 同一個Column中某數字只出現在唯一一個 possible cell
+  - Box Hidden Single: 同一個Box中某數字只出現在唯一一個 possible cell
 
-- Mask檢查：檢查封包是否符合門檻條件，若失敗仍占用資源
-
-- Re-balance：檢查三通道負載，若其中一通道過載，照0 > 1 >2的順序移動至其他通道
 
 ---
 ## 注意事項
-- 儘量優先縮短 **critical path**  ，因為這次SPEC規定cycle time要在36.5ns以內，我身邊蠻多人都這邊卡關的
-- 第一個Lab就有隱藏測資，且隱藏測資蠻好通過的，所以建議自己寫個python生隱藏測資
+- 因題目尚未提及是否需要做backtracking
+- 一樣有隱藏測資，所以建議自己寫個python生隱藏測資
 
 ---
 ## $Performance$ = $Cycle time$ * $Latency^{1.5}$ * $Area^{1.5}$
@@ -40,11 +43,5 @@
 
 ---
 ## Tips
-- 計算優先度的部分可以用LUT去實現，可避免使用乘法器以及減法器
-- 使用 **merge sort**，可以參考[別人統計的排序網路](https://zhuanlan.zhihu.com/p/410412547)
-- Mask計算方式用到 *score and 0x6* 或者 *src_hint xor 0x3* 這種邏輯
-  - 把 *score and 0x6*　看成 score[2:1]
-  - 把 *src_hint xor 0x3* 看成 src_hint[1:0]要做反向
-  - 因Threshold使用到除法跟加法，一樣可以用LUT去做處理
-- 可以使用case(1)的方式去替代多層的if elseif else這種電路 [case(1)的用法](https://zhuanlan.zhihu.com/p/410412547)
+- 演算法是決定Performance的關鍵，使用one-hot encoding來表示possible value
 ---
