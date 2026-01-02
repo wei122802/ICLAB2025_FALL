@@ -14,15 +14,15 @@
 
 | Lab                      | Demo | Rank   | Score      | 1de    | Name                                       |
 | ------------------------ | ---- | ------ | ---------- | ------ | ------------------------------------------ |
-| [Lab01](./Lab1/)         | 1st  | **10** | 97.89      | 72.72% | Multi-Packet Channel Arbiter               |
-| [Lab02](./Lab2/)         | 1st  | **26** | 93.9       | 83.67% | SUDOKU                                     |
-| [Lab03](./Lab3/)         | 1st  | 103    | 82.42      | 48.97% | Convex Hull                                |
-| [Lab04](./Lab4/)         | 1st  | 95     | 77.97      | 76.87% | Convolution Neural Network (CNN)           |
-| [Lab05](./Lab5/)         | 1st  | 76     | 80.6       | 50.34% | H.264 Lite Prediction and Transform Engine |
-| [Lab06](./Lab6/)         | 1st  | 54     | 87.48      | 79.72% | WinRate & Poker                            |
-| [Lab07](./Lab7/)         | 1st  | 99     | 96.11      | 83.21% | Number Theoretic Transform (NTT)           |
-| [Lab08](./Lab8/)         | 1st  | **24** | **106.38** | 81.81% | Self-Attention with Determinant            |
-| [Lab09](./Lab9/)         | 1st  | **19** | 95.54      | 78.83% | Role-Playing Game (RPG)                    |
+| [Lab01](./Lab01/)        | 1st  | **10** | 97.89      | 72.72% | Multi-Packet Channel Arbiter               |
+| [Lab02](./Lab02/)        | 1st  | **26** | 93.9       | 83.67% | SUDOKU                                     |
+| [Lab03](./Lab03/)        | 1st  | 103    | 82.42      | 48.97% | Convex Hull                                |
+| [Lab04](./Lab04/)        | 1st  | 95     | 77.97      | 76.87% | Convolution Neural Network (CNN)           |
+| [Lab05](./Lab05/)        | 1st  | 76     | 80.6       | 50.34% | H.264 Lite Prediction and Transform Engine |
+| [Lab06](./Lab06/)        | 1st  | 54     | 87.48      | 79.72% | WinRate & Poker                            |
+| [Lab07](./Lab07/)        | 1st  | 99     | 96.11      | 83.21% | Number Theoretic Transform (NTT)           |
+| [Lab08](./Lab08/)        | 1st  | **24** | **106.38** | 81.81% | Self-Attention with Determinant            |
+| [Lab09](./Lab09/)        | 1st  | **19** | 95.54      | 78.83% | Role-Playing Game (RPG)                    |
 | [Lab10](./Lab10/)        | 1st  | 39     | 96.81      | 79.56% | Verification: From Lab09                   |
 | [Lab11](./Lab11/)        | 1st  | 84     | 79.08      | 74.82% | Geometric Transform Engine                 |
 | [Lab12](./Lab12/)        | 1st  | -      | 100        | -      | IR drop & Power Analysis                   |
