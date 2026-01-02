@@ -47,12 +47,13 @@
 - 面積雖然是平方，但因為SRAM通常會佔據大部分面積，所以**節省latency最有效果**!!
 - 建議把很多內容包成module，之後debug也會方便很多。
 - 提早輸出以及提早計算都是非常重要的優化方式。(細節請參考Tips)
+- 記得不只05APR的LEF要改，04MEM的LEF也要改，否則繳交上去的會是原版LEF
 ---
 ## $Performance$ =  $Chip Area^{2}$ * $Total Latency$ * $Cycle time$ 
 
-| 1st_demo Rate | demo         | Cycle time | Area | Total Latency |
-| ------------- | ------------ | ---------- | ---- | ------------- |
-| %             | **1st_demo** | 11.1       |      |               |
+| Rank  | demo         | Cycle time | Chip Area   | Total Latency | early finish |
+| ----- | ------------ | ---------- | ----------- | ------------- | ------------ |
+| **5** | **1st_demo** | 11.1       | 5001011.611 | 24157         | V            |
 
 ---
 ## Design Tips
