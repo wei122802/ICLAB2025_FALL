@@ -8,9 +8,8 @@
 ---
 
 ## Demo Result
-- Total Score : 
-- Total Rank : 
-
+- Total Score : 90.089
+- Total Rank : **33**
 
 | Lab                      | Demo | Rank   | Score      | 1de    | Name                                       |
 | ------------------------ | ---- | ------ | ---------- | ------ | ------------------------------------------ |
@@ -30,9 +29,12 @@
 | [MP](./Midterm_Project/) | 1st  | 59     | 90.49      | 76.64% | MidTerm Central Processing Unit (CPU)      |
 | [FP](./Final_Project/)   | 1st  | **5**  | **99.01**  | 84.61% | Motion Vector Difference Matching          |
 | ME                       | -    | -      | 86         |        |
-| FE                       | -    | -      |            |        |
+| FE                       | -    | -      | 73         |        |
 
 ---
 ## 心得感想
 課程中還有非常多厲害的人，只是我先來拋磚引玉~
 因為看到很多學長姐會分享心得，所以也想來紀錄一下自己每個Lab，並給未來要修課的同學們一些小小技巧。
+
+## 助教整理之統計
+![grade](grade.png)
