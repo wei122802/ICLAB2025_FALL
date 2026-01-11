@@ -2,9 +2,10 @@
 <font color=FF00000>僅供參考，請不要抄襲，助教會拿考古抓!</font>
 - 課程名稱 : 積體電路設計實驗 Integrated Circuit Design Laboratory (ICLAB)
 - 修課學期 : 2025 FALL
-- 學期初修課人數 : 
-- 退選人數 : 
-- 全班平均 : 
+- 學期初修課人數 : 214
+- 退選人數 : 92 (43%)
+- 全班平均 : 83.49
+- 全班標準差 : 10.32
 ---
 
 ## Demo Result
