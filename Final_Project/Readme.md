@@ -21,7 +21,7 @@
 | out_value | 1      | 兩個點的計算結果，每個cycle只輸出一個bit，需56cycle。 |
 
 ### **▲ 主要流程**
-![FSM](FSM.jpg)
+![FSM](FSM.png)
 - Input Image :
   將輸入包裝成128bits(16個data)，並把128X128的兩張圖片(L0、L1)存在兩顆SRAM裡面。(細節請參考Tips)
 - Input MV :
