@@ -5,20 +5,18 @@
 
 - 核心架構包含 Fractional Interpolation 與 SATD (Sum of Absolute Transformed Differences) 計算。
 
-### **▲ Inputs**
-| 名稱      | 位元數 | 說明                                                                         |
-| --------- | ------ | ---------------------------------------------------------------------------- |
-| clk       | 1      | 時脈                                                                         |
-| rst_n     | 1      | 非同步重置信號                                                               |
-| in_valid  | 1      | 圖片有效訊號                                                                 |
-| in_valid2 | 1      | 座標有效訊號                                                                 |
-| in_data   | 9      | in_valid拉起的時候是載入兩張128X128的圖片，in_valid2拉起的時候是載入兩點座標 |
+- 完成從 RTL 設計到 APR (自動佈局與繞線) 的完整 IC 設計流程
 
-### **▲Output**
-| 名稱      | 位元數 | 說明                                                  |
-| --------- | ------ | ----------------------------------------------------- |
-| out_valid | 1      | 輸出有效訊號                                          |
-| out_value | 1      | 兩個點的計算結果，每個cycle只輸出一個bit，需56cycle。 |
+### **▲ Inputs & Output**
+| 類型 | 名稱        | 位元數 | 說明                                                   |
+| ---- | ----------- | ------ | ------------------------------------------------------ |
+| IN   | clk / rst_n | 1      | 時脈 / 非同步重置信號                                  |
+| IN   | in_valid    | 1      | 圖片有效訊號 (載入兩張 128x128 圖片至 SRAM)            |
+| IN   | in_valid2   | 1      | 座標有效訊號 (載入兩點座標 MV)                         |
+| IN   | in_data     | 9      | 共用 Data Bus。in_valid 時傳圖片，in_valid2 時傳座標。 |
+| OUT  | out_valid   | 1      | 輸出有效訊號                                           |
+| OUT  | out_value   | 1      | 兩點的計算結果，串列輸出 (Serial Out) 需 56 cycles。   |
+
 
 ### **▲ 主要流程**
 ![FSM](FSM.png)
@@ -30,8 +28,12 @@
   - 6-tap FIR Filter： 針對Fractional Pixel，用 H.264 標準的 6-tap 濾波器係數 [1, -5, 20, 20, -5, 1] 進行運算。
   - Clipping： 計算後需經過 (Val+16)>>5 或 (Val+512)>>10 的處理，並將數值精準限制在 [0, 255] 之間，防止 Overflow。
   - 並非算出8X8區域，而是算10X10區域，以便後續的SATD計算。(細節請參考Tips)
+  - 下圖是一維interpolation以及二維interpolation的示意圖
+![1D](1D.png)
+![2D](2D.png)
 - SATD :
-  - Mirror Matching：範圍為 3x3。當 L0座標 $(+dx, +dy)$ 時，L1座標 則 $(-dx, -dy)$。掃描順序(0,0)->(1,0)->(2,0)->(1,0)...以此類推。
+  - Mirror Matching：範圍為 3x3。當 L0座標 $(+dx, +dy)$ 時，L1座標 則 $(-dx, -dy)$。掃描順序(0,0)->(1,0)->(2,0)->(1,0)...以此類推，如下圖。
+![SATD](SATD.png)
   - Hadamard Transform： 將 8x8 的Residual Block拆解為 4 個 4x4，進行 Hadamard Transform 與絕對值加總。
   - Minimum Search： 比較 9 個搜尋點的 SATD 值，並紀錄最小值及其對應的index(0~8)。
 - OUTPUT :
@@ -58,8 +60,10 @@
 ---
 ## Design Tips
 - **SRAM設計**(第一關鍵優化技術):
-  - 第一版設計是用8bits的SRAM存圖片，並分成L0一顆SRAM、L1一顆SRAM，但這樣主要的latency都會浪費在取值，所以我最後使用128bits的SRAM，一次可以取16個pixel
-  - 把L0 L1用斑馬紋的形式儲存在SRAM裡面，這樣取值就是每次從兩顆SRAM各取16個pixel出來，然後透過(MVx,MVy)座標來選擇哪些才是真正我要的pixel
+  - 第一版設計是用8bits的SRAM存圖片，並分成L0一顆SRAM、L1一顆SRAM(如下圖)，但這樣主要的latency都會浪費在取值，所以我最後使用128bits的SRAM，一次可以取16個pixel
+![SRAM16384](SRAM16384.png)
+  - 把L0 L1用斑馬紋的形式儲存在SRAM裡面，這樣取值就是每次從兩顆SRAM各取16個pixel出來，然後透過(MVx,MVy)座標來選擇哪些才是真正我要的pixel，如下圖
+![SRAM1024](SRAM1024.png)
   - 若不需要做interpolation的話我**只需要10個Cycle**就可以把10X10的區域都取出來
   - 但若要做interpolation的話就需要**10~15個Cycle**從SRAM取值(因為Interpolation需要算到邊界外的pixel)
   - 在SRAM取值的時候就順便把邊界狀況給考慮進去，這樣後續的interpolation就不需要再花時間去判斷邊界狀況
@@ -84,24 +88,30 @@
           Clip_Val <= Val[14:5] + Val[4]; // (Val+16) >> 5
       ```
 - SATD
-  - 因為面積約45072(包含Hadamard)，所以一次開四組，花9個cycle計算各點，均衡時間及面積。
+  - 因為面積約85941(包含Hadamard)，所以一次開四組，花9個cycle計算各點，均衡時間及面積。
   - 這邊通常會是主要的Critical Path位置，所以我在這邊切了四級的pipeline
     - 1 . 計算 Residual Block (Critical Path : 選擇8X8矩陣的MUX + 64組並行減法器)
     - 2 . 計算整個Hardmard Transform (Critical Path : 64組加減法器)
     - 3 . 計算絕對值相加 (Critical Path :16組MUX + 15組加法器) 
     - 4 . 把四塊4X4加總起來，並比較大小並更新最小值 (Critical Path : 3組加法 + 2組比較器)
-  - 但並不會浪費latency，因為SATD的計算是可以跟Interpolation或者Output同時進行的，當我計算完Point1或者Point2的Interpolation後，就可以**同時開始做SATD**的計算(如下圖)。
-   ![時序](時序.jpg)
+![SATDPipeline](SATDPipeline.png)
+  - 但並不會浪費latency，因為SATD的計算是可以跟Interpolation或者Output同時進行的，當我計算完Point1或者Point2的Interpolation後，就可以**同時開始做SATD**的計算。
+
 - **提早計算以及提早輸出**(第二關鍵優化技術)：
   - 提早計算：因為Mvx、Mvy的座標需要八個cycle才會收完，但實際上我只需要收到前兩個cycle(Point1_L0)就可以從SRAM取值並做Interpolation，**省6個cycle**
   - 提早輸出：當我第一次SATD做完的時候，我就可以開始先把Point1的結果打包並且拉高out_valid，**省12~16Cycle**
   - 但提早輸出要注意，因為輸出需要連續，所以我如果SATD後直接拉output且point2_L1的模式是2D(16Cycle)，那麼26Cycle後，point2會還沒算完，所以要多加一個判斷在這邊。
   - 如上圖所示，可以看到整個流程中Interpolation、SATD、Output是有重疊的
+![timing](timing.png)
   - 最終計算結果為平均為**39Cycle**，因為我的pattern前面幾個set是打corner case，所以最後比平均低(如圖)
   <div style="text-align: center;">
     <img src="Latency.jpg" alt="置中圖片" style="max-width: 40%;">
   </div>
-
+|               | Original | Optimized Cycle | Performance |
+| ------------- | -------- | --------------- | ----------- |
+| Max Cycle     | 94       | 47              |             |
+| Min Cycle     | 70       | 29              |             |
+| Average Cycle | 82       | 38              | **+115%**   |
 
 ## APR Tips
 - 因為我的SRAM是128bits，所以會是比較長方形的設計，但因為不考慮IR drop影響，故Floorplan採用較長形的CHIP形狀(utilization:0.8725 ratio:1.199)
