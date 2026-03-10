@@ -579,30 +579,30 @@ end
 always @ (posedge clk) begin
     case (current_state)
         NO_INT : begin
-            if (point_L_cnt[0] == 0) begin
+            if (point_L_cnt[0] == 0) begin //L0
                 for (i=0; i<90; i=i+1)
                     Green_L0[i] <= Green_L0[i+10] ; 
                 for (i=90; i<100; i=i+1)
-                    Green_L0[i] <= get10[i-90]; //maybe
+                    Green_L0[i] <= get10[i-90];
             end
-            else begin
+            else begin //L1
                 for (i=0; i<90; i=i+1)
                     Green_L1[i] <= Green_L1[i+10] ; 
                 for (i=90; i<100; i=i+1)
-                    Green_L1[i] <= get10[i-90]; //maybe
+                    Green_L1[i] <= get10[i-90];
             end
         end
         HOR_INT : begin
             if (point_L_cnt[0] == 0) begin
                 for (i=0; i<90; i=i+1)
                     Green_L0[i] <= Green_L0[i+10] ; 
-                for (i=90; i<100; i=i+1) //maybe
+                for (i=90; i<100; i=i+1) 
                     if (bluex_temp[i-90] < 0 ) 
                         Green_L0[i] <= 0 ;
                     else if (bluex_temp[i-90] > 8144)
                         Green_L0[i] <= 255 ;
                     else
-                        Green_L0[i] <= bluex_temp[i-90][14:5] + bluex_temp[i-90][4];
+                        Green_L0[i] <= bluex_temp[i-90][14:5] + bluex_temp[i-90][4]; //Clip
 
             end
             else begin
@@ -614,7 +614,7 @@ always @ (posedge clk) begin
                     else if (bluex_temp[i-90] > 8144)
                         Green_L1[i] <= 255 ;
                     else
-                        Green_L1[i] <= bluex_temp[i-90][14:5] + bluex_temp[i-90][4];
+                        Green_L1[i] <= bluex_temp[i-90][14:5] + bluex_temp[i-90][4];//Clip
 
             end
         end 
@@ -628,7 +628,7 @@ always @ (posedge clk) begin
                     else if (green_temp[i-90] > 8144)
                         Green_L0[i] <= 255 ;
                     else
-                        Green_L0[i] <= green_temp[i-90][14:5] + green_temp[i-90][4];
+                        Green_L0[i] <= green_temp[i-90][14:5] + green_temp[i-90][4]; //Clip
             end
             else begin
                 for (i=0; i<90; i=i+1)
@@ -639,7 +639,7 @@ always @ (posedge clk) begin
                     else if (green_temp[i-90] > 8144)
                         Green_L1[i] <= 255 ;
                     else
-                        Green_L1[i] <= green_temp[i-90][14:5] + green_temp[i-90][4];
+                        Green_L1[i] <= green_temp[i-90][14:5] + green_temp[i-90][4]; //Clip
             end
         end
         HV_INT : begin
@@ -652,7 +652,7 @@ always @ (posedge clk) begin
                     else if (green_temp[i-90] > 260608)
                         Green_L0[i] <= 255 ;
                     else
-                        Green_L0[i] <= green_temp[i-90][19:10] + green_temp[i-90][9];
+                        Green_L0[i] <= green_temp[i-90][19:10] + green_temp[i-90][9];  //Clip
             end
             else begin
                 for (i=0; i<90; i=i+1)
@@ -663,17 +663,18 @@ always @ (posedge clk) begin
                     else if (green_temp[i-90] > 260608)
                         Green_L1[i] <= 255 ;
                     else
-                        Green_L1[i] <= green_temp[i-90][19:10] + green_temp[i-90][9];
+                        Green_L1[i] <= green_temp[i-90][19:10] + green_temp[i-90][9];  //Clip
             end
         end
-        // default: 
     endcase
 end
+
+//MARK:Green Module
 interpolation_green green_interpolation_point1 (
     .Pmin2 (bluex_L0[0]),     .Pmin1 (bluex_L0[10]),
     .P0    (bluex_L0[20]),    .P1    (bluex_L0[30]),
     .P2    (bluex_L0[40]),    .P3    (bluex_L0[50]),
-    .out_data(green_temp[0]) //maybe pipe
+    .out_data(green_temp[0])
 );
 interpolation_green green_interpolation_point2 (
     .Pmin2 (bluex_L0[1]),     .Pmin1 (bluex_L0[11]),
@@ -872,24 +873,22 @@ always @(*) begin
     case(satd_cnt)
         0: begin start_point_L0 = 0  ; start_point_L1 = 22 ; end
         1: begin start_point_L0 = 10 ; start_point_L1 = 12 ; end
-        2: begin start_point_L0 = 20 ; start_point_L1 = 2 ; end
+        2: begin start_point_L0 = 20 ; start_point_L1 = 2  ; end
         3: begin start_point_L0 = 1  ; start_point_L1 = 21 ; end
         4: begin start_point_L0 = 11 ; start_point_L1 = 11 ; end
-        5: begin start_point_L0 = 21 ; start_point_L1 = 1 ; end
+        5: begin start_point_L0 = 21 ; start_point_L1 = 1  ; end
         6: begin start_point_L0 = 2  ; start_point_L1 = 20 ; end
         7: begin start_point_L0 = 12 ; start_point_L1 = 10 ; end
-        8: begin start_point_L0 = 22 ; start_point_L1 = 0 ; end
-        default: begin
-            start_point_L0 = 0 ;
-            start_point_L1 = 0 ;
-        end
+        8: begin start_point_L0 = 22 ; start_point_L1 = 0  ; end
+        default: 
+           begin start_point_L0 = 0  ; start_point_L1 = 0  ; end
     endcase
 end
 
 always @(*) begin
     for (i = 0 ; i < 8 ; i = i + 1) begin
         for (j = 0 ; j < 8 ; j = j + 1) begin
-            select_L0 [i][j] = Green_SATD [start_point_L0 + i*10 + j] ;
+            select_L0 [i][j] = Green_SATD [start_point_L0 + i*10 + j] ; //Green_L0 
             select_L1 [i][j] = Green_L1 [start_point_L1 + i*10 + j] ;
         end
     end
@@ -898,10 +897,11 @@ end
 always @(posedge clk) begin
     for (i = 0 ; i < 8 ; i = i + 1) begin
         for (j = 0 ; j < 8 ; j = j + 1) begin
-            residual_8X8[i][j] <= select_L0[i][j] - select_L1[i][j]; //maybe pipe
+            residual_8X8[i][j] <= select_L0[i][j] - select_L1[i][j]; //pipe
         end
     end
 end
+
 wire [17:0] satd_4X4 [0:3];
 reg [19:0] satd_total;
 
@@ -922,12 +922,8 @@ always @(posedge clk or negedge rst_n) begin
         minpoint <= satd_cnt_pipe-2;
     end
 end
-
-always @(*) begin
-    satd_total = satd_4X4[0] + satd_4X4[1] + satd_4X4[2] + satd_4X4[3];
-    // else satd_total <= 0 ;
-end
-
+//MARK:SATD
+always @(*) satd_total = satd_4X4[0] + satd_4X4[1] + satd_4X4[2] + satd_4X4[3];
 
 SATD_calculation satd_inst_00 (
     .clk(clk),
@@ -1177,7 +1173,6 @@ always @(*) begin
     Y_abs[3][1] = Y_pipe[3][1][13] ? (-Y_pipe[3][1]) : Y_pipe[3][1];
     Y_abs[3][2] = Y_pipe[3][2][13] ? (-Y_pipe[3][2]) : Y_pipe[3][2];
     Y_abs[3][3] = Y_pipe[3][3][13] ? (-Y_pipe[3][3]) : Y_pipe[3][3];
-    
 end
 
 always @(posedge clk or negedge rst_n) begin
