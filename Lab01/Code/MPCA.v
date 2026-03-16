@@ -23,8 +23,8 @@ wire [2:0] src_hint [0:7];
 wire signed [7:0] priority_score[0:7];
 wire mask_success [0:7];
 
-wire signed [13:0] packet_after_sorting[0:7];//maybe
-wire signed [8:0] packet_before_sorting[0:7];//maybe
+wire signed [13:0] packet_before_sorting[0:7];//maybe
+wire signed [8:0] packet_after_sorting[0:7];//maybe
 wire [3:0] ch_load [0:2];
 wire [2:0] ch_cap [0:2];
 // Declare the wire/reg you would use in your circuit
@@ -66,22 +66,22 @@ Priority_LUT pack2 (.mode(mode[2]), .qos(qos[2]) , .congestion(congestion[2]) , 
 Priority_LUT pack1 (.mode(mode[1]), .qos(qos[1]) , .congestion(congestion[1]) , .src_hint(src_hint[1]) , .pkt_len(pkt_len[1]) , .priority_score(priority_score[1]));
 Priority_LUT pack0 (.mode(mode[0]), .qos(qos[0]) , .congestion(congestion[0]) , .src_hint(src_hint[0]) , .pkt_len(pkt_len[0]) , .priority_score(priority_score[0]));
 
-assign packet_after_sorting[0] = {priority_score[0] ,3'd0, req_valid[0] , prefer_ch[0] };
-assign packet_after_sorting[1] = {priority_score[1] ,3'd1, req_valid[1] , prefer_ch[1] };
-assign packet_after_sorting[2] = {priority_score[2] ,3'd2, req_valid[2] , prefer_ch[2] };
-assign packet_after_sorting[3] = {priority_score[3] ,3'd3, req_valid[3] , prefer_ch[3] };
-assign packet_after_sorting[4] = {priority_score[4] ,3'd4, req_valid[4] , prefer_ch[4] };
-assign packet_after_sorting[5] = {priority_score[5] ,3'd5, req_valid[5] , prefer_ch[5] };
-assign packet_after_sorting[6] = {priority_score[6] ,3'd6, req_valid[6] , prefer_ch[6] };
-assign packet_after_sorting[7] = {priority_score[7] ,3'd7, req_valid[7] , prefer_ch[7] };
+assign packet_before_sorting[0] = {priority_score[0] ,3'd0, req_valid[0] , prefer_ch[0] };
+assign packet_before_sorting[1] = {priority_score[1] ,3'd1, req_valid[1] , prefer_ch[1] };
+assign packet_before_sorting[2] = {priority_score[2] ,3'd2, req_valid[2] , prefer_ch[2] };
+assign packet_before_sorting[3] = {priority_score[3] ,3'd3, req_valid[3] , prefer_ch[3] };
+assign packet_before_sorting[4] = {priority_score[4] ,3'd4, req_valid[4] , prefer_ch[4] };
+assign packet_before_sorting[5] = {priority_score[5] ,3'd5, req_valid[5] , prefer_ch[5] };
+assign packet_before_sorting[6] = {priority_score[6] ,3'd6, req_valid[6] , prefer_ch[6] };
+assign packet_before_sorting[7] = {priority_score[7] ,3'd7, req_valid[7] , prefer_ch[7] };
 
 MergeSort_8 packetsort(
-    .in1(packet_after_sorting[0]) ,.in2(packet_after_sorting[1]) , .in3(packet_after_sorting[2]) ,
-    .in4(packet_after_sorting[3]) ,.in5(packet_after_sorting[4]) , .in6(packet_after_sorting[5]) ,
-    .in7(packet_after_sorting[6]), .in8(packet_after_sorting[7]),
-    .out1(packet_before_sorting[0]),.out2(packet_before_sorting[1]),.out3(packet_before_sorting[2]),
-    .out4(packet_before_sorting[3]),.out5(packet_before_sorting[4]),.out6(packet_before_sorting[5]),
-    .out7(packet_before_sorting[6]),.out8(packet_before_sorting[7])
+    .in1(packet_before_sorting[0]) ,.in2(packet_before_sorting[1]) , .in3(packet_before_sorting[2]) ,
+    .in4(packet_before_sorting[3]) ,.in5(packet_before_sorting[4]) , .in6(packet_before_sorting[5]) ,
+    .in7(packet_before_sorting[6]), .in8(packet_before_sorting[7]),
+    .out1(packet_after_sorting[0]),.out2(packet_after_sorting[1]),.out3(packet_after_sorting[2]),
+    .out4(packet_after_sorting[3]),.out5(packet_after_sorting[4]),.out6(packet_after_sorting[5]),
+    .out7(packet_after_sorting[6]),.out8(packet_after_sorting[7])
 );
 wire [2:0] packetnum[0:7];
 wire [1:0] pivot_state [1:8];
@@ -92,18 +92,18 @@ wire [2:0] ch1_usage [1:8];
 wire [2:0] ch2_usage [1:8];
 wire       pivot_init [1:8];
 
-assign packetnum[0] = packet_before_sorting[0][5:3];
-assign packetnum[1] = packet_before_sorting[1][5:3];
-assign packetnum[2] = packet_before_sorting[2][5:3];
-assign packetnum[3] = packet_before_sorting[3][5:3];
-assign packetnum[4] = packet_before_sorting[4][5:3];
-assign packetnum[5] = packet_before_sorting[5][5:3];
-assign packetnum[6] = packet_before_sorting[6][5:3];
-assign packetnum[7] = packet_before_sorting[7][5:3];
+assign packetnum[0] = packet_after_sorting[0][5:3];
+assign packetnum[1] = packet_after_sorting[1][5:3];
+assign packetnum[2] = packet_after_sorting[2][5:3];
+assign packetnum[3] = packet_after_sorting[3][5:3];
+assign packetnum[4] = packet_after_sorting[4][5:3];
+assign packetnum[5] = packet_after_sorting[5][5:3];
+assign packetnum[6] = packet_after_sorting[6][5:3];
+assign packetnum[7] = packet_after_sorting[7][5:3];
 
 Mask maskpack0 (
-    .priority_score({packet_before_sorting[0][8:7],1'b0}),
-    .prefer_ch(packet_before_sorting[0][1:0]),
+    .priority_score({packet_after_sorting[0][8:7],1'b0}),
+    .prefer_ch(packet_after_sorting[0][1:0]),
     .channel(allocations[1:0]),
     .src_hint(src_hint[packetnum[0]]),
     .channel_load(channel_load),
@@ -111,8 +111,8 @@ Mask maskpack0 (
 );
 
 Mask maskpack1 (
-    .priority_score({packet_before_sorting[1][8:7],1'b0}),
-    .prefer_ch(packet_before_sorting[1][1:0]),
+    .priority_score({packet_after_sorting[1][8:7],1'b0}),
+    .prefer_ch(packet_after_sorting[1][1:0]),
     .channel(allocations[3:2]),
     .src_hint(src_hint[packetnum[1]]),
     .channel_load(channel_load),
@@ -120,8 +120,8 @@ Mask maskpack1 (
 );
 
 Mask maskpack2 (
-    .priority_score({packet_before_sorting[2][8:7],1'b0}),
-    .prefer_ch(packet_before_sorting[2][1:0]),
+    .priority_score({packet_after_sorting[2][8:7],1'b0}),
+    .prefer_ch(packet_after_sorting[2][1:0]),
     .channel(allocations[5:4]),
     .src_hint(src_hint[packetnum[2]]),
     .channel_load(channel_load),
@@ -129,8 +129,8 @@ Mask maskpack2 (
 );
 
 Mask maskpack3 (
-    .priority_score({packet_before_sorting[3][8:7],1'b0}),
-    .prefer_ch(packet_before_sorting[3][1:0]),
+    .priority_score({packet_after_sorting[3][8:7],1'b0}),
+    .prefer_ch(packet_after_sorting[3][1:0]),
     .channel(allocations[7:6]),
     .src_hint(src_hint[packetnum[3]]),
     .channel_load(channel_load),
@@ -138,8 +138,8 @@ Mask maskpack3 (
 );
 
 Mask maskpack4 (
-    .priority_score({packet_before_sorting[4][8:7],1'b0}),
-    .prefer_ch(packet_before_sorting[4][1:0]),
+    .priority_score({packet_after_sorting[4][8:7],1'b0}),
+    .prefer_ch(packet_after_sorting[4][1:0]),
     .channel(allocations[9:8]),
     .src_hint(src_hint[packetnum[4]]),
     .channel_load(channel_load),
@@ -147,8 +147,8 @@ Mask maskpack4 (
 );
 
 Mask maskpack5 (
-    .priority_score({packet_before_sorting[5][8:7],1'b0}),
-    .prefer_ch(packet_before_sorting[5][1:0]),
+    .priority_score({packet_after_sorting[5][8:7],1'b0}),
+    .prefer_ch(packet_after_sorting[5][1:0]),
     .channel(allocations[11:10]),
     .src_hint(src_hint[packetnum[5]]),
     .channel_load(channel_load),
@@ -156,8 +156,8 @@ Mask maskpack5 (
 );
 
 Mask maskpack6 (
-    .priority_score({packet_before_sorting[6][8:7],1'b0}),
-    .prefer_ch(packet_before_sorting[6][1:0]),
+    .priority_score({packet_after_sorting[6][8:7],1'b0}),
+    .prefer_ch(packet_after_sorting[6][1:0]),
     .channel(allocations[13:12]),
     .src_hint(src_hint[packetnum[6]]),
     .channel_load(channel_load),
@@ -165,8 +165,8 @@ Mask maskpack6 (
 );
 
 Mask maskpack7 (
-    .priority_score({packet_before_sorting[7][8:7],1'b0}),
-    .prefer_ch(packet_before_sorting[7][1:0]),
+    .priority_score({packet_after_sorting[7][8:7],1'b0}),
+    .prefer_ch(packet_after_sorting[7][1:0]),
     .channel(allocations[15:14]),
     .src_hint(src_hint[packetnum[7]]),
     .channel_load(channel_load),
@@ -175,7 +175,7 @@ Mask maskpack7 (
 wire [2:0] capacity_full [0:7];
 
 Packet_allocator alloc0 (
-    .packet_in(packet_before_sorting[0][2:0]),
+    .packet_in(packet_after_sorting[0][2:0]),
     .ch0_used(3'd0), .ch1_used(3'd0), .ch2_used(3'd0),
     .ch0_capacity(ch_cap[0]), .ch1_capacity(ch_cap[1]), .ch2_capacity(ch_cap[2]),
     .current_pivot(2'd0), .pivot_initialized(1'b0), .capacity_full(3'b000),
@@ -184,7 +184,7 @@ Packet_allocator alloc0 (
     .next_pivot(pivot_state[1]), .pivot_init_next(pivot_init[1]) ,.capacity_full_next(capacity_full[0])
 );
 Packet_allocator alloc1 (
-    .packet_in(packet_before_sorting[1][2:0]),
+    .packet_in(packet_after_sorting[1][2:0]),
     .ch0_used(ch0_usage[1]), .ch1_used(ch1_usage[1]), .ch2_used(ch2_usage[1]),
     .ch0_capacity(ch_cap[0]), .ch1_capacity(ch_cap[1]), .ch2_capacity(ch_cap[2]),
     .current_pivot(pivot_state[1]), .pivot_initialized(pivot_init[1]), .capacity_full(capacity_full[0]),
@@ -194,7 +194,7 @@ Packet_allocator alloc1 (
 );
 
 Packet_allocator alloc2 (
-    .packet_in(packet_before_sorting[2][2:0]),
+    .packet_in(packet_after_sorting[2][2:0]),
     .ch0_used(ch0_usage[2]), .ch1_used(ch1_usage[2]), .ch2_used(ch2_usage[2]),
     .ch0_capacity(ch_cap[0]), .ch1_capacity(ch_cap[1]), .ch2_capacity(ch_cap[2]),
     .current_pivot(pivot_state[2]), .pivot_initialized(pivot_init[2]), .capacity_full(capacity_full[1]),
@@ -204,7 +204,7 @@ Packet_allocator alloc2 (
 ); 
 
 Packet_allocator alloc3 (
-    .packet_in(packet_before_sorting[3][2:0]),
+    .packet_in(packet_after_sorting[3][2:0]),
     .ch0_used(ch0_usage[3]), .ch1_used(ch1_usage[3]), .ch2_used(ch2_usage[3]),
     .ch0_capacity(ch_cap[0]), .ch1_capacity(ch_cap[1]), .ch2_capacity(ch_cap[2]),
     .current_pivot(pivot_state[3]), .pivot_initialized(pivot_init[3]), .capacity_full(capacity_full[2]),
@@ -214,7 +214,7 @@ Packet_allocator alloc3 (
 );
 
 Packet_allocator alloc4 (
-    .packet_in(packet_before_sorting[4][2:0]),
+    .packet_in(packet_after_sorting[4][2:0]),
     .ch0_used(ch0_usage[4]), .ch1_used(ch1_usage[4]), .ch2_used(ch2_usage[4]),
     .ch0_capacity(ch_cap[0]), .ch1_capacity(ch_cap[1]), .ch2_capacity(ch_cap[2]),
     .current_pivot(pivot_state[4]), .pivot_initialized(pivot_init[4]), .capacity_full(capacity_full[3]),
@@ -224,7 +224,7 @@ Packet_allocator alloc4 (
 );
 
 Packet_allocator alloc5 (
-    .packet_in(packet_before_sorting[5][2:0]),
+    .packet_in(packet_after_sorting[5][2:0]),
     .ch0_used(ch0_usage[5]), .ch1_used(ch1_usage[5]), .ch2_used(ch2_usage[5]),
     .ch0_capacity(ch_cap[0]), .ch1_capacity(ch_cap[1]), .ch2_capacity(ch_cap[2]),
     .current_pivot(pivot_state[5]), .pivot_initialized(pivot_init[5]), .capacity_full(capacity_full[4]),
@@ -234,7 +234,7 @@ Packet_allocator alloc5 (
 );
 
 Packet_allocator alloc6 (
-    .packet_in(packet_before_sorting[6][2:0]),
+    .packet_in(packet_after_sorting[6][2:0]),
     .ch0_used(ch0_usage[6]), .ch1_used(ch1_usage[6]), .ch2_used(ch2_usage[6]),
     .ch0_capacity(ch_cap[0]), .ch1_capacity(ch_cap[1]), .ch2_capacity(ch_cap[2]),
     .current_pivot(pivot_state[6]), .pivot_initialized(pivot_init[6]), .capacity_full(capacity_full[5]),
@@ -244,7 +244,7 @@ Packet_allocator alloc6 (
 );
 
 Packet_allocator alloc7 (
-    .packet_in(packet_before_sorting[7][2:0]),
+    .packet_in(packet_after_sorting[7][2:0]),
     .ch0_used(ch0_usage[7]), .ch1_used(ch1_usage[7]), .ch2_used(ch2_usage[7]),
     .ch0_capacity(ch_cap[0]), .ch1_capacity(ch_cap[1]), .ch2_capacity(ch_cap[2]),
     .current_pivot(pivot_state[7]), .pivot_initialized(pivot_init[7]), .capacity_full(capacity_full[6]),
@@ -283,7 +283,7 @@ always @(*) begin
 end
 
 assign rebalance = !(channel_load_1==channel_load_0 && channel_load_0 == channel_load_2) ;
-//packet_before_sorting[0] has highest priority
+//packet_after_sorting[0] has highest priority
 reg [15:0] packetchannel ;
 
 reg find;
