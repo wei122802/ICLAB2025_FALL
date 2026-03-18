@@ -39,7 +39,7 @@
 ---
 ## Tips
 - 計算優先度的部分可以用LUT去實現，可避免使用乘法器以及減法器
-- 使用 **merge sort**，可以參考[別人統計的排序網路](https://zhuanlan.zhihu.com/p/410412547)
+- 使用 **merge sort**，可以參考[別人統計的排序網路](https://bertdobbelaere.github.io/sorting_networks.html)
 - Sorting時，我為了保留原始封包的prefer_channel、req_valid以及原本位置，所以我先包裝起來再丟進Sorting，而排序判斷時不需要考慮priority_score以外的資訊，只有在交換時整包一起交換，這樣可以減少後面的判斷面積。
 - Mask計算方式用到 *score and 0x6* 或者 *src_hint xor 0x3* 這種邏輯
   - 把 *score and 0x6*　看成 score[2:1]
